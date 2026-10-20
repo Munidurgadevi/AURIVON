@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Services | AURIVON</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=block"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/theme.css">
+    <link rel="stylesheet" href="../assets/css/services.css">
+    <link rel="stylesheet" href="../assets/css/animation.css">
+    <link rel="stylesheet" href="../assets/css/home2.css">
+    <link rel="stylesheet" href="../assets/css/buttons.css">
+    <link rel="icon" type="image/png" href="../assets/images/logo_lightmode.png">
+    <link rel="apple-touch-icon" href="../assets/images/logo_lightmode.png">
+    <script>
+        (function () { try { var t = localStorage.getItem('theme') === 'dark' ? 'dark' : 'light'; var u = t === 'dark' ? '../assets/images/logo_darkmode.png' : '../assets/images/logo_lightmode.png'; document.querySelectorAll('link[rel="icon"],link[rel="apple-touch-icon"]').forEach(function (l) { l.href = u }); } catch (e) { } })();
+    </script>
+    <link rel="stylesheet" href="../assets/css/header-footer.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <a href="../index.html" class="brand">
+                <span class="brand-icon">
+                    <img id="brandLogo" src="../assets/images/logo_lightmode.png" alt="AURIVON Logo">
+                </span>
+                <span class="brand-text">
+                    <span class="brand-name">
+                        AURI<span>VON</span>
+                    </span>
+                    <span class="brand-tagline">Home Theatre & Audio</span>
+                </span>
+            </a>
+            <nav id="main-navigation" class="navbar" aria-label="Main Navigation">
+                <div class="nav-dropdown">
+                    <button type="button" class="nav-link nav-dropdown-toggle" aria-expanded="false"
+                        aria-haspopup="true">
+                        Home
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-caret-down-fill dropdown-icon" viewBox="0 0 16 16">
+                            <path
+                                d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                        </svg>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="../index.html">Home 1</a>
+                        <a href="home2.html">Home 2</a>
+                    </div>
+                </div>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link active" aria-current="page">Services</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="booking.html" class="nav-drawer-cta">Visit Booking</a>
+            </nav>
+            <div class="header-actions">
+                <button type="button" class="icon-btn" id="darkModeBtn" aria-label="Toggle dark mode">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                        class="bi bi-moon-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278" />
+                    </svg>
+                </button>
+                <button type="button" class="icon-btn rtl-btn" id="rtlBtn" aria-label="Toggle right-to-left layout">
+                    RTL
+                </button>
+                <a href="booking.html" class="booking-btn">
+                    Visit Booking
+                </a>
+                <button type="button" class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false"
+                    aria-controls="main-navigation"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </header>
+    <script src="../assets/js/header-init.js"></script>
+    <script src="../assets/js/page-nav.js"></script>
+
+    <main>
+        <section class="hero sv-hero" aria-labelledby="svTitle">
+            <video class="hero-video" autoplay muted loop playsinline preload="auto">
+                <source src="../assets/video/video.mp4" type="video/mp4">
+            </video>
+            <div class="hero-inner">
+                <p class="hero-eyebrow">What we do</p>
+                <h1 class="hero-title" id="svTitle">Our Services</h1>
+                <p class="hero-text">From first sketch to final calibration, we design and install cinema-grade video
+                    and audio systems tailored to your room.</p>
+                <a href="booking.html" class="hero-btn">Book a Visit</a>
+            </div>
+        </section>
+
+        <section class="service-section content-section" aria-labelledby="svIntro">
+            <div class="section-heading">
+                <p class="section-eyebrow">Thoughtfully installed</p>
+                <h2 id="svIntro">Complete home theatre and audio solutions</h2>
+                <p>Every project is planned around your room, seating and lifestyle, then installed and tuned by our
+                    team.</p>
+            </div>
+
+            <div class="svs" role="region" aria-label="Our services slideshow">
+                <div class="svs-stage">
+                    <article class="svs-slide">
+                        <div class="svs-text">
+                            <span class="svs-count">01 / 06</span>
+                            <h3>Home Theatre Design</h3>
+                            <p>A complete cinema plan built around your room size, seating and budget.</p>
+                            <ul class="sv-points">
+                                <li>Room layout and seating plan</li>
+                                <li>Screen and equipment selection</li>
+                                <li>Lighting and cable planning</li>
+                            </ul>
+                            <div class="svs-price"><span class="svs-from">Starting from</span><strong> &#8377 15,000</strong>
+                            </div>
+                            <a href="contact.html" class="text-link">Enquire</a>
+                        </div>
+                        <figure class="svs-media"><img src="../assets/images/design.png"
+                                alt="Dark home cinema room with a large screen and plush seating"></figure>
+                    </article>
+                    <article class="svs-slide">
+                        <div class="svs-text">
+                            <span class="svs-count">02 / 06</span>
+                            <h3>Surround Sound Installation</h3>
+                            <p>Immersive 5.1, 7.1 and Dolby Atmos systems with clean, discreet wiring.</p>
+                            <ul class="sv-points">
+                                <li>Speaker placement and mounting</li>
+                                <li>In-wall and in-ceiling options</li>
+                                <li>AV receiver setup</li>
+                            </ul>
+                            <div class="svs-price"><span class="svs-from">Starting from</span><strong> &#8377 25,000</strong>
+                            </div>
+                            <a href="contact.html" class="text-link">Enquire</a>
+                        </div>
+                        <figure class="svs-media"><img src="../assets/images/sound.png"
+                                alt="Soundbar and subwoofer under a wall-mounted screen" loading="lazy"></figure>
+                    </article>
+                    <article class="svs-slide">
+                        <div class="svs-text">
+                            <span class="svs-count">03 / 06</span>
+                            <h3>Projector & Screen Setup</h3>
+                            <p>Sharp, bright pictures with the right projector, screen and mounting for your space.</p>
+                            <ul class="sv-points">
+                                <li>Projector and screen matching</li>
+                                <li>Ceiling and wall mounting</li>
+                                <li>Alignment and image tuning</li>
+                            </ul>
+                            <div class="svs-price"><span class="svs-from">Starting from</span><strong> &#8377 12,000</strong>
+                            </div>
+                            <a href="contact.html" class="text-link">Enquire</a>
+                        </div>
+                        <figure class="svs-media"><img src="../assets/images/pro.png"
+                                alt="Ceiling projector and large screen in a home theatre" loading="lazy"></figure>
+                    </article>
+                    <article class="svs-slide">
+                        <div class="svs-text">
+                            <span class="svs-count">04 / 06</span>
+                            <h3>Acoustic Treatment</h3>
+                            <p>Control echo and reflections so every note and line of dialogue stays clear.</p>
+                            <ul class="sv-points">
+                                <li>Room acoustic assessment</li>
+                                <li>Wall and ceiling panels</li>
+                                <li>Bass trapping</li>
+                            </ul>
+                            <div class="svs-price"><span class="svs-from">Starting from</span><strong> &#8377 30,000</strong>
+                            </div>
+                            <a href="contact.html" class="text-link">Enquire</a>
+                        </div>
+                        <figure class="svs-media"><img src="../assets/images/about1.png"
+                                alt="Cinema room with acoustic panels on the walls and ceiling" loading="lazy"></figure>
+                    </article>
+                    <article class="svs-slide">
+                        <div class="svs-text">
+                            <span class="svs-count">05 / 06</span>
+                            <h3>Multi Room Audio</h3>
+                            <p>Music in every room, controlled together or separately from one simple app.</p>
+                            <ul class="sv-points">
+                                <li>Zone-based speaker setup</li>
+                                <li>Streaming and app control</li>
+                                <li>Seamless interior finish</li>
+                            </ul>
+                            <div class="svs-price"><span class="svs-from">Starting from</span><strong> &#8377 35,000</strong>
+                            </div>
+                            <a href="contact.html" class="text-link">Enquire</a>
+                        </div>
+                        <figure class="svs-media"><img src="../assets/images/home22.png"
+                                alt="Living room with a built-in screen and discreet speakers" loading="lazy"></figure>
+                    </article>
+                    <article class="svs-slide">
+                        <div class="svs-text">
+                            <span class="svs-count">06 / 06</span>
+                            <h3>Calibration & Tuning</h3>
+                            <p>Measured tuning so picture and sound perform as the creators intended.</p>
+                            <ul class="sv-points">
+                                <li>Speaker level and distance setup</li>
+                                <li>Room correction</li>
+                                <li>Display colour calibration</li>
+                            </ul>
+                            <div class="svs-price"><span class="svs-from">Starting from</span><strong> &#8377 8,000</strong>
+                            </div>
+                            <a href="contact.html" class="text-link">Enquire</a>
+                        </div>
+                        <figure class="svs-media"><img src="../assets/images/gallery.png"
+                                alt="Home cinema with projection screen and recliner seating" loading="lazy"></figure>
+                    </article>
+                </div>
+                <ol class="svs-dashes" aria-hidden="true">
+                    <li><span class="svs-bar"></span></li>
+                    <li><span class="svs-bar"></span></li>
+                    <li><span class="svs-bar"></span></li>
+                    <li><span class="svs-bar"></span></li>
+                    <li><span class="svs-bar"></span></li>
+                    <li><span class="svs-bar"></span></li>
+                </ol>
+            </div>
+        </section>
+        <section class="sv-tl-section content-section" aria-labelledby="svCare">
+            <div class="section-heading">
+                <p class="section-eyebrow">After the install</p>
+                <h2 id="svCare">Care that continues long after handover</h2>
+                <p>Your system stays covered, checked and supported so it sounds as good in year three as on day one.
+                </p>
+            </div>
+            <ol class="sv-tl">
+                <li>
+                    <span class="sv-tl-num">01</span>
+                    <h3>Installation Warranty</h3>
+                    <p>All wiring, mounting and workmanship covered for two years.</p>
+                </li>
+                <li>
+                    <span class="sv-tl-num">02</span>
+                    <h3>Yearly Check-up</h3>
+                    <p>We revisit, re-test connections and retune levels as your room changes.</p>
+                </li>
+                <li>
+                    <span class="sv-tl-num">03</span>
+                    <h3>Priority Support</h3>
+                    <p>A direct line for faults, with a visit scheduled within 48 hours.</p>
+                </li>
+                <li>
+                    <span class="sv-tl-num">04</span>
+                    <h3>Upgrade Path</h3>
+                    <p>Add speakers, rooms or a new screen later without redoing the work.</p>
+                </li>
+            </ol>
+        </section>
+        <section class="of-section" id="ofSection" aria-labelledby="hoTitle">
+            <div class="ho-head">
+                <p class="ho-eyebrow">Special offers</p>
+                <h2 id="hoTitle">Best Offers & Premium Plans</h2>
+                <p>Offers made for your home. Three simple ways to start your cinema or audio project with extra value.
+                </p>
+            </div>
+
+            <div class="of-grid">
+                <!-- Card 1 -->
+                <article class="of-card">
+                    <span class="of-badge">Free</span>
+                    <h3>Survey Consultation</h3>
+                    <p class="of-desc">We visit your room, measure it and suggest the right layout and equipment.</p>
+                    <div class="of-price">
+                        <span class="of-price-label">Site visit & survey</span>
+                        <div class="of-price-row">
+                            <del class="of-old">₹ 1,500</del>
+                            <strong class="of-now">₹ 0</strong>
+                            <span class="of-save">100% Free</span>
+                        </div>
+                        <span class="of-price-note">A ₹ 1,500 value, on us. No obligation.</span>
+                    </div>
+                    <ul class="of-list">
+                        <li>Room Measurement & Layout Sketch</li>
+                        <li>Equipment & Budget Guidance</li>
+                        <li>No Obligation to Proceed</li>
+                    </ul>
+                    <a href="booking.html" class="of-btn">Book a Free Visit</a>
+                </article>
+
+                <article class="of-card of-card-featured">
+                    <span class="of-badge of-badge-solid">Most Popular</span>
+                    <h3>Cinema Combo</h3>
+                    <p class="of-desc">Combine screen, speakers and installation in one project and save up to 10%.</p>
+                    <div class="of-price">
+                        <span class="of-price-label">Bundle price</span>
+                        <div class="of-price-row">
+                            <del class="of-old">₹ 37,000</del>
+                            <strong class="of-now">₹ 33,300</strong>
+                            <span class="of-save">Save ₹ 3,700</span>
+                        </div>
+                        <span class="of-price-note">10% off Surround Sound + Projector & Screen.</span>
+                    </div>
+                    <ul class="of-list">
+                        <li>Projector or Display with Surround Speakers</li>
+                        <li>Installation & Wiring Included</li>
+                        <li>Calibration at Handover</li>
+                    </ul>
+                    <a href="booking.html" class="of-btn of-btn-accent">Claim This Offer</a>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="of-card">
+                    <span class="of-badge">Limited Time</span>
+                    <h3>Festive Season Offer</h3>
+                    <p class="of-desc">Book your installation this season and enjoy a year of care at no extra charge.
+                    </p>
+                    <div class="of-price">
+                        <span class="of-price-label">1-year care plan</span>
+                        <div class="of-price-row">
+                            <del class="of-old">₹6,000</del>
+                            <strong class="of-now">₹0</strong>
+                            <span class="of-save">1 Year Free</span>
+                        </div>
+                        <span class="of-price-note">Free with any installation booked this season.</span>
+                    </div>
+                    <ul class="of-list">
+                        <li>Free First-Year Check-up</li>
+                        <li>Priority Support Line</li>
+                        <li>Offer Ends 30 November 2026</li>
+                    </ul>
+                    <a href="booking.html" class="of-btn">Book Now</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="ht-section content-section" aria-labelledby="svHt">
+            <div class="section-heading">
+                <p class="section-eyebrow">What every visit covers</p>
+                <h2 id="svHt" dir="ltr">Home Theatre Consultation</h2>
+                <p>Bring a cinematic sound experience to your home theater with professional audio system installation.
+                    We install and configure surround sound systems for clear dialogue, powerful bass, and immersive
+                    movie audio.</p>
+            </div>
+            <ul class="ht-grid">
+                <li><button type="button" class="ht-tile"><span class="ht-num">01</span>
+                        <img class="ht-art"
+                            src="https://i.ibb.co/KpqgY9mk/Gemini-Generated-Image-61whi61whi61whi6-1.png"
+                            alt="Room Assessment" width="600" height="600" loading="lazy">
+                        <span class="ht-name">Room Assessment</span></button></li>
+                <li><button type="button" class="ht-tile"><span class="ht-num">02</span>
+                        <img class="ht-art" src="https://i.ibb.co/Y4Mxp15x/Gemini-Generated-Image-k1ffkjk1ffkjk1ff.png"
+                            alt="Surround Sound Design" width="600" height="600" loading="lazy">
+                        <span class="ht-name">Surround Sound Design</span></button></li>
+                <li><button type="button" class="ht-tile"><span class="ht-num">03</span>
+                        <img class="ht-art"
+                            src="https://i.ibb.co/20Yd83js/Home-Theatre-Ceiling-Speaker-Installation.png"
+                            alt="Speaker Installation" width="600" height="600" loading="lazy">
+                        <span class="ht-name">Speaker Installation</span></button></li>
+                <li><button type="button" class="ht-tile"><span class="ht-num">04</span>
+                        <img class="ht-art"
+                            src="https://schallertech.com/wp-content/uploads/2023/05/28417824571_d418a1bb6a_c.jpg"
+                            alt="In-Wall and In-Ceiling Speaker Installation" width="600" height="600" loading="lazy">
+                        <span class="ht-name">In-Wall & In-Ceiling Speaker Installation</span></button></li>
+                <li><button type="button" class="ht-tile"><span class="ht-num">05</span>
+                        <img class="ht-art"
+                            src="https://www.cinema-systems.com/uploads/1/4/9/4/149484915/home-theater-subwoofer-750x500_orig.jpeg"
+                            alt="Subwoofer Installation" width="600" height="600" loading="lazy">
+                        <span class="ht-name">Subwoofer Installation</span></button></li>
+                <li><button type="button" class="ht-tile"><span class="ht-num">06</span>
+                        <img class="ht-art"
+                            src="https://i.pinimg.com/736x/0a/4c/af/0a4cafb8a16e1dfb0e4316f404e6b3a0.jpg"
+                            alt="Speaker Wiring and Cable Concealment" width="600" height="600" loading="lazy">
+                        <span class="ht-name">Speaker Wiring & Cable Concealment</span></button></li>
+                <li><button type="button" class="ht-tile"><span class="ht-num">07</span>
+                        <img class="ht-art"
+                            src="https://www.nanotheatre.com/assets/uploads/blog/thumbnails/90b2ee708698ba48-1778737012.jpg"
+                            alt="AV Receiver Setup" width="600" height="600" loading="lazy">
+                        <span class="ht-name">AV Receiver Setup</span></button></li>
+                <li><button type="button" class="ht-tile"><span class="ht-num">08</span>
+                        <img class="ht-art" src="https://i.ibb.co/Hv6PhmG/Screenshot-2026-10-18-143005.png"
+                            alt="Source Device Setup" width="600" height="600" loading="lazy">
+                        <span class="ht-name">Source Device Setup</span></button></li>
+                <li><button type="button" class="ht-tile"><span class="ht-num">09</span>
+                        <img class="ht-art"
+                            src="https://i.ibb.co/27sQCcFc/Symmetrical-Warm-Home-Theatre-Listening-Room.png"
+                            alt="Audio Calibration" width="600" height="600" loading="lazy">
+                        <span class="ht-name">Audio Calibration</span></button></li>
+                <li><button type="button" class="ht-tile"><span class="ht-num">10</span>
+                        <img class="ht-art" src="https://i.ibb.co/Fb1SgVvD/Screenshot-2026-10-18-143926.png"
+                            alt="Surround Sound Testing" width="600" height="600" loading="lazy">
+                        <span class="ht-name">Surround Sound Testing</span></button></li>
+                <li><button type="button" class="ht-tile"><span class="ht-num">11</span>
+                        <img class="ht-art" src="https://i.ibb.co/Kprm2qwj/Screenshot-2026-10-18-144352.png"
+                            alt="Smart Control Setup" width="600" height="600" loading="lazy">
+                        <span class="ht-name">Smart Control Setup</span></button></li>
+                <li><button type="button" class="ht-tile"><span class="ht-num">12</span>
+                        <img class="ht-art"
+                            src="https://i0.wp.com/simplehomecinema.com/wp-content/uploads/2024/07/image-2-e1720270255957.png"
+                            alt="Installation Cleanup" width="600" height="600" loading="lazy">
+                        <span class="ht-name">Installation Cleanup</span></button></li>
+
+            </ul>
+        </section>
+
+        <section class="consultation-section content-section" aria-labelledby="svCta">
+            <div class="consultation-copy">
+                <p class="section-eyebrow">Let's make room for better sound</p>
+                <h2 id="svCta">Your dream setup starts with a conversation</h2>
+                <p>Share your ideas with us. We'll help you explore the right home theatre or audio solution for your
+                    space.</p>
+            </div>
+            <div class="consultation-actions">
+                <a href="booking.html" class="section-button">Book a consultation <span aria-hidden="true"></span></a>
+
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-col footer-brand">
+                <a href="../index.html" class="footer-logo">
+                    <span class="footer-logo-icon">
+                        <img class="logo-light" src="../assets/images/logo_lightmode.png" alt="AURIVON Logo">
+                        <img class="logo-dark" src="../assets/images/logo_darkmode.png" alt="AURIVON Logo">
+                    </span>
+                    <span class="footer-brand-text">
+                        <span class="footer-logo-text">AURI<span>VON</span></span>
+                        <span class="footer-tagline">Home Theatre & Audio</span>
+                    </span>
+                </a>
+                <p class="footer-about">
+                    Premium home theatre design and audio system installation, crafted around your space,
+                    your sound, and the way you watch.
+                </p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                        </svg></a>
+                    <a href="#" aria-label="X"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                            <path
+                                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15" />
+                        </svg></a>
+                    <a href="#" aria-label="WhatsApp"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                            <path
+                                d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                        </svg></a>
+                    <a href="#" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                        </svg></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="booking.html">Visit Booking</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Our Services</h4>
+                <ul>
+                    <li><a href="services.html">Home Theatre Design</a></li>
+                    <li><a href="services.html">Surround Sound Installation</a></li>
+                    <li><a href="services.html">Projector & Screen Setup</a></li>
+                    <li><a href="services.html">Acoustic Treatment</a></li>
+                    <li><a href="services.html">Multi-Room Audio</a></li>
+                    <li><a href="services.html">Calibration & Tuning</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col footer-contact">
+                <h4>Get In Touch</h4>
+                <ul>
+                    <li><span>Hyderabad, India</span></li>
+                    <li><a href="tel:+919876543210">+91 98765 43210</a></li>
+                    <li><a href="mailto:support@aurivon.com">support@aurivon.com</a>
+                    </li>
+                    <li><span>Mon - Sat: 10 AM - 7 PM</span></li>
+                </ul>
+                <a href="booking.html" class="footer-cta">
+                    Book a Consultation
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
+                <p>&copy; 2026 AURIVON All Rights Reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

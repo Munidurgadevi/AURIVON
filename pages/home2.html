@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>AURIVON | Premium Home Theatre Experience</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600&display=block"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/theme.css">
+    <link rel="stylesheet" href="../assets/css/home2.css">
+    <link rel="stylesheet" href="../assets/css/buttons.css">
+    <link rel="stylesheet" href="../assets/css/animation.css">
+    <link rel="icon" type="image/png" href="../assets/images/logo_lightmode.png">
+    <link rel="stylesheet" href="../assets/css/header-footer.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <a href="../index.html" class="brand">
+                <span class="brand-icon">
+                    <img id="brandLogo" src="../assets/images/logo_lightmode.png" alt="AURIVON Logo">
+                </span>
+                <span class="brand-text">
+                    <span class="brand-name">
+                        AURI<span>VON</span>
+                    </span>
+                    <span class="brand-tagline">Home Theatre & Audio</span>
+                </span>
+            </a>
+            <nav id="main-navigation" class="navbar" aria-label="Main Navigation">
+                <div class="nav-dropdown">
+                    <button type="button" class="nav-link nav-dropdown-toggle active" aria-current="page"
+                        aria-expanded="false" aria-haspopup="true">
+                        Home
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="dropdown-icon" viewBox="0 0 16 16">
+                            <path
+                                d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                        </svg>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="../index.html">Home 1</a>
+                        <a href="home2.html" class="dropdown-current" aria-current="page">Home 2</a>
+                    </div>
+                </div>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="booking.html" class="nav-drawer-cta">Visit Booking</a>
+            </nav>
+            <div class="header-actions">
+                <button type="button" class="icon-btn" id="darkModeBtn" aria-label="Toggle dark mode">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278" />
+                    </svg>
+                </button>
+                <button type="button" class="icon-btn rtl-btn" id="rtlBtn" aria-label="Toggle right-to-left layout">
+                    RTL
+                </button>
+                <a href="booking.html" class="booking-btn">
+                    Visit Booking
+                </a>
+                <button type="button" class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false"
+                    aria-controls="main-navigation"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </header>
+    <script src="../assets/js/header-init.js"></script>
+    <script src="../assets/js/page-nav.js"></script>
+
+    <section class="motion-hero" aria-labelledby="motionHeroTitle">
+        <div class="mh-media">
+            <video class="mh-video" autoplay muted loop playsinline preload="auto" aria-hidden="true">
+                <source src="../assets/video/home2.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="mh-overlay"></div>
+
+        <div class="heroflow-wrap" aria-hidden="true">
+            <svg class="heroflow heroflow-1" viewBox="0 0 2400 120" preserveAspectRatio="none">
+                <path d="M0 60 Q150 0 300 60 T600 60 T900 60 T1200 60 T1500 60 T1800 60 T2100 60 T2400 60" />
+            </svg>
+            <svg class="heroflow heroflow-2" viewBox="0 0 2400 120" preserveAspectRatio="none">
+                <path d="M0 60 Q150 0 300 60 T600 60 T900 60 T1200 60 T1500 60 T1800 60 T2100 60 T2400 60" />
+            </svg>
+            <svg class="heroflow heroflow-3" viewBox="0 0 2400 120" preserveAspectRatio="none">
+                <path d="M0 60 Q150 0 300 60 T600 60 T900 60 T1200 60 T1500 60 T1800 60 T2100 60 T2400 60" />
+            </svg>
+        </div>
+
+        <div class="mh-content">
+            <p class="mh-eyebrow">Feel every frame</p>
+            <h1 id="motionHeroTitle">Where every movie night becomes an experience </h1>
+            <p class="mh-text">Immersive sound, a screen that fits your room and lighting that sets the mood We plan
+                and
+                install it all, so all you do is press play.</p>
+            <a href="booking.html" class="mh-btn">Book a Consultation</a>
+        </div>
+    </section>
+
+    <section class="hy-section" aria-labelledby="hyTitle">
+        <div class="hy-head">
+            <p class="hy-eyebrow">Our Expertise</p>
+            <h2 id="hyTitle">Crafted for those who listen closely</h2>
+        </div>
+
+        <article class="hy-row">
+            <div class="hy-text">
+                <p class="hy-label"><b>01</b><em>Cinema</em></p>
+                <h3>Home Theatres</h3>
+                <p class="hy-desc"><strong>A private cinema, planned around your room.</strong> We design every part
+                    together: the screen or projector, the speaker layout, the seating and the lighting. Sound is
+                    tuned to your room, pictures stay sharp and bright, and the whole setup is simple to run, so movie
+                    night, a big match or a gaming session feels as good as the cinema, only more comfortable.</p>
+                <a href="services.html" class="hy-link">Read more <span aria-hidden="true"></span></a>
+            </div>
+            <div class="hy-media"><img src="../assets/images/home21.png" alt="Home theatre room" loading="lazy">
+            </div>
+        </article>
+
+        <article class="hy-row hy-row-reverse">
+            <div class="hy-text">
+                <p class="hy-label"><b>02</b><em>Whole Home</em></p>
+                <h3>Multi Room / Smart Audio</h3>
+                <p class="hy-desc"><strong>Music that follows you from room to room.</strong> Play one playlist
+                    everywhere, or a different song in the kitchen, bedroom and living room at the same time. Speakers
+                    stay neatly out of sight, and one app or wall panel lets everyone in the family control volume and
+                    sources without any fuss.</p>
+                <a href="services.html" class="hy-link">Read more <span aria-hidden="true"></span></a>
+            </div>
+            <div class="hy-media"><img src="../assets/images/home22.png" alt="Multi-room smart audio" loading="lazy">
+            </div>
+        </article>
+
+        <article class="hy-row">
+            <div class="hy-text">
+                <p class="hy-label"><b>03</b><em>Commercial</em></p>
+                <h3>Commercial Sound Experiences</h3>
+                <p class="hy-desc"><strong>Good sound is part of how your business feels.</strong> For offices,
+                    showrooms, cafes, restaurants and event spaces, we plan audio that covers the room evenly, keeps
+                    announcements clear and lets the background music set the right mood. Each area gets its own level
+                    and source, and the system is built to run reliably all day.</p>
+                <a href="services.html" class="hy-link">Read more <span aria-hidden="true"></span></a>
+            </div>
+            <div class="hy-media"><img src="../assets/images/home23.png" alt="Commercial sound experience"
+                    loading="lazy">
+            </div>
+        </article>
+    </section>
+
+    <section class="hz-section" aria-labelledby="hzTitle">
+        <div class="hz-head">
+            <p class="hz-eyebrow">Our Services</p>
+            <h2 id="hzTitle">What we offer</h2>
+            <p class="hz-sub">The finishing touches around the core installation that make a home theatre feel complete.
+            </p>
+        </div>
+
+        <div class="hz-grid">
+            <article class="hz-card">
+                <span class="hz-icon">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                            d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" />
+                        <path d="M9 18h6" />
+                        <path d="M10 22h4" />
+                    </svg>
+                </span>
+                <h3>Cinema Lighting & Scenes</h3>
+                <p>Dimmable cove lighting, starlight ceilings and preset scenes for movie, music and party modes, all
+                    changed with a single tap.</p>
+            </article>
+            <article class="hz-card">
+                <span class="hz-icon">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                            d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+                        <path d="m9 12 2 2 4-4" />
+                    </svg>
+                </span>
+                <h3>Soundproofing & Isolation</h3>
+                <p>Keep the sound in and the noise out with insulated walls, doors and ceilings, so late-night movies
+                    never disturb the family or neighbours.</p>
+            </article>
+            <article class="hz-card">
+                <span class="hz-icon">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="m10 7 5 3-5 3Z" />
+                        <path d="M12 17v4" />
+                        <path d="M8 21h8" />
+                        <rect x="2" y="3" width="20" height="14" rx="2" />
+                    </svg>
+                </span>
+                <h3>Streaming & Source Setup</h3>
+                <p>Set-top boxes, streaming players, gaming consoles and Blu-ray players connected neatly, with one
+                    smart remote that effortlessly runs everything.</p>
+            </article>
+            <article class="hz-card">
+                <span class="hz-icon">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <line x1="6" x2="10" y1="11" y2="11" />
+                        <line x1="8" x2="8" y1="9" y2="13" />
+                        <line x1="15" x2="15.01" y1="12" y2="12" />
+                        <line x1="18" x2="18.01" y1="10" y2="10" />
+                        <path
+                            d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z" />
+                    </svg>
+                </span>
+                <h3>Gaming & Sports Rooms</h3>
+                <p>Low-lag big screens and punchy sound, perfectly tuned for console gaming, cricket nights and exciting
+                    live match days with friends.</p>
+            </article>
+            <article class="hz-card">
+                <span class="hz-icon">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8" />
+                        <path d="M21 3v5h-5" />
+                        <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16" />
+                        <path d="M8 16H3v5" />
+                    </svg>
+                </span>
+                <h3>Upgrades & Retrofits</h3>
+                <p>Already have a system? We improve what you own by replacing weak links and reworking the layout,
+                    without starting from scratch.</p>
+            </article>
+            <article class="hz-card">
+                <span class="hz-icon">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                            d="M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm0 0a9 9 0 1 1 18 0m0 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z" />
+                        <path d="M21 16v2a4 4 0 0 1-4 4h-5" />
+                    </svg>
+                </span>
+                <h3>Support & Maintenance</h3>
+                <p>Regular check-ups, re-calibration, software updates and quick fixes, so your system keeps
+                    performing like day one.</p>
+            </article>
+        </div>
+    </section>
+
+
+    <section class="hw-section" aria-labelledby="hwTitle">
+        <div class="hw-wrap">
+            <div class="hw-circle">
+                <img src="https://i.pinimg.com/736x/e6/42/c8/e642c8a2c672ee14179856f5acb3eb34.jpg"
+                    alt="Planning a home theatre room" loading="lazy">
+            </div>
+            <div class="hw-body">
+                <p class="hw-eyebrow">Our promise</p>
+                <h2 id="hwTitle">Why clients choose us</h2>
+                <p class="hw-lead">A great system is only half the story. We keep every quote clear, every date fixed
+                    and every room tidy, then test it with your own favourite movies and music before we hand it over.
+                    That is how a good installation becomes a room you love.</p>
+                <ul class="hw-checks">
+                    <li><span class="hw-tick" aria-hidden="true"></span>Clear, itemised quotes</li>
+                    <li><span class="hw-tick" aria-hidden="true"></span>A fixed handover date</li>
+                    <li><span class="hw-tick" aria-hidden="true"></span>Tidy site, tidy wiring</li>
+                    <li><span class="hw-tick" aria-hidden="true"></span>Tested your favourites</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="hp-section" aria-labelledby="hpTitle">
+        <div class="hp-head">
+            <p class="hp-eyebrow">Journal</p>
+            <h2 id="hpTitle">Stories from the install room</h2>
+        </div>
+        <div class="hp-grid">
+            <article class="hp-card">
+                <div class="hp-img"><img src="https://i.pinimg.com/1200x/ba/94/5e/ba945e743d18b0eeeda947dd01590e7e.jpg"
+                        alt="" loading="lazy"></div>
+                <div class="hp-body">
+                    <p class="hp-meta"><span class="hp-tag">Screens</span><time datetime="2026-10-12">12 Oct 2026</time>
+                    </p>
+                    <h3>Projector or big-screen TV: which suits your room?</h3>
+                    <p>Light, room size and seating distance decide the answer. A quick guide to choosing with
+                        confidence.</p>
+                    <a href="journal.html" class="hp-link">Read more <span aria-hidden="true"></span></a>
+                </div>
+            </article>
+            <article class="hp-card">
+                <div class="hp-img"><img src="https://i.pinimg.com/736x/98/66/90/986690fdf1d04059a1bb60ee7ad65e72.jpg"
+                        alt="" loading="lazy"></div>
+                <div class="hp-body">
+                    <p class="hp-meta"><span class="hp-tag">Wiring</span><time datetime="2026-09-28">28 Sep 2026</time>
+                    </p>
+                    <h3>How we hide the wires without opening your walls</h3>
+                    <p>Cable channels and clever routing keep wires out of sight, even in rooms that are already
+                        finished.</p>
+                    <a href="journal.html" class="hp-link">Read more <span aria-hidden="true"></span></a>
+                </div>
+            </article>
+            <article class="hp-card">
+                <div class="hp-img"><img src="https://i.pinimg.com/736x/e2/97/29/e297297e9c4041ae5351f0769a95f7ff.jpg"
+                        alt="" loading="lazy"></div>
+                <div class="hp-body">
+                    <p class="hp-meta"><span class="hp-tag">Care</span><time datetime="2026-09-10">10 Sep 2026</time>
+                    </p>
+                    <h3>Five habits that keep your system sounding new</h3>
+                    <p>Placement, ventilation, dusting and updates: small routines that protect your equipment for
+                        years.</p>
+                    <a href="journal.html" class="hp-link">Read more <span aria-hidden="true"></span></a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+
+    <section class="ht-section" aria-labelledby="htTitle">
+        <div class="ht-head">
+            <p class="ht-eyebrow">Our team</p>
+            <h2 id="htTitle">Meet the people behind your room</h2>
+        </div>
+        <div class="ht-grid">
+            <article class="ht-member" tabindex="0">
+                <span class="ht-initials" aria-hidden="true">AR</span>
+                <img src="https://i.pinimg.com/736x/39/e9/ec/39e9ec6cef3c45b97201ec7f307701b1.jpg" alt="Arjun Reddy"
+                    loading="lazy" onerror="this.remove()">
+                <div class="ht-info">
+                    <h3>Arjun Reddy</h3>
+                    <p class="ht-role">Founder & Lead Designer</p>
+                    <p class="ht-bio">Plans every cinema layout around the room, the seating and the family using it.
+                    </p>
+                </div>
+            </article>
+            <article class="ht-member" tabindex="0">
+                <span class="ht-initials" aria-hidden="true">IS</span>
+                <img src="https://i.pinimg.com/736x/b0/a0/fb/b0a0fb3f0a84ec013e8494774f8b22ab.jpg" alt="Imran Sheikh"
+                    loading="lazy" onerror="this.remove()">
+                <div class="ht-info">
+                    <h3>Imran Sheikh</h3>
+                    <p class="ht-role">Head of Installation</p>
+                    <p class="ht-bio">Leads on-site work with neat wiring, careful mounting and a clean finish.</p>
+                </div>
+            </article>
+            <article class="ht-member" tabindex="0">
+                <span class="ht-initials" aria-hidden="true">SK</span>
+                <img src="https://i.pinimg.com/736x/e6/ab/2a/e6ab2ad55725e1740fe4bd266fa90e9b.jpg" alt="Sneha Kulkarni"
+                    loading="lazy" onerror="this.remove()">
+                <div class="ht-info">
+                    <h3>Sneha Kulkarni</h3>
+                    <p class="ht-role">Client Care Manager</p>
+                    <p class="ht-bio">Your first call after handover, for questions, updates and regular check-ups.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+
+    <section class="hv-section" aria-labelledby="hvTitle">
+        <img class="hv-bg" src="https://i.pinimg.com/1200x/c5/bd/2a/c5bd2adf10f7a211e80875e44e599a43.jpg" alt=""
+            loading="lazy">
+        <div class="hv-copy">
+            <p class="hv-eyebrow">Visit our store</p>
+            <h2 id="hvTitle">Come and experience it in person</h2>
+            <p class="hv-text">Walk through our demo rooms, listen to real systems and talk to our experts. There is no
+                pressure to buy.</p>
+        </div>
+        <div class="hv-actions">
+            <a href="booking.html" class="hv-btn">Book a store visit</a>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-col footer-brand">
+                <a href="../index.html" class="footer-logo">
+                    <span class="footer-logo-icon">
+                        <img class="logo-light" src="../assets/images/logo_lightmode.png" alt="AURIVON Logo">
+                        <img class="logo-dark" src="../assets/images/logo_darkmode.png" alt="AURIVON Logo">
+                    </span>
+                    <span class="footer-brand-text">
+                        <span class="footer-logo-text">AURI<span>VON</span></span>
+                        <span class="footer-tagline">Home Theatre & Audio</span>
+                    </span>
+                </a>
+                <p class="footer-about">
+                    Premium home theatre design and audio system installation, crafted around your space,
+                    your sound, and the way you watch.
+                </p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                        </svg></a>
+                    <a href="#" aria-label="X"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" viewBox="0 0 16 16">
+                            <path
+                                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15" />
+                        </svg></a>
+                    <a href="#" aria-label="WhatsApp"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" viewBox="0 0 16 16">
+                            <path
+                                d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                        </svg></a>
+                    <a href="#" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                        </svg></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="booking.html">Visit Booking</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Our Services</h4>
+                <ul>
+                    <li><a href="services.html">Home Theatre Design</a></li>
+                    <li><a href="services.html">Surround Sound Installation</a></li>
+                    <li><a href="services.html">Projector & Screen Setup</a></li>
+                    <li><a href="services.html">Acoustic Treatment</a></li>
+                    <li><a href="services.html">Multi-Room Audio</a></li>
+                    <li><a href="services.html">Calibration & Tuning</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col footer-contact">
+                <h4>Get In Touch</h4>
+                <ul>
+                    <li><span>Hyderabad, India</span></li>
+                    <li><a href="tel:+919876543210">+91 98765 43210</a></li>
+                    <li><a href="mailto:support@aurivon.com">support@aurivon.com</a>
+                    </li>
+                    <li><span>Mon - Sat: 10 AM - 7 PM</span></li>
+                </ul>
+                <a href="booking.html" class="footer-cta">
+                    Book a Consultation
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
+                <p>&copy; 2026 AURIVON All Rights Reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,494 @@
+:root {
+  --primary: #884674;
+  --primary-hover: #4A1720;
+  --secondary: #9A762F;
+  --background: #F7F2EA;
+  --surface: #FFFDF8;
+  --surface-elevated: #EFE8DE;
+  --text-primary: #000000;
+  --text-muted: #000000;
+  --border: #D9CCBC;
+  --on-primary: #FFFFFF;
+  --on-accent: #FFFFFF;
+  --shadow: rgba(61, 40, 47, 0.13);
+  --btn-hover: #9A762F;
+  --brand-primary: var(--primary);
+  --brand-secondary: var(--secondary);
+
+}
+
+.dark {
+  --primary: #884674;
+  --primary-hover: #A55D8F;
+  --secondary: #D9A04E;
+  --background: #000000;
+  --surface: #111111;
+  --surface-elevated: #171717;
+  --text-primary: #F5F5F5;
+  --text-muted: #B8B8B8;
+  --border: rgba(255, 255, 255, 0.12);
+  --on-primary: #FFFFFF;
+  --on-accent: #1A1013;
+  --shadow: rgba(0, 0, 0, 0.6);
+  --btn-hover: #D9A04E;
+  --brand-primary: var(--primary);
+  --brand-secondary: var(--secondary);
+}
+
+body {
+  background: var(--background);
+  color: var(--text-primary);
+}
+
+.main-header {
+  background: var(--surface);
+}
+
+.brand {
+  color: var(--brand-primary);
+}
+
+.brand-name span {
+  color: var(--brand-secondary);
+}
+
+.brand-tagline,
+.footer-tagline {
+  color: var(--text-muted);
+}
+
+.nav-link {
+  color: var(--text-primary);
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--primary);
+}
+
+.nav-link.active::after {
+  background: var(--primary);
+}
+
+.dropdown-menu {
+  background: var(--surface);
+  box-shadow: 0 4px 12px var(--shadow);
+}
+
+.dropdown-menu a {
+  color: var(--text-primary);
+}
+
+.dropdown-menu a:hover {
+  background: var(--surface-elevated);
+  color: var(--primary);
+}
+
+.icon-btn {
+  background: var(--surface);
+  color: var(--text-primary);
+}
+
+.icon-btn:hover {
+  background: var(--surface-elevated);
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.booking-btn {
+  background: var(--primary);
+  color: var(--on-primary);
+}
+
+.booking-btn:hover {
+  background: var(--btn-hover);
+}
+
+.dropdown-menu a.dropdown-current {
+  color: var(--primary);
+}
+
+.footer-logo {
+  color: var(--brand-primary);
+}
+
+.footer-logo-text span {
+  color: var(--brand-secondary);
+}
+
+.booking-btn:hover,
+.footer-cta:hover,
+.footer-socials a:hover {
+  color: var(--on-accent);
+}
+
+.hero {
+  --hero-veil: 82%;
+  background-color: var(--surface);
+}
+
+.hero::before {
+  background:
+    radial-gradient(ellipse 70% 40% at 50% 0%,
+      color-mix(in srgb, var(--primary) 12%, transparent), transparent 70%),
+    linear-gradient(180deg,
+      color-mix(in srgb, var(--surface) var(--hero-veil), transparent),
+      color-mix(in srgb, var(--surface) calc(var(--hero-veil) - 12%), transparent));
+}
+
+.hero-title {
+  color: var(--text-primary);
+}
+
+.typewriter-caret {
+  background: var(--primary);
+}
+
+.hero-text {
+  color: var(--text-muted);
+}
+
+.hero-side {
+  color: var(--text-primary);
+}
+
+[dir="rtl"] .hero-side-left {
+  left: auto;
+  right: 3.9vw;
+  transform: translateY(-50%);
+}
+
+[dir="rtl"] .hero-side-right {
+  right: auto;
+  left: 3.85vw;
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.dark .dropdown-menu a.dropdown-current {
+  color: var(--secondary);
+}
+
+.dark .brand-name,
+.dark .footer-logo-text {
+  background: linear-gradient(90deg, #884674 0%, #A55D8F 100%);
+  background-size: 58% 100%;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.dark .brand-name span,
+.dark .footer-logo-text span {
+  background: linear-gradient(90deg, #E8B25A 0%, #C27A36 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+[dir="rtl"] .dark .brand-name,
+[dir="rtl"] .dark .footer-logo-text {
+  background-size: 100% 100%;
+  background-position: left;
+}
+
+body:not(.dark) .hero::before {
+  background: linear-gradient(180deg, rgba(40, 15, 35, .55), rgba(20, 8, 18, .75));
+}
+
+body:not(.dark) .hero .hero-title,
+body:not(.dark) .hero .hero-side {
+  color: #fff;
+}
+
+body:not(.dark) .hero .hero-text {
+  color: rgba(255, 255, 255, .85);
+}
+
+body:not(.dark) .hero .typewriter-caret {
+  background: var(--secondary);
+}
+
+:root {
+  --eyebrow: #9A762F;
+}
+
+.section-eyebrow,
+.hy-eyebrow,
+.hz-eyebrow,
+.hw-eyebrow,
+.hp-eyebrow,
+.ht-eyebrow,
+.ho-eyebrow,
+.hv-eyebrow,
+.cinema-content .section-eyebrow,
+.consultation-copy .section-eyebrow {
+  color: var(--eyebrow) !important;
+  font-size: 12px;
+}
+
+
+:root {
+  --h-a: #000000;
+  --h-b: #884674;
+}
+
+.dark {
+  --h-a: #FFFFFF;
+  --h-b: #884674;
+}
+
+h2 .h-a {
+  color: var(--h-a) !important;
+}
+
+h2 .h-b {
+  color: var(--h-b) !important;
+}
+
+.cinema-content h2 .h-a,
+.consultation-copy h2 .h-a,
+.hv-copy h2 .h-a {
+  color: #FFFFFF !important;
+}
+
+.consultation-copy h2 .h-b,
+.hv-copy h2 .h-b {
+  color: #E8C887 !important;
+}
+
+body .cinema-content h2 .h-b {
+  color: #884674 !important;
+}
+
+body:not(.dark) .cinema-content h2 .h-a {
+  color: #000000 !important;
+}
+
+body:not(.dark) .consultation-copy .section-eyebrow {
+  color: #e8c887 !important;
+}
+
+body .hv-copy .hv-eyebrow {
+  color: #E8C887 !important;
+}
+
+.hero.sv-hero,
+.hero.gl-hero,
+.hero.ct-hero {
+  padding-top: clamp(24px, 3vw, 48px);
+  padding-bottom: clamp(24px, 3vw, 48px);
+}
+
+.hero.sv-hero .hero-title,
+.hero.gl-hero .hero-title,
+.hero.ct-hero .hero-title {
+  margin-top: 1rem;
+  font-size: clamp(32px, min(6vw, 11vh), 58px);
+}
+
+.hero.sv-hero .hero-text,
+.hero.gl-hero .hero-text,
+.hero.ct-hero .hero-text {
+  margin-top: 1rem;
+}
+
+.hero.sv-hero .hero-btn,
+.hero.ct-hero .hero-btn {
+  margin-top: clamp(1.2rem, 3vh, 2rem);
+}
+
+:root {
+  --consult-from: #884674;
+  --consult-to: #4A1720;
+}
+
+.dark {
+  --consult-from: #0B0B0B;
+  --consult-via: #2A1124;
+  --consult-to: #5E2F50;
+}
+
+.consultation-section {
+  background: linear-gradient(135deg, var(--consult-from), var(--consult-to));
+}
+
+.dark .consultation-section {
+  background: linear-gradient(135deg, var(--consult-from) 0%, var(--consult-via) 50%, var(--consult-to) 100%);
+}
+
+body.dark .consultation-copy .section-eyebrow {
+  color: #E8C887 !important;
+}
+
+body .hv-section {
+  background: linear-gradient(135deg, var(--consult-from), var(--consult-to));
+}
+
+body.dark .hv-section {
+  background: linear-gradient(135deg, var(--consult-from) 0%, var(--consult-via) 50%, var(--consult-to) 100%);
+}
+
+body.dark .hv-copy .hv-eyebrow {
+  color: #E8C887 !important;
+}
+
+:root {
+  --section-y: clamp(44px, 5.5vw, 72px);
+}
+
+body .content-section:not(.ab-assure-section),
+body .cinema-section,
+body .hy-section,
+body .hz-section,
+body .hw-section,
+body .hp-section,
+body .ht-section,
+body .hv-section {
+  padding-top: var(--section-y);
+  padding-bottom: var(--section-y);
+}
+
+html body .consultation-section,
+html body .hv-section {
+  border-radius: clamp(20px, 2.5vw, 32px);
+  overflow: hidden;
+}
+
+.icon-btn,
+.footer-socials a {
+  border: 1px solid var(--primary);
+}
+
+html body .hv-section {
+  position: relative;
+  isolation: isolate;
+}
+
+html body .hv-section .hv-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 48%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 55%);
+  mask-image: linear-gradient(90deg, transparent 0%, #000 55%);
+}
+
+@media (max-width: 900px) {
+  html body .hv-section .hv-bg {
+    width: 100%;
+    opacity: .22;
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+}
+
+html body .consultation-section[aria-labelledby="abVisit"] {
+  --ab-overlay: linear-gradient(100deg, rgba(136, 70, 116, .93) 0%, rgba(116, 52, 92, .84) 50%, rgba(74, 23, 32, .72) 100%);
+  background: var(--ab-overlay), url("https://i.pinimg.com/736x/f9/ab/81/f9ab817b68eff53de87c3dfbe7c53d84.jpg") center / cover no-repeat;
+}
+
+html body.dark .consultation-section[aria-labelledby="abVisit"] {
+  --ab-overlay: linear-gradient(100deg, rgba(11, 11, 11, .95) 0%, rgba(42, 17, 36, .88) 50%, rgba(94, 47, 80, .74) 100%);
+}
+
+html body .consultation-section[aria-labelledby="svCta"] {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+html body .consultation-section[aria-labelledby="svCta"]::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -7%;
+  width: 50%;
+  z-index: -1;
+  transform: skewX(-12deg);
+  border-left: 4px solid #E8C887;
+  background: linear-gradient(rgba(30, 8, 24, .35), rgba(30, 8, 24, .35)), url("https://i.pinimg.com/736x/65/a2/eb/65a2eb36d49214ffc8af6ab0274fbd5c.jpg") center / cover no-repeat;
+}
+
+html body .consultation-section[aria-labelledby="svCta"] .consultation-copy,
+html body .consultation-section[aria-labelledby="svCta"] .consultation-actions {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 900px) {
+  html body .consultation-section[aria-labelledby="svCta"]::before {
+    inset: 0;
+    width: 100%;
+    transform: none;
+    border-left: 0;
+    opacity: .25;
+  }
+}
+
+body.dark .section-eyebrow,
+body.dark .hy-eyebrow,
+body.dark .hz-eyebrow,
+body.dark .hw-eyebrow,
+body.dark .hp-eyebrow,
+body.dark .ht-eyebrow,
+body.dark .ho-eyebrow,
+body.dark .hv-eyebrow,
+body.dark .cinema-content .section-eyebrow,
+body.dark .consultation-copy .section-eyebrow {
+  color: #C8892B !important;
+}
+
+h2 {
+  unicode-bidi: isolate;
+}
+
+html[dir="rtl"] h2 {
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
+html[dir="rtl"] .space-copy h2,
+html[dir="rtl"] .consultation-copy h2,
+html[dir="rtl"] .hv-copy h2 {
+  text-align: right;
+}
+
+html[dir="rtl"] .section-heading h2,
+html[dir="rtl"] .cinema-content h2 {
+  text-align: center;
+}
+
+@supports (animation-timeline: view()) {
+  html[dir="rtl"] h2 .h-a {
+    animation-name: aniFadeRight;
+  }
+
+  html[dir="rtl"] h2 .h-b {
+    animation-name: aniFadeLeft;
+  }
+}
+
+html[dir="rtl"] body .hv-section .hv-bg {
+  right: auto;
+  left: 0;
+  -webkit-mask-image: linear-gradient(270deg, transparent 0%, #000 55%);
+  mask-image: linear-gradient(270deg, transparent 0%, #000 55%);
+}
+
+html[dir="rtl"] body .consultation-section[aria-labelledby="svCta"]::before {
+  right: auto;
+  left: -7%;
+  transform: skewX(12deg);
+  border-left: 0;
+  border-right: 4px solid #E8C887;
+}

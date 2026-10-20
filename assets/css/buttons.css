@@ -1,0 +1,73 @@
+.hero-btn,
+.section-button,
+.footer-cta,
+.mh-btn,
+.hv-btn {
+  box-sizing: border-box !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  height: 37px !important;
+  min-height: 37px !important;
+  padding: 0 20px !important;
+  border: 1px solid var(--primary) !important;
+  border-radius: 30px !important;
+  background: var(--primary) !important;
+  color: var(--on-primary) !important;
+  font-family: "Inter", sans-serif !important;
+  font-size: 15px !important;
+  font-weight: bold !important;
+  line-height: 1 !important;
+  letter-spacing: normal !important;
+  text-transform: none !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  white-space: nowrap !important;
+  cursor: pointer;
+  transform: none !important;
+  transition: background .2s ease, border-color .2s ease, color .2s ease !important;
+}
+
+.hero-btn:hover,
+.section-button:hover,
+.footer-cta:hover,
+.mh-btn:hover,
+.hv-btn:hover {
+  background: var(--btn-hover) !important;
+  border-color: var(--btn-hover) !important;
+  color: var(--on-accent) !important;
+  transform: none !important;
+}
+
+.consultation-actions .section-button,
+.hv-btn {
+  border-color: #fff !important;
+}
+
+.consultation-actions .section-button:hover,
+.hv-btn:hover {
+  border-color: var(--btn-hover) !important;
+}
+
+.hero-btn:focus-visible,
+.section-button:focus-visible,
+.footer-cta:focus-visible,
+.mh-btn:focus-visible,
+.hv-btn:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 3px;
+}
+
+.bk-submit .section-button,
+.ct-submit .section-button {
+  min-height: 37px !important;
+  padding: 0 20px !important;
+  font-size: 15px !important;
+}
+
+@media (max-width: 640px) {
+  .bk-submit .section-button {
+    width: auto !important;
+  }
+}

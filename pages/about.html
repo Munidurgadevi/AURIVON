@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>About | AURIVON</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600&display=block"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/animation.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/theme.css">
+    <link rel="stylesheet" href="../assets/css/about.css">
+    <link rel="stylesheet" href="../assets/css/buttons.css">
+
+    <link rel="icon" type="image/png" href="../assets/images/logo_lightmode.png">
+    <link rel="apple-touch-icon" href="../assets/images/logo_lightmode.png">
+    <link rel="stylesheet" href="../assets/css/header-footer.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <a href="../index.html" class="brand">
+                <span class="brand-icon">
+                    <img id="brandLogo" src="../assets/images/logo_lightmode.png" alt="AURIVON Logo">
+                </span>
+                <span class="brand-text">
+                    <span class="brand-name">
+                        AURI<span>VON</span>
+                    </span>
+                    <span class="brand-tagline">Home Theatre & Audio</span>
+                </span>
+            </a>
+            <nav id="main-navigation" class="navbar" aria-label="Main Navigation">
+                <div class="nav-dropdown">
+                    <button type="button" class="nav-link nav-dropdown-toggle" aria-expanded="false"
+                        aria-haspopup="true">
+                        Home
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="dropdown-icon" viewBox="0 0 16 16">
+                            <path
+                                d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                        </svg>
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="../index.html">Home 1</a>
+                        <a href="home2.html">Home 2</a>
+                    </div>
+                </div>
+                <a href="about.html" class="nav-link active" aria-current="page">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="booking.html" class="nav-drawer-cta">Visit Booking</a>
+            </nav>
+            <div class="header-actions">
+                <button type="button" class="icon-btn" id="darkModeBtn" aria-label="Toggle dark mode">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278" />
+                    </svg>
+                </button>
+                <button type="button" class="icon-btn rtl-btn" id="rtlBtn" aria-label="Toggle right-to-left layout">
+                    RTL
+                </button>
+                <a href="booking.html" class="booking-btn">
+                    Visit Booking
+                </a>
+                <button type="button" class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false"
+                    aria-controls="main-navigation"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </header>
+    <script src="../assets/js/header-init.js"></script>
+    <script src="../assets/js/page-nav.js"></script>
+
+    <svg class="ab-sprite" width="0" height="0" aria-hidden="true" focusable="false">
+        <defs>
+            <path id="abStar"
+                d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+        </defs>
+    </svg>
+
+    <main>
+        <section class="hero ab-hero" aria-labelledby="abTitle">
+            <div class="hero-inner">
+                <p class="hero-eyebrow">About AURIVON</p>
+                <h1 class="hero-title" id="abTitle">Sound and picture, designed around you</h1>
+                <p class="hero-text">We are a Hyderabad home theatre atelier that plans, installs and tunes cinema-grade
+                    audio and video for homes and businesses.</p>
+                <a href="services.html" class="hero-btn">Our Services</a>
+            </div>
+        </section>
+        <div class="ab-stats-wrap">
+            <div class="ab-stats-bar">
+                <div><strong data-count="10" data-suffix="+">0+</strong><span>Years of experience</span></div>
+                <div><strong data-count="250" data-suffix="+">0+</strong><span>Rooms installed</span></div>
+                <div><strong data-count="6" data-suffix="">0</strong><span>Core services</span></div>
+                <div><strong data-count="100" data-suffix="%">0%</strong><span>Calibrated on site</span></div>
+            </div>
+        </div>
+        <section class="content-section" aria-labelledby="abStory">
+            <div class="ab-wrap ab-story">
+                <div class="ab-collage">
+                    <img class="ab-collage-main" src="../assets/images/about1.png"
+                        alt="Dark home theatre with a wide screen and lounge seating" loading="lazy">
+                    <img class="ab-collage-small" src="../assets/images/about2.png" alt="Media room with a star ceiling"
+                        loading="lazy">
+                </div>
+
+                <div class="ab-copy">
+                    <span class="ab-tag">Our story</span>
+                    <h2 class="ab-title" id="abStory">It started with one room that sounded wrong</h2>
+                    <p class="ab-text">AURIVON began when a simple living room setup looked impressive but never sounded
+                        right. We learned that great sound is not about the most expensive equipment. It is about the
+                        room, the placement and the care taken in tuning.</p>
+                    <p class="ab-text">Today we bring that same attention to every project, from compact apartment
+                        lounges to dedicated cinema rooms across Hyderabad.</p>
+                    <blockquote class="ab-quote">A great system should disappear into your home and leave only the film
+                        or the music.<cite>The AURIVON team</cite></blockquote>
+                    <a href="contact.html" class="section-button">Talk to our team <span aria-hidden="true"></span></a>
+                </div>
+            </div>
+
+            <ol class="ab-timeline">
+                <li><strong>2014</strong>
+                    <h3>The first room</h3>
+                    <p>A single living room project that started it all with passion and vision.</p>
+                </li>
+                <li><strong>2018</strong>
+                    <h3>Dedicated cinemas</h3>
+                    <p>We began designing full cinema rooms with acoustic treatment.</p>
+                </li>
+                <li><strong>2021</strong>
+                    <h3>Smart integration</h3>
+                    <p>Screens, sound and simple controls brought together.</p>
+                </li>
+                <li><strong>2026</strong>
+                    <h3>250+ rooms</h3>
+                    <p>Trusted by homeowners and businesses across Hyderabad.</p>
+                </li>
+            </ol>
+        </section>
+        <section class="standard-section content-section" aria-labelledby="abBelief">
+            <div class="section-heading">
+                <p class="section-eyebrow">Our belief</p>
+                <h2 id="abBelief">What we stand for</h2>
+                <p>Four simple beliefs guide every room we design and every system we install.</p>
+            </div>
+            <div class="ab-belief-grid">
+                <article class="ab-belief"><span class="ab-belief-num">01</span>
+                    <div>
+                        <h3>The room comes first</h3>
+                        <p>The best system is the one planned around your room, your seating and the way you live.</p>
+                    </div>
+                </article>
+                <article class="ab-belief"><span class="ab-belief-num">02</span>
+                    <div>
+                        <h3>Quality over quantity</h3>
+                        <p>We recommend what your space needs, not the biggest box or the longest spec sheet.</p>
+                    </div>
+                </article>
+                <article class="ab-belief"><span class="ab-belief-num">03</span>
+                    <div>
+                        <h3>Honest advice</h3>
+                        <p>Clear, practical guidance and transparent quotes, so every decision feels confident.</p>
+                    </div>
+                </article>
+                <article class="ab-belief"><span class="ab-belief-num">04</span>
+                    <div>
+                        <h3>Care after install</h3>
+                        <p>We calibrate, explain and stay available, because the experience should last for years.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="service-section content-section ab-fit-flow" aria-labelledby="abDo">
+            <div class="section-heading">
+                <p class="section-eyebrow">What we do</p>
+                <h2 id="abDo">From first idea to final note</h2>
+                <p>One team handles design, installation and tuning, so your system works as one.</p>
+            </div>
+            <div class="ab-flow">
+                <figure class="ab-flow-media">
+                    <img src="https://i.pinimg.com/1200x/3e/c4/af/3ec4af2114d7404633de49094cdb5b54.jpg"
+                        alt="Home theatre designed around the room" loading="lazy">
+                    <figcaption>Designed around your room, seating and budget.</figcaption>
+                </figure>
+                <ol class="ab-flow-list">
+                    <li class="ab-flow-step">
+                        <span class="ab-flow-num">01</span>
+                        <div>
+                            <h3>Home Theatre Design</h3>
+
+                        </div>
+                    </li>
+                    <li class="ab-flow-step">
+                        <span class="ab-flow-num">02</span>
+                        <div>
+                            <h3>Surround Sound</h3>
+                        </div>
+                    </li>
+                    <li class="ab-flow-step">
+                        <span class="ab-flow-num">03</span>
+                        <div>
+                            <h3>Projector & Screen</h3>
+                        </div>
+                    </li>
+                    <li class="ab-flow-step">
+                        <span class="ab-flow-num">04</span>
+                        <div>
+                            <h3>Acoustic Treatment</h3>
+                        </div>
+                    </li>
+                    <li class="ab-flow-step">
+                        <span class="ab-flow-num">05</span>
+                        <div>
+                            <h3>Multi-Room Audio</h3>
+                        </div>
+                    </li>
+                    <li class="ab-flow-step">
+                        <span class="ab-flow-num">06</span>
+                        <div>
+                            <h3>Calibration & Tuning</h3>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+            <div class="ab-more"><a href="services.html" class="section-button">See all services <span
+                        aria-hidden="true"></span></a></div>
+        </section>
+        <section class="reviews-section content-section ab-fit" aria-labelledby="abWords">
+            <div class="section-heading">
+                <p class="section-eyebrow">In our clients' words</p>
+                <h2 id="abWords">Rooms that make people stay a little longer</h2>
+            </div>
+            <div class="ab-spot" data-spot>
+                <div class="ab-spot-stage">
+                    <figure class="ab-spot-panel is-active" id="abSpot1" role="tabpanel" aria-labelledby="abTab1">
+                        <div class="review-stars" role="img" aria-label="5 out of 5 stars"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg></div>
+                        <blockquote>"The sound finally fits the room. Movie nights feel immersive, and the wiring
+                            is so neat that you never notice it."</blockquote>
+                        <figcaption><strong>priya </strong><span>Home theatre, Hyderabad</span></figcaption>
+                    </figure>
+                    <figure class="ab-spot-panel" id="abSpot2" role="tabpanel" aria-labelledby="abTab2">
+                        <div class="review-stars" role="img" aria-label="5 out of 5 stars"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg></div>
+                        <blockquote>"They listened first, then designed. The projector and speakers look like they
+                            belong in our living room."</blockquote>
+                        <figcaption><strong>uma</strong><span>Living room setup, Hyderabad</span></figcaption>
+                    </figure>
+                    <figure class="ab-spot-panel" id="abSpot3" role="tabpanel" aria-labelledby="abTab3">
+                        <div class="review-stars" role="img" aria-label="5 out of 5 stars"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-star-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                            </svg></div>
+                        <blockquote>"Calibration made a huge difference. Dialogue is clear at low volume and the
+                            bass never overwhelms."</blockquote>
+                        <figcaption><strong>joe</strong><span>Cinema room, Hyderabad</span></figcaption>
+                    </figure>
+                </div>
+                <div class="ab-spot-tabs" role="tablist" aria-label="Client reviews">
+                    <button type="button" class="ab-spot-tab is-active" role="tab" id="abTab1" aria-controls="abSpot1"
+                        aria-selected="true" tabindex="0">
+                        <span class="review-avatar" aria-hidden="true"><img class="review-avatar"
+                                src="https://i.pinimg.com/736x/43/46/e0/4346e07645db88489bbf77db10b7882c.jpg"
+                                alt="Ananya Rao"></span>
+                        <span class="ab-spot-who"><strong>priya</strong><em>Home theatre</em></span>
+                    </button>
+                    <button type="button" class="ab-spot-tab" role="tab" id="abTab2" aria-controls="abSpot2"
+                        aria-selected="false" tabindex="-1">
+                        <span class="review-avatar" aria-hidden="true"><img class="review-avatar"
+                                src="https://i.pinimg.com/736x/5e/fb/aa/5efbaabec1d341d45e383df0f77651e5.jpg"
+                                alt="uma"></span>
+                        <span class="ab-spot-who"><strong>uma</strong><em>Living room setup</em></span>
+                    </button>
+                    <button type="button" class="ab-spot-tab" role="tab" id="abTab3" aria-controls="abSpot3"
+                        aria-selected="false" tabindex="-1">
+                        <span class="review-avatar" aria-hidden="true"><img class="review-avatar"
+                                src="https://i.pinimg.com/1200x/4b/5a/08/4b5a08de435e2a6275c443c5790d3aa8.jpg"
+                                alt="joe"></span>
+                        <span class="ab-spot-who"><strong>joe</strong><em>Cinema room</em></span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="service-section content-section" aria-labelledby="abBlogs">
+            <div class="section-heading">
+                <p class="section-eyebrow">Blogs</p>
+                <h2 id="abBlogs">Ideas, guides and advice</h2>
+                <p>Short reads to help you plan a better room for sound and picture.</p>
+            </div>
+            <div class="ab-blogs">
+                <article class="ab-post ab-post-lead">
+                    <div class="ab-post-img"><img
+                            src="https://i.pinimg.com/736x/8c/0b/a9/8c0ba9825b5becfe0153ef6365bab23e.jpg"
+                            alt="Media room with a star ceiling and wall screen" loading="lazy"></div>
+                    <div class="ab-post-body">
+                        <div class="ab-post-meta"><span class="ab-tag">Planning</span><span>5 min read</span></div>
+                        <h3>How to plan your ideal first home theatre</h3>
+                        <p>Room size, seating distance and screen choice: the basics to get right before you buy
+                            anything.</p>
+                    </div>
+                </article>
+                <div class="ab-post-list">
+                    <article class="ab-post ab-post-row">
+                        <div class="ab-post-img"><img
+                                src="https://i.pinimg.com/736x/64/59/3e/64593e417006f7489be06b4ca378813f.jpg"
+                                alt="Surround speakers around a wide screen" loading="lazy"></div>
+                        <div class="ab-post-body">
+                            <div class="ab-post-meta"><span class="ab-tag">Sound</span><span>4 min read</span></div>
+                            <h3><span class="ab-ltr">5.1, 7.1 or Atmos: which is</span> right for you?</h3>
+                            <p>Each format suits a different room size and budget. Here is how to choose the one that
+                                fits your space.</p>
+                        </div>
+                    </article>
+                    <article class="ab-post ab-post-row">
+                        <div class="ab-post-img"><img
+                                src="https://i.pinimg.com/736x/08/a5/bf/08a5bf2b85c547b007318cff405f56a9.jpg"
+                                alt="Ceiling projector and floor speakers" loading="lazy"></div>
+                        <div class="ab-post-body">
+                            <div class="ab-post-meta"><span class="ab-tag">Acoustics</span><span>6 min read</span></div>
+                            <h3>Why room acoustics matter more than speakers</h3>
+                            <p>The best speakers sound poor in an untreated room. Learn what to fix before you upgrade.
+                            </p>
+
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="consultation-section content-section" aria-labelledby="abVisit">
+            <div class="consultation-copy">
+                <p class="section-eyebrow">Book a visit</p>
+                <h2 id="abVisit">Let's plan your room together</h2>
+                <p>Book a free consultation visit. We will look at your space, listen to your needs and recommend the
+                    right setup.</p>
+            </div>
+            <div class="consultation-actions">
+                <a href="booking.html" class="section-button">Book a visit <span aria-hidden="true"></span></a>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-col footer-brand">
+                <a href="../index.html" class="footer-logo">
+                    <span class="footer-logo-icon">
+                        <img class="logo-light" src="../assets/images/logo_lightmode.png" alt="AURIVON Logo">
+                        <img class="logo-dark" src="../assets/images/logo_darkmode.png" alt="AURIVON Logo">
+                    </span>
+                    <span class="footer-brand-text">
+                        <span class="footer-logo-text">AURI<span>VON</span></span>
+                        <span class="footer-tagline">Home Theatre & Audio</span>
+                    </span>
+                </a>
+                <p class="footer-about">
+                    Premium home theatre design and audio system installation, crafted around your space,
+                    your sound, and the way you watch.
+                </p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                        </svg></a>
+                    <a href="#" aria-label="X"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" viewBox="0 0 16 16">
+                            <path
+                                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15" />
+                        </svg></a>
+                    <a href="#" aria-label="WhatsApp"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" viewBox="0 0 16 16">
+                            <path
+                                d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                        </svg></a>
+                    <a href="#" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            fill="currentColor" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                        </svg></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="booking.html">Visit Booking</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Our Services</h4>
+                <ul>
+                    <li><a href="services.html">Home Theatre Design</a></li>
+                    <li><a href="services.html">Surround Sound Installation</a></li>
+                    <li><a href="services.html">Projector & Screen Setup</a></li>
+                    <li><a href="services.html">Acoustic Treatment</a></li>
+                    <li><a href="services.html">Multi-Room Audio</a></li>
+                    <li><a href="services.html">Calibration & Tuning</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col footer-contact">
+                <h4>Get In Touch</h4>
+                <ul>
+                    <li><span>Hyderabad, India</span></li>
+                    <li><a href="tel:+919876543210">+91 98765 43210</a></li>
+                    <li><a href="mailto:support@aurivon.com">support@aurivon.com</a>
+                    </li>
+                    <li><span>Mon - Sat: 10 AM - 7 PM</span></li>
+                </ul>
+                <a href="booking.html" class="footer-cta">
+                    Book a Consultation
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
+                <p>&copy; 2026 AURIVON All Rights Reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../assets/js/main.js"></script>
+    <script>
+        document.querySelectorAll('.ab-post-img').forEach(function (img) {
+            var post = img.closest('.ab-post');
+            img.setAttribute('tabindex', '0');
+            img.setAttribute('role', 'button');
+            img.setAttribute('aria-expanded', 'false');
+            function toggle() {
+                var open = post.classList.toggle('is-open');
+                img.setAttribute('aria-expanded', open);
+            }
+            img.addEventListener('click', toggle);
+            img.addEventListener('keydown', function (e) {
+                if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); }
+            });
+        });
+    </script>
+    <script>
+        (function () {
+            var root = document.querySelector('[data-spot]');
+            if (!root) return;
+            var tabs = [].slice.call(root.querySelectorAll('.ab-spot-tab'));
+            var panels = [].slice.call(root.querySelectorAll('.ab-spot-panel'));
+            root.classList.add('is-js');
+            function show(i, focus) {
+                tabs.forEach(function (t, k) {
+                    var on = k === i;
+                    t.classList.toggle('is-active', on);
+                    t.setAttribute('aria-selected', on);
+                    t.tabIndex = on ? 0 : -1;
+                    panels[k].classList.toggle('is-active', on);
+                });
+                if (focus) tabs[i].focus();
+            }
+            tabs.forEach(function (t, i) {
+                t.addEventListener('click', function () { show(i); });
+                t.addEventListener('keydown', function (e) {
+                    if (e.key === 'ArrowRight') { e.preventDefault(); show((i + 1) % tabs.length, true); }
+                    if (e.key === 'ArrowLeft') { e.preventDefault(); show((i - 1 + tabs.length) % tabs.length, true); }
+                });
+            });
+        })();
+    </script>
+    <script>
+        (function () {
+            var nums = document.querySelectorAll('.ab-stats-bar strong[data-count]');
+            if (!nums.length) return;
+
+            function animate(el) {
+                var target = parseInt(el.getAttribute('data-count'), 10);
+                var suffix = el.getAttribute('data-suffix') || '';
+                var duration = 2000; // 2 seconds
+                var start = null;
+
+                function step(ts) {
+                    if (!start) start = ts;
+                    var p = Math.min((ts - start) / duration, 1);
+                    var eased = 1 - Math.pow(1 - p, 3);
+                    el.textContent = Math.floor(eased * target) + suffix;
+                    if (p < 1) requestAnimationFrame(step);
+                    else el.textContent = target + suffix;
+                }
+                requestAnimationFrame(step);
+            }
+
+            var bar = document.querySelector('.ab-stats-bar');
+            if ('IntersectionObserver' in window) {
+                var done = false;
+                new IntersectionObserver(function (entries, obs) {
+                    if (entries[0].isIntersecting && !done) {
+                        done = true;
+                        nums.forEach(animate);
+                        obs.disconnect();
+                    }
+                }, { threshold: 0.3 }).observe(bar);
+            } else {
+                nums.forEach(animate);
+            }
+        })();
+    </script>
+</body>
+
+</html>

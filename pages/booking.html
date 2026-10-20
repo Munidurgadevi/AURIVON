@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description"
+        content="Book a free consultation visit with AURIVON for home theatre and audio installation in Hyderabad.">
+    <title>Visit Booking | AURIVON</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=block"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/theme.css">
+    <link rel="stylesheet" href="../assets/css/booking.css">
+    <link rel="stylesheet" href="../assets/css/buttons.css">
+    <link rel="icon" type="image/png" href="../assets/images/logo_lightmode.png">
+    <link rel="apple-touch-icon" href="../assets/images/logo_lightmode.png">
+    <link rel="stylesheet" href="../assets/css/header-footer.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+</head>
+
+<body class="bk-body">
+
+    <main class="bk-page">
+
+        <div class="bk-topbar">
+            <button type="button" class="icon-btn" id="darkModeBtn" aria-label="Toggle dark mode"></button>
+            <button type="button" class="icon-btn rtl-btn" id="rtlBtn"
+                aria-label="Toggle right-to-left layout">RTL</button>
+        </div>
+
+        <div class="bk-card">
+
+            <div class="bk-brand">
+                <a href="../index.html" class="brand" aria-label="AURIVON Home">
+                    <span class="brand-icon">
+                        <img id="brandLogo" src="../assets/images/logo_lightmode.png" alt="AURIVON Logo">
+                    </span>
+                    <span class="brand-text">
+                        <span class="brand-name">AURI<span>VON</span></span>
+                        <span class="brand-tagline">Home Theatre & Audio</span>
+                    </span>
+                </a>
+            </div>
+
+            <div class="bk-head">
+                <p class="section-eyebrow">Free consultation visit</p>
+                <h1>Book a visit to plan your home theatre.</h1>
+                <p>Tell us about your space and when suits you. Our team will visit, listen and recommend the right
+                    setup for your room.</p>
+            </div>
+
+            <form action="mailto:support@aurivon.com" method="post" enctype="text/plain">
+                <div class="bk-grid">
+
+                    <div class="bk-field">
+                        <label for="bk-name">Your name</label>
+                        <input id="bk-name" name="Name" type="text" required autocomplete="name"
+                            placeholder="Full name">
+                    </div>
+
+                    <div class="bk-field">
+                        <label for="bk-phone">Phone number</label>
+                        <input id="bk-phone" name="Phone" type="tel" required autocomplete="tel"
+                            placeholder="+91 98765 43210">
+                    </div>
+
+                    <div class="bk-field full">
+                        <label for="bk-email">Email address</label>
+                        <input id="bk-email" name="Email" type="email" required autocomplete="email"
+                            placeholder="you@example.com">
+                    </div>
+
+                    <div class="bk-field">
+                        <label for="bk-service">Service needed</label>
+                        <select id="bk-service" name="Service">
+                            <option>Home Theatre Design</option>
+                            <option>Surround Sound Installation</option>
+                            <option>Projector & Screen Setup</option>
+                            <option>Acoustic Treatment</option>
+                            <option>Multi-Room Audio</option>
+                            <option>Calibration & Tuning</option>
+                        </select>
+                    </div>
+
+                    <div class="bk-field">
+                        <label for="bk-room">Room type</label>
+                        <select id="bk-room" name="Room type">
+                            <option>Living room</option>
+                            <option>Dedicated cinema room</option>
+                            <option>Bedroom</option>
+                            <option>Office / commercial space</option>
+                        </select>
+                    </div>
+
+                    <div class="bk-field">
+                        <label for="bk-size">Room size</label>
+                        <input id="bk-size" name="Room size" type="text" placeholder="e.g. 12 * 14 ft">
+                    </div>
+
+                    <div class="bk-field">
+                        <label for="bk-area">Area / locality</label>
+                        <input id="bk-area" name="Area" type="text" required
+                            placeholder="e.g. Jubilee Hills, Hyderabad">
+                    </div>
+
+                    <div class="bk-field">
+                        <label for="bk-date">Preferred visit date</label>
+                        <input id="bk-date" name="Visit date" type="date" required>
+                    </div>
+
+                    <div class="bk-field">
+                        <label for="bk-time">Preferred time</label>
+                        <select id="bk-time" name="Visit time">
+                            <option>Morning (9 AM - 12 PM)</option>
+                            <option>Afternoon (12 PM - 4 PM)</option>
+                            <option>Evening (4 PM - 7 PM)</option>
+                        </select>
+                    </div>
+
+                    <div class="bk-field full">
+                        <label for="bk-notes">Anything we should know</label>
+                        <textarea id="bk-notes" name="Notes"
+                            placeholder="Seating, current equipment, budget range, ideas you like..."></textarea>
+                    </div>
+
+                    <div class="bk-field full bk-submit">
+                        <button type="submit" class="section-button">Book my visit <span
+                                aria-hidden="true"></span></button>
+                        <p class="bk-note">We will confirm your visit by phone or email.</p>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+
+    </main>
+
+    <script src="../assets/js/header-init.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script>
+        /* Booking: custom dropdowns that always stay inside the screen */
+        (function () {
+            var selects = document.querySelectorAll('.bk-field select');
+            if (!selects.length) return;
+            var dds = [];
+
+            function closeAll(except) {
+                dds.forEach(function (d) { if (d !== except) d.close(); });
+            }
+
+            selects.forEach(function (sel) {
+                var field = sel.closest('.bk-field');
+                var label = field.querySelector('label');
+                var wrap = document.createElement('div');
+                wrap.className = 'bk-dd';
+
+                var btn = document.createElement('button');
+                btn.type = 'button';
+                btn.className = 'bk-dd-btn';
+                btn.setAttribute('aria-haspopup', 'listbox');
+                btn.setAttribute('aria-expanded', 'false');
+
+                var text = document.createElement('span');
+                text.className = 'bk-dd-text';
+                text.id = sel.id + '-text';
+                var chev = document.createElement('span');
+                chev.className = 'bk-dd-chev';
+                chev.setAttribute('aria-hidden', 'true');
+                btn.appendChild(text);
+                btn.appendChild(chev);
+
+                var list = document.createElement('ul');
+                list.className = 'bk-dd-list';
+                list.id = sel.id + '-list';
+                list.setAttribute('role', 'listbox');
+                list.tabIndex = -1;
+                btn.setAttribute('aria-controls', list.id);
+                if (label) {
+                    label.id = label.id || sel.id + '-label';
+                    btn.setAttribute('aria-labelledby', label.id + ' ' + text.id);
+                }
+
+                var items = [];
+                Array.prototype.forEach.call(sel.options, function (o, i) {
+                    var li = document.createElement('li');
+                    li.className = 'bk-dd-opt';
+                    li.id = list.id + '-' + i;
+                    li.setAttribute('role', 'option');
+                    li.textContent = o.text;
+                    li.addEventListener('mousedown', function (e) { e.preventDefault(); });
+                    li.addEventListener('click', function () { choose(i); close(true); });
+                    li.addEventListener('mousemove', function () { setActive(i); });
+                    list.appendChild(li);
+                    items.push(li);
+                });
+
+                sel.parentNode.insertBefore(wrap, sel);
+                wrap.appendChild(sel);
+                sel.classList.add('bk-dd-native');
+                sel.tabIndex = -1;
+                sel.setAttribute('aria-hidden', 'true');
+                wrap.appendChild(btn);
+                wrap.appendChild(list);
+
+                var active = sel.selectedIndex;
+
+                function paint() {
+                    text.textContent = sel.options[sel.selectedIndex].text;
+                    items.forEach(function (li, i) {
+                        li.setAttribute('aria-selected', i === sel.selectedIndex ? 'true' : 'false');
+                    });
+                }
+
+                function setActive(i) {
+                    active = Math.max(0, Math.min(items.length - 1, i));
+                    items.forEach(function (li, k) { li.classList.toggle('is-active', k === active); });
+                    btn.setAttribute('aria-activedescendant', items[active].id);
+                    items[active].scrollIntoView({ block: 'nearest' });
+                }
+
+                function choose(i) {
+                    sel.selectedIndex = i;
+                    paint();
+                    sel.dispatchEvent(new Event('change', { bubbles: true }));
+                }
+
+                function place() {
+                    wrap.classList.remove('is-up');
+                    list.style.maxHeight = '';
+                    var r = btn.getBoundingClientRect();
+                    var vh = window.innerHeight;
+                    var below = vh - r.bottom - 12;
+                    var above = r.top - 12;
+                    if (Math.max(below, above) < 160) {         
+                        window.scrollBy(0, r.top - 80);
+                        r = btn.getBoundingClientRect();
+                        below = vh - r.bottom - 12;
+                        above = r.top - 12;
+                    }
+                    var need = Math.min(list.scrollHeight + 12, 260);
+                    var up = below < need && above > below;
+                    wrap.classList.toggle('is-up', up);
+                    list.style.maxHeight = Math.max(120, Math.min(260, up ? above : below)) + 'px';
+                }
+
+                function open() {
+                    closeAll(api);
+                    wrap.classList.add('is-open');
+                    btn.setAttribute('aria-expanded', 'true');
+                    place();
+                    setActive(sel.selectedIndex);
+                }
+
+                function close(focus) {
+                    if (!wrap.classList.contains('is-open')) return;
+                    wrap.classList.remove('is-open', 'is-up');
+                    btn.setAttribute('aria-expanded', 'false');
+                    btn.removeAttribute('aria-activedescendant');
+                    if (focus) btn.focus();
+                }
+
+                var api = { close: close, wrap: wrap };
+                dds.push(api);
+
+                btn.addEventListener('click', function () {
+                    wrap.classList.contains('is-open') ? close() : open();
+                });
+
+                btn.addEventListener('keydown', function (e) {
+                    var isOpen = wrap.classList.contains('is-open');
+                    var k = e.key;
+                    if (k === 'ArrowDown' || k === 'ArrowUp') {
+                        e.preventDefault();
+                        if (!isOpen) { open(); return; }
+                        setActive(active + (k === 'ArrowDown' ? 1 : -1));
+                    } else if (k === 'Home' && isOpen) { e.preventDefault(); setActive(0); }
+                    else if (k === 'End' && isOpen) { e.preventDefault(); setActive(items.length - 1); }
+                    else if (k === 'Enter' || k === ' ') {
+                        e.preventDefault();
+                        if (!isOpen) { open(); return; }
+                        choose(active); close(true);
+                    } else if (k === 'Escape' && isOpen) { e.preventDefault(); close(true); }
+                    else if (k === 'Tab') { close(); }
+                    else if (k.length === 1 && /\S/.test(k)) {
+                        var start = isOpen ? active + 1 : sel.selectedIndex + 1;
+                        for (var n = 0; n < items.length; n++) {
+                            var idx = (start + n) % items.length;
+                            if (items[idx].textContent.charAt(0).toLowerCase() === k.toLowerCase()) {
+                                if (isOpen) setActive(idx); else choose(idx);
+                                break;
+                            }
+                        }
+                    }
+                });
+
+                if (label) {
+                    label.addEventListener('click', function (e) { e.preventDefault(); btn.focus(); });
+                }
+
+                if (sel.form) {
+                    sel.form.addEventListener('reset', function () { setTimeout(paint, 0); });
+                }
+
+                paint();
+            });
+
+            document.addEventListener('click', function (e) {
+                dds.forEach(function (d) { if (!d.wrap.contains(e.target)) d.close(); });
+            });
+            window.addEventListener('resize', function () { closeAll(); });
+        })();
+    </script>
+</body>
+
+</html>
