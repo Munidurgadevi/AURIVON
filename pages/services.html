@@ -17,7 +17,7 @@
     <link rel="icon" type="image/png" href="../assets/images/logo_lightmode.png">
     <link rel="apple-touch-icon" href="../assets/images/logo_lightmode.png">
     <script>
-        (function () { try { var t = localStorage.getItem('theme') === 'dark' ? 'dark' : 'light'; var u = t === 'dark' ? '../assets/images/logo_darkmode.png' : '../assets/images/logo_lightmode.png'; document.querySelectorAll('link[rel="icon"],link[rel="apple-touch-icon"]').forEach(function (l) { l.href = u }); } catch (e) { } })();
+        (function () {try {var t = localStorage.getItem('theme') === 'dark' ? 'dark' : 'light'; var u = t === 'dark' ? '../assets/images/logo_darkmode.png' : '../assets/images/logo_lightmode.png'; document.querySelectorAll('link[rel="icon"],link[rel="apple-touch-icon"]').forEach(function (l) {l.href = u});} catch (e) { } })();
     </script>
     <link rel="stylesheet" href="../assets/css/header-footer.css">
     <link rel="stylesheet" href="../assets/css/responsive.css">
@@ -55,6 +55,7 @@
                 </div>
                 <a href="about.html" class="nav-link">About</a>
                 <a href="services.html" class="nav-link active" aria-current="page">Services</a>
+                <a href="pricing.html" class="nav-link">Pricing</a>
                 <a href="gallery.html" class="nav-link">Gallery</a>
                 <a href="contact.html" class="nav-link">Contact</a>
                 <a href="booking.html" class="nav-drawer-cta">Visit Booking</a>
@@ -83,15 +84,30 @@
 
     <main>
         <section class="hero sv-hero" aria-labelledby="svTitle">
-            <video class="hero-video" autoplay muted loop playsinline preload="auto">
-                <source src="../assets/video/video.mp4" type="video/mp4">
-            </video>
-            <div class="hero-inner">
-                <p class="hero-eyebrow">What we do</p>
-                <h1 class="hero-title" id="svTitle">Our Services</h1>
-                <p class="hero-text">From first sketch to final calibration, we design and install cinema-grade video
-                    and audio systems tailored to your room.</p>
-                <a href="booking.html" class="hero-btn">Book a Visit</a>
+            <div class="svh-grid">
+                <div class="svh-copy">
+                    <p class="hero-eyebrow">What we do</p>
+                    <h1 class="hero-title" id="svTitle">Our <span>Services</span></h1>
+                    <p class="hero-text">From first sketch to final calibration, we design and install cinema-grade
+                        video
+                        and audio systems tailored to your room.</p>
+                    <div class="svh-actions">
+                        <a href="booking.html" class="hero-btn">Book a Visit</a>
+                        <a href="#svIntro" class="text-link">Explore services</a>
+                    </div>
+                    <ul class="svh-stats">
+                        <li><strong>06</strong><span>Core services</span></li>
+                        <li><strong>2 Yr</strong><span>Install warranty</span></li>
+                        <li><strong>48 hrs</strong><span>Support visit</span></li>
+                    </ul>
+                </div>
+
+                <div class="svh-gallery" aria-hidden="true">
+                    <figure class="svh-img svh-a"><img src="https://i.pinimg.com/1200x/09/c3/3c/09c33cbe8cbc037cedf11e7a3abf208c.jpg" alt=""></figure>
+                    <figure class="svh-img svh-b"><img src="https://i.pinimg.com/736x/d7/52/45/d75245aa32f48662aaf08765d7856f7b.jpg" alt=""></figure>
+                    <figure class="svh-img svh-c"><img src="https://i.pinimg.com/1200x/94/21/43/9421432ab772ea4efac5a6538de5a134.jpg" alt=""></figure>
+                    <div class="svh-badge"><strong>Cinema-grade</strong><span>Design  Install  Tune</span></div>
+                </div>
             </div>
         </section>
 
@@ -103,119 +119,103 @@
                     team.</p>
             </div>
 
-            <div class="svs" role="region" aria-label="Our services slideshow">
-                <div class="svs-stage">
-                    <article class="svs-slide">
-                        <div class="svs-text">
-                            <span class="svs-count">01 / 06</span>
-                            <h3>Home Theatre Design</h3>
-                            <p>A complete cinema plan built around your room size, seating and budget.</p>
-                            <ul class="sv-points">
-                                <li>Room layout and seating plan</li>
-                                <li>Screen and equipment selection</li>
-                                <li>Lighting and cable planning</li>
-                            </ul>
-                            <div class="svs-price"><span class="svs-from">Starting from</span><strong> &#8377 15,000</strong>
+            <div class="svx" role="group" aria-label="Our services">
+                <input type="radio" name="svx" id="svx1" class="svx-radio" aria-label="Home Theatre Design" checked>
+                <input type="radio" name="svx" id="svx2" class="svx-radio" aria-label="Surround Sound Installation">
+                <input type="radio" name="svx" id="svx3" class="svx-radio" aria-label="Projector & Screen Setup">
+                <input type="radio" name="svx" id="svx4" class="svx-radio" aria-label="Acoustic Treatment">
+                <input type="radio" name="svx" id="svx5" class="svx-radio" aria-label="Multi Room Audio">
+                <input type="radio" name="svx" id="svx6" class="svx-radio" aria-label="Calibration & Tuning">
+                <div class="svx-grid">
+                    <div class="svx-tabs">
+                        <label for="svx1" class="svx-tab"><span class="svx-n">01</span><span class="svx-name">Home Theatre Design</span><span class="svx-from">From &#8377; 15,000</span></label>
+                        <label for="svx2" class="svx-tab"><span class="svx-n">02</span><span class="svx-name">Surround Sound Installation</span><span class="svx-from">From &#8377; 25,000</span></label>
+                        <label for="svx3" class="svx-tab"><span class="svx-n">03</span><span class="svx-name">Projector & Screen Setup</span><span class="svx-from">From &#8377; 12,000</span></label>
+                        <label for="svx4" class="svx-tab"><span class="svx-n">04</span><span class="svx-name">Acoustic Treatment</span><span class="svx-from">From &#8377; 30,000</span></label>
+                        <label for="svx5" class="svx-tab"><span class="svx-n">05</span><span class="svx-name">Multi Room Audio</span><span class="svx-from">From &#8377; 35,000</span></label>
+                        <label for="svx6" class="svx-tab"><span class="svx-n">06</span><span class="svx-name">Calibration & Tuning</span><span class="svx-from">From &#8377; 8,000</span></label>
+                    </div>
+                    <div class="svx-stage">
+                        <article class="svx-panel">
+                            <img class="svx-img" src="https://media.designcafe.com/wp-content/uploads/2020/04/13172034/home-theater-design-ideas.jpg" alt="Dark home cinema room with a large screen and plush seating">
+                            <div class="svx-card">
+                                <span class="svx-count">01 / 06</span>
+                                <h3>Home Theatre Design</h3>
+                                <p class="svx-desc">A complete cinema plan built around your room size, seating and budget.</p>
+                                <ul class="svx-points"><li>Room layout and seating plan</li><li>Screen and equipment selection</li><li>Lighting and cable planning</li></ul>
+                                <div class="svx-foot">
+                                    <p class="svx-price"><span>Starting from</span><strong>&#8377; 15,000</strong></p>
+                                    <a href="home-theatre-design.html" class="svx-btn">View Service</a>
+                                </div>
                             </div>
-                            <a href="contact.html" class="text-link">Enquire</a>
-                        </div>
-                        <figure class="svs-media"><img src="../assets/images/design.png"
-                                alt="Dark home cinema room with a large screen and plush seating"></figure>
-                    </article>
-                    <article class="svs-slide">
-                        <div class="svs-text">
-                            <span class="svs-count">02 / 06</span>
-                            <h3>Surround Sound Installation</h3>
-                            <p>Immersive 5.1, 7.1 and Dolby Atmos systems with clean, discreet wiring.</p>
-                            <ul class="sv-points">
-                                <li>Speaker placement and mounting</li>
-                                <li>In-wall and in-ceiling options</li>
-                                <li>AV receiver setup</li>
-                            </ul>
-                            <div class="svs-price"><span class="svs-from">Starting from</span><strong> &#8377 25,000</strong>
+                        </article>
+                        <article class="svx-panel">
+                            <img class="svx-img" src="https://i.pinimg.com/1200x/53/3e/56/533e56e5c2ec2535f0b647d179747b02.jpg" alt="Soundbar and subwoofer under a wall-mounted screen" loading="lazy">
+                            <div class="svx-card">
+                                <span class="svx-count">02 / 06</span>
+                                <h3>Surround Sound Installation</h3>
+                                <p class="svx-desc">Immersive 5.1, 7.1 and Dolby Atmos systems with clean, discreet wiring.</p>
+                                <ul class="svx-points"><li>Speaker placement and mounting</li><li>In-wall and in-ceiling options</li><li>AV receiver setup</li></ul>
+                                <div class="svx-foot">
+                                    <p class="svx-price"><span>Starting from</span><strong>&#8377; 25,000</strong></p>
+                                    <a href="surround-sound-installation.html" class="svx-btn">View service</a>
+                                </div>
                             </div>
-                            <a href="contact.html" class="text-link">Enquire</a>
-                        </div>
-                        <figure class="svs-media"><img src="../assets/images/sound.png"
-                                alt="Soundbar and subwoofer under a wall-mounted screen" loading="lazy"></figure>
-                    </article>
-                    <article class="svs-slide">
-                        <div class="svs-text">
-                            <span class="svs-count">03 / 06</span>
-                            <h3>Projector & Screen Setup</h3>
-                            <p>Sharp, bright pictures with the right projector, screen and mounting for your space.</p>
-                            <ul class="sv-points">
-                                <li>Projector and screen matching</li>
-                                <li>Ceiling and wall mounting</li>
-                                <li>Alignment and image tuning</li>
-                            </ul>
-                            <div class="svs-price"><span class="svs-from">Starting from</span><strong> &#8377 12,000</strong>
+                        </article>
+                        <article class="svx-panel">
+                            <img class="svx-img" src="../assets/images/pro.png" alt="Ceiling projector and large screen in a home theatre" loading="lazy">
+                            <div class="svx-card">
+                                <span class="svx-count">03 / 06</span>
+                                <h3>Projector & Screen Setup</h3>
+                                <p class="svx-desc">Sharp, bright pictures with the right projector, screen and mounting for your space.</p>
+                                <ul class="svx-points"><li>Projector and screen matching</li><li>Ceiling and wall mounting</li><li>Alignment and image tuning</li></ul>
+                                <div class="svx-foot">
+                                    <p class="svx-price"><span>Starting from</span><strong>&#8377; 12,000</strong></p>
+                                    <a href="projector-screen-setup.html" class="svx-btn">View Service </a>
+                                </div>
                             </div>
-                            <a href="contact.html" class="text-link">Enquire</a>
-                        </div>
-                        <figure class="svs-media"><img src="../assets/images/pro.png"
-                                alt="Ceiling projector and large screen in a home theatre" loading="lazy"></figure>
-                    </article>
-                    <article class="svs-slide">
-                        <div class="svs-text">
-                            <span class="svs-count">04 / 06</span>
-                            <h3>Acoustic Treatment</h3>
-                            <p>Control echo and reflections so every note and line of dialogue stays clear.</p>
-                            <ul class="sv-points">
-                                <li>Room acoustic assessment</li>
-                                <li>Wall and ceiling panels</li>
-                                <li>Bass trapping</li>
-                            </ul>
-                            <div class="svs-price"><span class="svs-from">Starting from</span><strong> &#8377 30,000</strong>
+                        </article>
+                        <article class="svx-panel">
+                            <img class="svx-img" src="https://i.pinimg.com/1200x/da/2c/7b/da2c7b00d698117004ed597d2cb9cec2.jpg" alt="Cinema room with acoustic panels on the walls and ceiling" loading="lazy">
+                            <div class="svx-card">
+                                <span class="svx-count">04 / 06</span>
+                                <h3>Acoustic Treatment</h3>
+                                <p class="svx-desc">Control echo and reflections so every note and line of dialogue stays clear.</p>
+                                <ul class="svx-points"><li>Room acoustic assessment</li><li>Wall and ceiling panels</li><li>Bass trapping</li></ul>
+                                <div class="svx-foot">
+                                    <p class="svx-price"><span>Starting from</span><strong>&#8377; 30,000</strong></p>
+                                    <a href="acoustic-treatment.html" class="svx-btn">View Service</a>
+                                </div>
                             </div>
-                            <a href="contact.html" class="text-link">Enquire</a>
-                        </div>
-                        <figure class="svs-media"><img src="../assets/images/about1.png"
-                                alt="Cinema room with acoustic panels on the walls and ceiling" loading="lazy"></figure>
-                    </article>
-                    <article class="svs-slide">
-                        <div class="svs-text">
-                            <span class="svs-count">05 / 06</span>
-                            <h3>Multi Room Audio</h3>
-                            <p>Music in every room, controlled together or separately from one simple app.</p>
-                            <ul class="sv-points">
-                                <li>Zone-based speaker setup</li>
-                                <li>Streaming and app control</li>
-                                <li>Seamless interior finish</li>
-                            </ul>
-                            <div class="svs-price"><span class="svs-from">Starting from</span><strong> &#8377 35,000</strong>
+                        </article>
+                        <article class="svx-panel">
+                            <img class="svx-img" src="https://i.pinimg.com/736x/2e/1e/a9/2e1ea9a9ca74d2a793b3dd2630830423.jpg" alt="Living room with a built-in screen and discreet speakers" loading="lazy">
+                            <div class="svx-card">
+                                <span class="svx-count">05 / 06</span>
+                                <h3>Multi Room Audio</h3>
+                                <p class="svx-desc">Music in every room, controlled together or separately from one simple app.</p>
+                                <ul class="svx-points"><li>Zone-based speaker setup</li><li>Streaming and app control</li><li>Seamless interior finish</li></ul>
+                                <div class="svx-foot">
+                                    <p class="svx-price"><span>Starting from</span><strong>&#8377; 35,000</strong></p>
+                                    <a href="multi-room-audio.html" class="svx-btn">View Service</a>
+                                </div>
                             </div>
-                            <a href="contact.html" class="text-link">Enquire</a>
-                        </div>
-                        <figure class="svs-media"><img src="../assets/images/home22.png"
-                                alt="Living room with a built-in screen and discreet speakers" loading="lazy"></figure>
-                    </article>
-                    <article class="svs-slide">
-                        <div class="svs-text">
-                            <span class="svs-count">06 / 06</span>
-                            <h3>Calibration & Tuning</h3>
-                            <p>Measured tuning so picture and sound perform as the creators intended.</p>
-                            <ul class="sv-points">
-                                <li>Speaker level and distance setup</li>
-                                <li>Room correction</li>
-                                <li>Display colour calibration</li>
-                            </ul>
-                            <div class="svs-price"><span class="svs-from">Starting from</span><strong> &#8377 8,000</strong>
+                        </article>
+                        <article class="svx-panel">
+                            <img class="svx-img" src="https://images.pexels.com/photos/13348768/pexels-photo-13348768.jpeg" alt="Home cinema with projection screen and recliner seating" loading="lazy">
+                            <div class="svx-card">
+                                <span class="svx-count">06 / 06</span>
+                                <h3>Calibration & Tuning</h3>
+                                <p class="svx-desc">Measured tuning so picture and sound perform as the creators intended.</p>
+                                <ul class="svx-points"><li>Speaker level and distance setup</li><li>Room correction</li><li>Display colour calibration</li></ul>
+                                <div class="svx-foot">
+                                    <p class="svx-price"><span>Starting from</span><strong>&#8377; 8,000</strong></p>
+                                    <a href="calibration-tuning.html" class="svx-btn">View Service </a>
+                                </div>
                             </div>
-                            <a href="contact.html" class="text-link">Enquire</a>
-                        </div>
-                        <figure class="svs-media"><img src="../assets/images/gallery.png"
-                                alt="Home cinema with projection screen and recliner seating" loading="lazy"></figure>
-                    </article>
+                        </article>
+                    </div>
                 </div>
-                <ol class="svs-dashes" aria-hidden="true">
-                    <li><span class="svs-bar"></span></li>
-                    <li><span class="svs-bar"></span></li>
-                    <li><span class="svs-bar"></span></li>
-                    <li><span class="svs-bar"></span></li>
-                    <li><span class="svs-bar"></span></li>
-                    <li><span class="svs-bar"></span></li>
-                </ol>
             </div>
         </section>
         <section class="sv-tl-section content-section" aria-labelledby="svCare">
@@ -325,73 +325,103 @@
             </div>
         </section>
 
-        <section class="ht-section content-section" aria-labelledby="svHt">
+        <section class="sp-section content-section" aria-labelledby="svSpaces">
             <div class="section-heading">
-                <p class="section-eyebrow">What every visit covers</p>
-                <h2 id="svHt" dir="ltr">Home Theatre Consultation</h2>
-                <p>Bring a cinematic sound experience to your home theater with professional audio system installation.
-                    We install and configure surround sound systems for clear dialogue, powerful bass, and immersive
-                    movie audio.</p>
+                <p class="section-eyebrow">Built for every space</p>
+                <h2 id="svSpaces">Spaces we design for</h2>
+                <p>From a dedicated cinema room to a busy showroom, every space gets a system planned around how it is used.</p>
             </div>
-            <ul class="ht-grid">
-                <li><button type="button" class="ht-tile"><span class="ht-num">01</span>
-                        <img class="ht-art"
-                            src="https://i.ibb.co/KpqgY9mk/Gemini-Generated-Image-61whi61whi61whi6-1.png"
-                            alt="Room Assessment" width="600" height="600" loading="lazy">
-                        <span class="ht-name">Room Assessment</span></button></li>
-                <li><button type="button" class="ht-tile"><span class="ht-num">02</span>
-                        <img class="ht-art" src="https://i.ibb.co/Y4Mxp15x/Gemini-Generated-Image-k1ffkjk1ffkjk1ff.png"
-                            alt="Surround Sound Design" width="600" height="600" loading="lazy">
-                        <span class="ht-name">Surround Sound Design</span></button></li>
-                <li><button type="button" class="ht-tile"><span class="ht-num">03</span>
-                        <img class="ht-art"
-                            src="https://i.ibb.co/20Yd83js/Home-Theatre-Ceiling-Speaker-Installation.png"
-                            alt="Speaker Installation" width="600" height="600" loading="lazy">
-                        <span class="ht-name">Speaker Installation</span></button></li>
-                <li><button type="button" class="ht-tile"><span class="ht-num">04</span>
-                        <img class="ht-art"
-                            src="https://schallertech.com/wp-content/uploads/2023/05/28417824571_d418a1bb6a_c.jpg"
-                            alt="In-Wall and In-Ceiling Speaker Installation" width="600" height="600" loading="lazy">
-                        <span class="ht-name">In-Wall & In-Ceiling Speaker Installation</span></button></li>
-                <li><button type="button" class="ht-tile"><span class="ht-num">05</span>
-                        <img class="ht-art"
-                            src="https://www.cinema-systems.com/uploads/1/4/9/4/149484915/home-theater-subwoofer-750x500_orig.jpeg"
-                            alt="Subwoofer Installation" width="600" height="600" loading="lazy">
-                        <span class="ht-name">Subwoofer Installation</span></button></li>
-                <li><button type="button" class="ht-tile"><span class="ht-num">06</span>
-                        <img class="ht-art"
-                            src="https://i.pinimg.com/736x/0a/4c/af/0a4cafb8a16e1dfb0e4316f404e6b3a0.jpg"
-                            alt="Speaker Wiring and Cable Concealment" width="600" height="600" loading="lazy">
-                        <span class="ht-name">Speaker Wiring & Cable Concealment</span></button></li>
-                <li><button type="button" class="ht-tile"><span class="ht-num">07</span>
-                        <img class="ht-art"
-                            src="https://www.nanotheatre.com/assets/uploads/blog/thumbnails/90b2ee708698ba48-1778737012.jpg"
-                            alt="AV Receiver Setup" width="600" height="600" loading="lazy">
-                        <span class="ht-name">AV Receiver Setup</span></button></li>
-                <li><button type="button" class="ht-tile"><span class="ht-num">08</span>
-                        <img class="ht-art" src="https://i.ibb.co/Hv6PhmG/Screenshot-2026-10-18-143005.png"
-                            alt="Source Device Setup" width="600" height="600" loading="lazy">
-                        <span class="ht-name">Source Device Setup</span></button></li>
-                <li><button type="button" class="ht-tile"><span class="ht-num">09</span>
-                        <img class="ht-art"
-                            src="https://i.ibb.co/27sQCcFc/Symmetrical-Warm-Home-Theatre-Listening-Room.png"
-                            alt="Audio Calibration" width="600" height="600" loading="lazy">
-                        <span class="ht-name">Audio Calibration</span></button></li>
-                <li><button type="button" class="ht-tile"><span class="ht-num">10</span>
-                        <img class="ht-art" src="https://i.ibb.co/Fb1SgVvD/Screenshot-2026-10-18-143926.png"
-                            alt="Surround Sound Testing" width="600" height="600" loading="lazy">
-                        <span class="ht-name">Surround Sound Testing</span></button></li>
-                <li><button type="button" class="ht-tile"><span class="ht-num">11</span>
-                        <img class="ht-art" src="https://i.ibb.co/Kprm2qwj/Screenshot-2026-10-18-144352.png"
-                            alt="Smart Control Setup" width="600" height="600" loading="lazy">
-                        <span class="ht-name">Smart Control Setup</span></button></li>
-                <li><button type="button" class="ht-tile"><span class="ht-num">12</span>
-                        <img class="ht-art"
-                            src="https://i0.wp.com/simplehomecinema.com/wp-content/uploads/2024/07/image-2-e1720270255957.png"
-                            alt="Installation Cleanup" width="600" height="600" loading="lazy">
-                        <span class="ht-name">Installation Cleanup</span></button></li>
+            <div class="sp-panels">
+                <a class="sp-panel" href="contact.html" aria-label="Dedicated Home Theatres: plan this space">
+                    <img class="sp-img" src="https://i.pinimg.com/736x/01/70/d6/0170d6b62448b4535da3103a05686e41.jpg" alt="Starlight ceiling home theatre room" loading="lazy">
+                    <span class="sp-num">01</span>
+                    <div class="sp-body">
+                        <h3>Dedicated Home Theatres</h3>
+                        <p class="sp-desc">A purpose-built room with tiered seating, acoustic treatment and a full cinema system.</p>
+                        <span class="sp-link">Plan this space <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                    </div>
+                </a>
+                <a class="sp-panel" href="contact.html" aria-label="Living-Room Cinema: plan this space">
+                    <img class="sp-img" src="https://i.pinimg.com/236x/b3/4d/96/b34d96753299e16503f7571c942765e3.jpg" alt="Living room with a built-in screen and discreet speakers" loading="lazy">
+                    <span class="sp-num">02</span>
+                    <div class="sp-body">
+                        <h3>Living-Room Cinema</h3>
+                        <p class="sp-desc">Big-screen picture and surround sound that blend into the room you already live in.</p>
+                        <span class="sp-link">Plan this space <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                    </div>
+                </a>
+                <a class="sp-panel" href="contact.html" aria-label="Whole-Home Audio: plan this space">
+                    <img class="sp-img" src="https://i.pinimg.com/736x/ec/ae/cb/ecaecb6f0badd01acd3c5997bec39be1.jpg" alt="Soundbar and subwoofer under a wall-mounted screen" loading="lazy">
+                    <span class="sp-num">03</span>
+                    <div class="sp-body">
+                        <h3>Whole-Home Audio</h3>
+                        <p class="sp-desc">Music that follows you from room to room, controlled from one simple app.</p>
+                        <span class="sp-link">Plan this space <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                    </div>
+                </a>
+                <a class="sp-panel" href="contact.html" aria-label="Commercial Spaces: plan this space">
+                    <img class="sp-img" src="https://i.pinimg.com/1200x/eb/d7/ce/ebd7ced9090401b1af6a9c4fbe91b433.jpg" alt="Projector and screen in a large dark room" loading="lazy">
+                    <span class="sp-num">04</span>
+                    <div class="sp-body">
+                        <h3>Commercial Spaces</h3>
+                        <p class="sp-desc">Clear, even sound and presentation audio for offices, showrooms, cafes and event spaces.</p>
+                        <span class="sp-link">Plan this space <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                    </div>
+                </a>
+            </div>
+        </section>
 
-            </ul>
+        <section class="fq-section content-section" aria-labelledby="svFaq">
+            <div class="fq-wrap">
+                <div class="fq-intro">
+                    <p class="section-eyebrow">Good to know</p>
+                    <h2 id="svFaq">Questions, answered</h2>
+                    <p>Straight answers to what clients ask us most before they begin.</p>
+                    <a href="contact.html" class="fq-ask">Still unsure? Talk to us <span aria-hidden="true">→</span></a>
+                </div>
+                <div class="fq-list">
+                    <details class="fq-item" name="fq" open>
+                        <summary>
+                            <span class="fq-num">01</span>
+                            <span class="fq-q">How are your prices decided?</span>
+                            <span class="fq-icon" aria-hidden="true"></span>
+                        </summary>
+                        <p class="fq-a">"From" prices are starting points. After a site visit, we provide an itemised quote covering every speaker, cable, and labour cost before work begins.</p>
+                    </details>
+                    <details class="fq-item" name="fq">
+                        <summary>
+                            <span class="fq-num">02</span>
+                            <span class="fq-q">Can you work in a room that is already finished?</span>
+                            <span class="fq-icon" aria-hidden="true"></span>
+                        </summary>
+                        <p class="fq-a">Yes. We plan cable routes carefully so wires stay out of sight, even in painted and furnished rooms. We explain options during the visit.</p>
+                    </details>
+                    <details class="fq-item" name="fq">
+                        <summary>
+                            <span class="fq-num">03</span>
+                            <span class="fq-q">Can you upgrade the system I already own?</span>
+                            <span class="fq-icon" aria-hidden="true"></span>
+                        </summary>
+                        <p class="fq-a">Often, yes. We review what you have, keep the parts that still perform well and replace only the weak links, so you do not need to start from scratch.</p>
+                    </details>
+                    <details class="fq-item" name="fq">
+                        <summary>
+                            <span class="fq-num">04</span>
+                            <span class="fq-q">How long does an installation take?</span>
+                            <span class="fq-icon" aria-hidden="true"></span>
+                        </summary>
+                        <p class="fq-a">It depends on the scope, from a short visit to a longer schedule for a dedicated room. We agree on the date and plan before work starts.</p>
+                    </details>
+                    <details class="fq-item" name="fq">
+                        <summary>
+                            <span class="fq-num">05</span>
+                            <span class="fq-q">What happens after the installation is done?</span>
+                            <span class="fq-icon" aria-hidden="true"></span>
+                        </summary>
+                        <p class="fq-a">We test the system with your own movies and music before handover, then stay available for check-ups, re-calibration, updates and quick fixes.</p>
+                    </details>
+                </div>
+            </div>
         </section>
 
         <section class="consultation-section content-section" aria-labelledby="svCta">
@@ -454,6 +484,7 @@
                     <li><a href="about.html">About</a></li>
                     <li><a href="services.html">Services</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="booking.html">Visit Booking</a></li>
                 </ul>
@@ -461,12 +492,12 @@
             <div class="footer-col">
                 <h4>Our Services</h4>
                 <ul>
-                    <li><a href="services.html">Home Theatre Design</a></li>
-                    <li><a href="services.html">Surround Sound Installation</a></li>
-                    <li><a href="services.html">Projector & Screen Setup</a></li>
-                    <li><a href="services.html">Acoustic Treatment</a></li>
-                    <li><a href="services.html">Multi-Room Audio</a></li>
-                    <li><a href="services.html">Calibration & Tuning</a></li>
+                    <li><a href="home-theatre-design.html">Home Theatre Design</a></li>
+                    <li><a href="surround-sound-installation.html">Surround Sound Installation</a></li>
+                    <li><a href="projector-screen-setup.html">Projector & Screen Setup</a></li>
+                    <li><a href="acoustic-treatment.html">Acoustic Treatment</a></li>
+                    <li><a href="multi-room-audio.html">Multi-Room Audio</a></li>
+                    <li><a href="calibration-tuning.html">Calibration & Tuning</a></li>
                 </ul>
             </div>
 

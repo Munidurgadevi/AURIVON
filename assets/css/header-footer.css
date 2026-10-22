@@ -5,7 +5,7 @@
     --rs-logo: 44px;
     --rs-brand-name: 26px;
     --rs-brand-gap: 10px;
-    --rs-tagline: 8px;
+    --rs-tagline: 9px;
 }
 
 html {
@@ -300,7 +300,7 @@ body,
 .footer-about {
     max-width: 310px;
     margin: 22px 0 21px;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 1.75;
 }
 
@@ -337,7 +337,7 @@ body,
 .footer-col ul a,
 .footer-col ul span,
 .footer-contact li {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.45;
 }
 
@@ -812,5 +812,69 @@ html[dir="rtl"] .footer-bottom-container p {
 @media (max-width: 960px) {
     .navbar .nav-dropdown:not(.open) .dropdown-menu {
         display: none;
+    }
+}
+html body .abh-hero .abh-eyebrow,
+html body .jn-hero .section-eyebrow,
+html body .dh-hero .dh-eyebrow,
+html body .hero.sv-hero .hero-eyebrow,
+html body .hero.pr-hero .hero-eyebrow,
+html body .hero.gl-hero .hero-eyebrow,
+html body .hero.ct-hero .hero-eyebrow {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 0 !important;
+    width: auto !important;
+    max-width: 100% !important;
+    margin: 0 0 18px !important;
+    padding: 9px 20px 9px calc(20px + .26em) !important;
+    border: 1px solid rgba(232, 200, 135, .5) !important;
+    border-radius: 999px !important;
+    background: rgba(217, 160, 78, .16) !important;
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    color: #9a762f !important;
+    font-family: "Inter", "Work Sans", sans-serif !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    line-height: 1.2 !important;
+    letter-spacing: .26em !important;
+    text-transform: uppercase !important;
+    white-space: nowrap !important;
+    box-shadow: none !important;
+}
+ 
+html body .abh-hero .abh-eyebrow::before,
+html body .abh-hero .abh-eyebrow::after,
+html body .jn-hero .section-eyebrow::before,
+html body .jn-hero .section-eyebrow::after,
+html body .dh-hero .dh-eyebrow::before,
+html body .dh-hero .dh-eyebrow::after,
+html body .hero .hero-eyebrow::before,
+html body .hero .hero-eyebrow::after {
+    display: none !important;
+}
+/* Dark mode: pill uses #d9a04e */
+html body.dark .abh-hero p.abh-eyebrow.abh-eyebrow,
+html body.dark .jn-hero p.section-eyebrow.section-eyebrow,
+html body.dark .dh-hero p.dh-eyebrow.dh-eyebrow,
+html body.dark .hero.sv-hero p.hero-eyebrow.hero-eyebrow,
+html body.dark .hero.pr-hero p.hero-eyebrow.hero-eyebrow,
+html body.dark .hero.gl-hero p.hero-eyebrow.hero-eyebrow,
+html body.dark .hero.ct-hero p.hero-eyebrow.hero-eyebrow {
+    color: #d9a04e !important;
+    -webkit-text-fill-color: #d9a04e !important;
+    border-color: rgba(217, 160, 78, .55) !important;
+    background: rgba(217, 160, 78, .16) !important;
+}
+@media (max-width: 640px) {
+    html body .abh-hero .abh-eyebrow,
+    html body .jn-hero .section-eyebrow,
+    html body .dh-hero .dh-eyebrow,
+    html body .hero .hero-eyebrow {
+        padding: 7px 14px 7px 16px !important;
+        font-size: 11px !important;
+        letter-spacing: 2px !important;
     }
 }

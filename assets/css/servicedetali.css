@@ -1,0 +1,204 @@
+/* --- Premium Full-Width Layout Styles --- */
+
+.detailed-services-section {
+  position: relative;
+  background: var(--background, #0b0b0b);
+  padding: 60px 20px 100px;
+}
+
+/* Filter Navigation Buttons */
+.service-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 60px;
+}
+
+.filter-btn {
+  background: var(--surface, #141414);
+  color: var(--text-primary, #ffffff);
+  border: 1px solid var(--border, rgba(255, 255, 255, 0.12));
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: var(--primary, #884674);
+  border-color: var(--primary, #884674);
+  color: var(--on-primary, #ffffff);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px var(--shadow, rgba(136, 70, 116, 0.3));
+}
+
+/* Services Wrapper & Detail Blocks */
+.services-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.service-detail-block {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 50px;
+  align-items: center;
+  background: var(--surface, #141414);
+  border: 1px solid var(--border, rgba(255, 255, 255, 0.08));
+  border-radius: 24px;
+  padding: 45px;
+  box-shadow: 0 20px 40px var(--shadow, rgba(0, 0, 0, 0.4));
+  transition: all 0.4s ease;
+}
+
+.service-detail-block:hover {
+  border-color: color-mix(in srgb, var(--secondary, #D9A04E) 40%, transparent);
+}
+
+.service-visual-col {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+}
+
+.service-img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.service-detail-block:hover .service-img {
+  transform: scale(1.03);
+}
+
+.price-tag {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(8px);
+  color: var(--secondary, #D9A04E);
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 1px solid color-mix(in srgb, var(--secondary, #D9A04E) 30%, transparent);
+}
+
+.service-content-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.service-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--secondary, #D9A04E);
+  opacity: 0.5;
+  line-height: 1;
+}
+
+.service-content-col h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin: 0;
+  color: var(--text-primary, #ffffff);
+}
+
+.sub-section h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--secondary, #D9A04E);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.sub-section p, .sub-section li {
+  font-size: 0.95rem;
+  color: var(--text-muted, #b8b8b8);
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.process-list, .features-list {
+  padding-left: 18px;
+  margin: 0;
+}
+
+.process-list li, .features-list li {
+  margin-bottom: 6px;
+}
+
+.features-list strong {
+  color: var(--text-primary, #ffffff);
+}
+
+.visual-demo-box {
+  background: var(--surface-elevated, #1c1c1c);
+  border: 1px dashed var(--border, rgba(255, 255, 255, 0.15));
+  border-radius: 12px;
+  padding: 15px;
+  font-size: 0.85rem;
+  color: var(--text-muted, #b8b8b8);
+}
+
+.demo-tag {
+  display: block;
+  font-weight: 600;
+  color: var(--secondary, #D9A04E);
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+.review-box {
+  background: color-mix(in srgb, var(--primary, #884674) 15%, var(--surface, #141414));
+  border-left: 4px solid var(--secondary, #D9A04E);
+  padding: 15px 20px;
+  border-radius: 0 12px 12px 0;
+  font-size: 0.88rem;
+}
+
+.review-rating {
+  font-weight: 600;
+  color: var(--secondary, #D9A04E);
+  margin-bottom: 6px;
+}
+
+.review-box blockquote {
+  margin: 0 0 6px 0;
+  font-style: italic;
+  color: var(--text-primary, #ffffff);
+  font-weight: 300;
+}
+
+.review-author {
+  display: block;
+  text-align: right;
+  font-weight: 500;
+  color: var(--text-muted, #b8b8b8);
+  font-size: 0.8rem;
+}
+
+/* Responsive layout adjustments */
+@media (max-width: 992px) {
+  .service-detail-block {
+    grid-template-columns: 1fr;
+    padding: 30px;
+  }
+  .service-img {
+    height: 300px;
+  }
+}

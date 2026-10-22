@@ -432,27 +432,27 @@ html body .gl-hero .hero-inner .hero-text {
 }
 
 .gl-tile:nth-child(1) .gl-img {
-    background-image: url("../images/gallery.png");
+    background-image: url("https://i.pinimg.com/736x/bc/e8/5f/bce85f9d86ec367d590d6ae7259d6190.jpg");
     animation-delay: 0s;
 }
 
 .gl-tile:nth-child(2) .gl-img {
-    background-image: url("../images/home21.png");
+    background-image: url("https://i.pinimg.com/1200x/e1/07/34/e10734527acb4e96359920cb70f3ec03.jpg");
     animation-delay: -2s;
 }
 
 .gl-tile:nth-child(3) .gl-img {
-    background-image: url("../images/home22.png");
+    background-image: url("https://i.pinimg.com/736x/42/bf/23/42bf23e8f5884a90639b517c1e82a670.jpg");
     animation-delay: -4s;
 }
 
 .gl-tile:nth-child(4) .gl-img {
-    background-image: url("../images/home23.png");
+    background-image: url("https://i.pinimg.com/736x/8d/31/a6/8d31a6d93ea95d8bbee3a78f4fbdca68.jpg");
     animation-delay: -6s;
 }
 
 .gl-tile:nth-child(5) .gl-img {
-    background-image: url("../images/home cinema.jpeg");
+    background-image: url("https://i.pinimg.com/736x/86/b1/43/86b14342ad5844b73e07e708f33a593f.jpg");
     animation-delay: -8s;
 }
 
@@ -768,4 +768,37 @@ html body.dark .gl-cta-bg {
         animation: none;
     }
 
+}
+
+/* ===== Gallery hero text: konchem right ki shift (desktop) ===== */
+@media (min-width: 901px) {
+    html body .gl-hero .gl-hero-grid .hero-inner {
+        margin-inline-start: var(--hero-shift, clamp(24px, 4vw, 80px));
+    }
+}
+
+/* ===== "What every visit covers" numbered tiles: 1 column on phones (Galaxy S8+ 360px) ===== */
+@media (max-width: 480px) {
+    html body .ht-section .ht-grid {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-rows: none;
+        grid-auto-flow: row;
+        gap: 16px;
+        width: 100%;
+        max-width: 420px;
+        margin-inline: auto;
+        padding: 0;
+        overflow: visible;
+        list-style: none;
+    }
+
+    html body .ht-section .ht-grid>li {
+        width: 100%;
+        min-width: 0;
+    }
+
+    html body .ht-section .ht-tile {
+        width: 100%;
+    }
 }

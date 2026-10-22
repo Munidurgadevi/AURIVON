@@ -779,7 +779,7 @@ body {
 }
 
 .service-card h3 {
-    color: var(--text-primary);
+    color: var(--brand-primary);
     font-family: "Cormorant Garamond", "Work Sans";
     margin: 8px 0 8px;
     font-size: 24px;

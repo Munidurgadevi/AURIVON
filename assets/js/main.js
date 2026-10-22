@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   initTypewriter();
   initHeadingSplit();
-  initCompareSlider();
   initTeamCards();
 });
 function initTypewriter() {
@@ -62,15 +61,6 @@ function initHeadingSplit() {
     h.textContent = '';
     h.append(first, ' ', second);
   });
-}
-function initCompareSlider() {
-  const box = document.getElementById('tfCompare');
-  if (!box) return;
-  const range = box.querySelector('.tf-range');
-  if (!range) return;
-  const set = v => box.style.setProperty('--pos', v + '%');
-  range.addEventListener('input', () => set(range.value));
-  set(range.value);
 }
 function initTeamCards() {
   const members = document.querySelectorAll('.ht-member');
