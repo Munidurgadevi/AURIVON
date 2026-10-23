@@ -1973,13 +1973,6 @@ img {
   text-transform: uppercase;
 }
 
-.hq-eyebrow::before {
-  content: "";
-  width: 46px;
-  height: 1px;
-  background: var(--secondary);
-}
-
 .hq-body h2 {
   margin-bottom: 24px;
   font-family: "Cormorant Garamond", "Work Sans", serif;
@@ -2821,5 +2814,113 @@ body:not(.dark) .hy-card-2 .hy-photo::after {
 
   .hy-photo img {
     transition: none;
+  }
+}
+.mh-actions .hq-link {
+  margin-top: 0;
+  padding: 10px 4px 4px;
+}
+
+.motion-hero .hq-link:hover {
+  color: #fff;
+  border-color: #ffffff;
+}
+
+.motion-hero .hq-link {
+  animation: aniFadeUp .9s var(--ani-ease-out) 1.1s both;
+}
+.mh-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+}
+
+.mh-btn.mh-btn-ghost {
+  background: transparent !important;
+  border: 1px solid var(--secondary) !important;
+  color: #151515 !important;
+  font-weight: 500 !important;
+}
+
+.mh-btn.mh-btn-ghost:hover {
+  background: var(--btn-hover) !important;
+  border-color: var(--btn-hover) !important;
+  color: var(--on-accent) !important;
+}
+
+.motion-hero .mh-btn.mh-btn-ghost {
+  animation: aniFadeUp .9s var(--ani-ease-out) 1.1s both;
+}
+/* ===== Journal: iPad Mini responsive layout ===== */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .hj-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: auto;
+    gap: 16px;
+  }
+
+  .hj-featured {
+    grid-column: 1 / -1;
+    grid-row: auto;
+    min-height: 420px;
+  }
+
+  .hj-side {
+    grid-template-columns: minmax(0, 1fr);
+    align-content: start;
+    gap: 12px;
+    padding: 10px;
+    min-width: 0;
+  }
+
+  .hj-thumb {
+    min-height: 0;
+    aspect-ratio: 16 / 10;
+  }
+
+  .hj-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .hj-side .hj-body {
+    padding: 0 6px 8px;
+  }
+
+  .hj-side h3 {
+    font-size: 20px;
+  }
+
+  .hj-side .hj-text {
+    font-size: 13px;
+  }
+}
+
+/* Mobile: one card per row */
+@media (max-width: 640px) {
+  .hj-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .hj-featured {
+    grid-column: auto;
+    min-height: 440px;
+  }
+
+  .hj-side {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+
+  .hj-thumb {
+    min-height: 0;
+    aspect-ratio: 16 / 10;
+  }
+
+  .hj-side .hj-body {
+    padding: 0 8px 10px;
   }
 }

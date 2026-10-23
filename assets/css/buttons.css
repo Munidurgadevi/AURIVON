@@ -2,7 +2,9 @@
 .section-button,
 .footer-cta,
 .mh-btn,
-.hv-btn {
+.hv-btn,
+.svx-btn,
+.fq-ask {
   box-sizing: border-box !important;
   display: inline-flex !important;
   align-items: center !important;
@@ -33,7 +35,9 @@
 .section-button:hover,
 .footer-cta:hover,
 .mh-btn:hover,
-.hv-btn:hover {
+.hv-btn:hover,
+.svx-btn:hover,
+.fq-ask:hover {
   background: var(--btn-hover) !important;
   border-color: var(--btn-hover) !important;
   color: var(--on-accent) !important;

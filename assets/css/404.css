@@ -1,0 +1,181 @@
+/* AURIVON 404 page. Colours come from theme.css (light + dark).
+   Buttons use the same .icon-btn and .section-button as the booking page. */
+
+.nf *,
+.nf *::before,
+.nf *::after {
+  box-sizing: border-box;
+}
+
+.nf {
+  margin: 0;
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: grid;
+  place-items: center;
+  position: relative;
+  overflow-x: hidden;
+  background: var(--background);
+  color: var(--text-primary);
+}
+
+/* glow behind the 404 + logo */
+.nf-glow {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(closest-side at 50% 44%, color-mix(in srgb, var(--primary) 26%, transparent), transparent 70%),
+    radial-gradient(520px 420px at 96% 100%, color-mix(in srgb, var(--secondary) 14%, transparent), transparent 70%);
+  background-size: min(900px, 100vw) min(900px, 100vw), auto;
+  background-position: 50% 42%, 0 0;
+  background-repeat: no-repeat;
+}
+
+.nf-tools {
+  position: fixed;
+  top: 20px;
+  inset-inline-end: 20px;
+  display: flex;
+  gap: 12px;
+  z-index: 10;
+}
+
+.nf-main {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 720px;
+  padding: 56px 24px;
+  text-align: center;
+}
+
+/* big glowing 404 */
+.nf-code {
+  margin: 0;
+  direction: ltr;
+  font: 700 clamp(150px, 30vw, 290px) / .82 "Cormorant Garamond", serif;
+  letter-spacing: .02em;
+  color: var(--primary);
+  text-shadow:
+    0 0 18px color-mix(in srgb, var(--primary) 40%, transparent),
+    0 0 70px color-mix(in srgb, var(--primary) 45%, transparent);
+  user-select: none;
+}
+
+/* logo + brand name (same lockup as the booking page, a bit larger) */
+.nf-brand {
+  --rs-logo: 64px;
+  --rs-brand-name: 34px;
+  --rs-brand-gap: 12px;
+  --rs-tagline: 10px;
+  display: flex;
+  justify-content: center;
+  margin: 34px 0 22px;
+}
+
+.nf-brand .brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--rs-brand-gap);
+  width: fit-content;
+  max-width: 100%;
+}
+
+.nf-brand .brand-icon {
+  width: var(--rs-logo);
+  height: var(--rs-logo);
+  flex: 0 0 var(--rs-logo);
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  overflow: hidden;
+}
+
+.nf-brand .brand-icon img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border-radius: 0;
+  object-fit: contain;
+}
+
+.nf-brand .brand-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+}
+
+.nf-brand .brand-name {
+  font-size: var(--rs-brand-name);
+  line-height: 1;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.nf-brand .brand-tagline {
+  font-size: var(--rs-tagline);
+  line-height: 1;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.nf h1 {
+  margin: 0 0 14px;
+  font: 600 clamp(38px, 5.4vw, 58px) / 1.08 "Cormorant Garamond", serif;
+  color: var(--text-primary);
+}
+
+.nf-lead {
+  max-width: 500px;
+  margin: 0 auto 30px;
+  font: 400 17px / 1.7 "Inter", "Work Sans", sans-serif;
+  color: color-mix(in srgb, var(--text-primary) 72%, transparent);
+}
+
+.nf-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+}
+
+/* outlined button: transparent, gold border (same style as the ghost buttons) */
+.section-button.nf-ghost {
+  background: transparent !important;
+  border: 1px solid var(--secondary) !important;
+  color: var(--text-primary) !important;
+  font-weight: 500 !important;
+}
+
+.section-button.nf-ghost:hover {
+  background: var(--btn-hover) !important;
+  border-color: var(--btn-hover) !important;
+  color: var(--on-accent) !important;
+}
+
+.nf-brand .brand:focus-visible {
+  outline: 2px solid var(--secondary);
+  outline-offset: 6px;
+}
+
+@media (max-width: 560px) {
+  .nf-tools {
+    top: 12px;
+    inset-inline-end: 12px;
+  }
+
+  .nf-brand {
+    --rs-logo: 52px;
+    --rs-brand-name: 28px;
+    --rs-tagline: 9px;
+  }
+
+  .nf-lead {
+    font-size: 16px;
+  }
+}

@@ -1,7 +1,6 @@
 :root {
-    --font-display: "Cormorant Garamond", serif;
-    --font-body: "Inter", sans-serif;
-    --font-accent: "Teko", sans-serif;
+    --font-display: "Cormorant Garamond", "Work Sans";
+    --font-body: "Inter", "Work Sans";
 }
 
 html {
@@ -40,7 +39,7 @@ html {
     gap: 14px;
     margin: 0 0 clamp(12px, 2vh, 22px);
     color: var(--secondary);
-    font: 600 13px/1.5 var(--font-body, "Inter", sans-serif);
+    font: 600 13px/1.5 var(--font-body);
     letter-spacing: .16em;
     text-transform: uppercase;
 }
@@ -48,7 +47,7 @@ html {
 .dh-hero h1 {
     margin: 0;
     color: var(--text-primary);
-    font: 600 clamp(36px, min(5.4vw, 9.5vh), 78px)/1.04 var(--font-display, "Cormorant Garamond", serif);
+    font: 600 clamp(36px, min(5.4vw, 9.5vh), 78px)/1.04 var(--font-display);
     letter-spacing: -.01em;
 }
 
@@ -60,14 +59,14 @@ html {
 .dh-tagline {
     margin: clamp(10px, 1.8vh, 20px) 0 0;
     color: var(--secondary);
-    font: 500 clamp(19px, min(2vw, 3.8vh), 28px)/1.3 var(--font-display, "Cormorant Garamond", serif);
+    font: 500 clamp(19px, min(2vw, 3.8vh), 28px)/1.3 var(--font-display);
 }
 
 .dh-intro {
     max-width: 540px;
     margin: clamp(10px, 1.8vh, 18px) 0 0;
     color: var(--text-muted);
-    font: 400 clamp(14px, min(1.2vw, 2.3vh), 17px)/1.7 var(--font-body, "Inter", sans-serif);
+    font: 400 clamp(14px, min(1.2vw, 2.3vh), 17px)/1.7 var(--font-body);
 }
 
 .dh-actions {
@@ -88,12 +87,12 @@ html {
 
 .dh-price span {
     color: var(--text-muted);
-    font: 400 13px/1.4 var(--font-body, "Inter", sans-serif);
+    font: 400 13px/1.4 var(--font-body);
 }
 
 .dh-price strong {
     color: var(--text-primary);
-    font: 600 clamp(20px, 3vh, 26px)/1.3 var(--font-body, "Inter", sans-serif);
+    font: 600 clamp(20px, 3vh, 26px)/1.3 var(--font-body);
 }
 
 .dh-visual {
@@ -127,12 +126,12 @@ html {
 }
 
 .dh-badge strong {
-    font: 700 17px/1.3 var(--font-body, "Inter", sans-serif);
+    font: 700 17px/1.3 var(--font-body);
 }
 
 .dh-badge span {
     color: rgba(255, 255, 255, .78);
-    font: 400 14px/1.4 var(--font-body, "Inter", sans-serif);
+    font: 400 14px/1.4 var(--font-body);
 }
 
 .dh-section {
@@ -156,13 +155,13 @@ html {
 .dh-cta h2 {
     margin: 0;
     color: var(--text-primary);
-    font: 600 clamp(32px, 4vw, 50px)/1.1 var(--font-display, "Cormorant Garamond", serif);
+    font: 600 clamp(32px, 4vw, 50px)/1.1 var(--font-display);
 }
 
-.dh-head > p:last-child {
+.dh-head>p:last-child {
     margin: 16px 0 0;
     color: var(--text-muted);
-    font: 400 15px/1.8 var(--font-body, "Inter", sans-serif);
+    font: 400 15px/1.8 var(--font-body);
 }
 
 .dh-head--left {
@@ -192,7 +191,7 @@ html {
     display: block;
     margin-bottom: 14px;
     color: var(--secondary);
-    font: 600 11px/1.5 var(--font-body, "Inter", sans-serif);
+    font: 600 11px/1.5 var(--font-body);
     letter-spacing: .14em;
     text-transform: uppercase;
 }
@@ -200,7 +199,7 @@ html {
 .dh-card h3 {
     margin: 0 0 18px;
     color: var(--text-primary);
-    font: 600 clamp(26px, 2.6vw, 34px)/1.2 var(--font-display, "Cormorant Garamond", serif);
+    font: 600 clamp(26px, 2.6vw, 34px)/1.2 var(--font-display);
 }
 
 .dh-card--accent {
@@ -236,7 +235,7 @@ ul[class*=" dh-"] {
     position: relative;
     padding-inline-start: 34px;
     color: var(--text-primary);
-    font: 500 15px/1.5 var(--font-body, "Inter", sans-serif);
+    font: 500 15px/1.5 var(--font-body);
 }
 
 .dh-checks li::before,
@@ -254,7 +253,7 @@ ul[class*=" dh-"] {
     border-radius: 50%;
     background: var(--secondary);
     color: var(--on-accent);
-    font: 700 12px/1 var(--font-body, "Inter", sans-serif);
+    font: 700 12px/1 var(--font-body);
 }
 
 .dh-checks li {
@@ -294,19 +293,19 @@ ul[class*=" dh-"] {
 
 .dh-step-no {
     color: var(--secondary);
-    font: 600 46px/1 var(--font-display, "Cormorant Garamond", serif);
+    font: 600 46px/1 var(--font-display);
 }
 
 .dh-step h3 {
     margin: 14px 0 10px;
     color: var(--text-primary);
-    font: 600 26px/1.2 var(--font-display, "Cormorant Garamond", serif);
+    font: 600 26px/1.2 var(--font-display);
 }
 
 .dh-step p {
     margin: 0;
     color: var(--text-muted);
-    font: 400 14px/1.8 var(--font-body, "Inter", sans-serif);
+    font: 400 14px/1.8 var(--font-body);
 }
 
 .dh-split {
@@ -337,7 +336,7 @@ ul[class*=" dh-"] {
     padding-top: 16px;
     border-top: 1px solid var(--border);
     color: var(--text-muted);
-    font: 400 13px/1.8 var(--font-body, "Inter", sans-serif);
+    font: 400 13px/1.8 var(--font-body);
 }
 
 .dh-pricecard {
@@ -347,7 +346,7 @@ ul[class*=" dh-"] {
 
 .dh-pricecard span {
     color: var(--text-muted);
-    font: 600 12px/1.5 var(--font-body, "Inter", sans-serif);
+    font: 600 12px/1.5 var(--font-body);
     letter-spacing: .12em;
     text-transform: uppercase;
 }
@@ -356,13 +355,13 @@ ul[class*=" dh-"] {
     display: block;
     margin: 12px 0;
     color: var(--primary);
-    font: 600 clamp(32px, 4vw, 46px)/1.15 var(--font-display, "Cormorant Garamond", serif);
+    font: 600 clamp(32px, 4vw, 46px)/1.15 var(--font-display);
 }
 
 .dh-pricecard p {
     margin: 0 0 22px;
     color: var(--text-muted);
-    font: 400 14px/1.7 var(--font-body, "Inter", sans-serif);
+    font: 400 14px/1.7 var(--font-body);
 }
 
 .dh-why {
@@ -410,13 +409,14 @@ ul[class*=" dh-"] {
     color: var(--on-primary);
 }
 
-.dh-cta > p:not(.dh-eyebrow) {
+.dh-cta>p:not(.dh-eyebrow) {
     margin: 16px auto 28px;
     color: rgba(255, 255, 255, .85);
-    font: 400 16px/1.8 var(--font-body, "Inter", sans-serif);
+    font: 400 16px/1.8 var(--font-body);
 }
 
 @media (min-width: 901px) and (max-height: 680px) {
+
     .dh-price,
     .dh-eyebrow {
         margin-top: 0;
@@ -534,12 +534,12 @@ ul[class*=" dh-"] {
 
 .dh-badge strong {
     color: var(--text-primary);
-    font: 700 16px/1.3 var(--font-body, "Inter", sans-serif);
+    font: 700 16px/1.3 var(--font-body);
 }
 
 .dh-badge span:not(.dh-badge-icon) {
     color: var(--text-muted);
-    font: 400 13px/1.4 var(--font-body, "Inter", sans-serif);
+    font: 400 13px/1.4 var(--font-body);
 }
 
 .dh-cap {
@@ -550,7 +550,7 @@ ul[class*=" dh-"] {
     align-items: center;
     justify-content: space-between;
     color: var(--text-muted);
-    font: 600 11px/1 var(--font-body, "Inter", sans-serif);
+    font: 600 11px/1 var(--font-body);
     letter-spacing: .14em;
     text-transform: uppercase;
 }
@@ -628,7 +628,7 @@ ul[class*=" dh-"] {
 .dh-benefits h3 {
     margin: 0 0 18px;
     color: var(--text-primary);
-    font: 600 clamp(26px, 2.6vw, 34px)/1.2 var(--font-display, "Cormorant Garamond", serif);
+    font: 600 clamp(26px, 2.6vw, 34px)/1.2 var(--font-display);
 }
 
 .dh-tiles {
@@ -657,12 +657,12 @@ ul[class*=" dh-"] {
 
 .dh-tiles b {
     color: var(--secondary);
-    font: 600 30px/1 var(--font-display, "Cormorant Garamond", serif);
+    font: 600 30px/1 var(--font-display);
 }
 
 .dh-tiles span {
     color: var(--text-primary);
-    font: 500 15px/1.45 var(--font-body, "Inter", sans-serif);
+    font: 500 15px/1.45 var(--font-body);
 }
 
 .dh-benefits {
@@ -698,7 +698,7 @@ ul[class*=" dh-"] {
     border: 1px solid rgba(255, 255, 255, .22);
     border-radius: 999px;
     background: rgba(255, 255, 255, .1);
-    font: 500 14px/1.4 var(--font-body, "Inter", sans-serif);
+    font: 500 14px/1.4 var(--font-body);
 }
 
 .dh-pills li::before {
@@ -714,7 +714,7 @@ ul[class*=" dh-"] {
     border-radius: 50%;
     background: #F1D9A6;
     color: #4A1720;
-    font: 700 10px/1 var(--font-body, "Inter", sans-serif);
+    font: 700 10px/1 var(--font-body);
 }
 
 .dh-offers {
@@ -759,7 +759,7 @@ ul[class*=" dh-"] {
     border-radius: 999px;
     background: var(--secondary);
     color: var(--on-accent);
-    font: 700 11px/1.2 var(--font-body, "Inter", sans-serif);
+    font: 700 11px/1.2 var(--font-body);
     letter-spacing: .14em;
     text-transform: uppercase;
 }
@@ -767,13 +767,13 @@ ul[class*=" dh-"] {
 .dh-offer h3 {
     margin: 22px 0 8px;
     color: var(--text-primary);
-    font: 600 28px/1.2 var(--font-display, "Cormorant Garamond", serif);
+    font: 600 28px/1.2 var(--font-display);
 }
 
 .dh-offer p {
     margin: 0;
     color: var(--text-muted);
-    font: 400 14px/1.7 var(--font-body, "Inter", sans-serif);
+    font: 400 14px/1.7 var(--font-body);
 }
 
 .dh-deal {
@@ -803,14 +803,14 @@ ul[class*=" dh-"] {
 
 .dh-deal-num small {
     color: #F1D9A6;
-    font: 600 12px/1.4 var(--font-body, "Inter", sans-serif);
+    font: 600 12px/1.4 var(--font-body);
     letter-spacing: .16em;
     text-transform: uppercase;
 }
 
 .dh-deal-num b {
     color: #F1D9A6;
-    font: 600 clamp(64px, 8vw, 104px)/.95 var(--font-display, "Cormorant Garamond", serif);
+    font: 600 clamp(64px, 8vw, 104px)/.95 var(--font-display);
 }
 
 .dh-deal-num i {
@@ -821,20 +821,20 @@ ul[class*=" dh-"] {
 .dh-deal-copy h3 {
     margin: 0 0 10px;
     color: #fff;
-    font: 600 clamp(24px, 2.6vw, 34px)/1.2 var(--font-display, "Cormorant Garamond", serif);
+    font: 600 clamp(24px, 2.6vw, 34px)/1.2 var(--font-display);
 }
 
 .dh-deal-copy p {
     max-width: 560px;
     margin: 0;
     color: rgba(255, 255, 255, .8);
-    font: 400 13.5px/1.8 var(--font-body, "Inter", sans-serif);
+    font: 400 13.5px/1.8 var(--font-body);
 }
 
 .dh-band {
     --dh-veil: color-mix(in srgb, var(--background) 80%, transparent);
     border-block: 1px solid var(--border);
-    background: linear-gradient(var(--dh-veil), var(--dh-veil)), url("https://images.pexels.com/photos/34153693/pexels-photo-34153693.jpeg") center / cover no-repeat;
+    background: linear-gradient(var(--dh-veil), var(--dh-veil)), url("../images/about2.png") center / cover no-repeat;
 }
 
 .dh-band .dh-section {
@@ -892,12 +892,12 @@ ul[class*=" dh-"] {
     flex: none;
     min-width: 34px;
     color: var(--secondary);
-    font: 600 26px/1 var(--font-display, "Cormorant Garamond", serif);
+    font: 600 26px/1 var(--font-display);
 }
 
 .dh-why2-list span {
     color: var(--text-primary);
-    font: 500 15px/1.4 var(--font-body, "Inter", sans-serif);
+    font: 500 15px/1.4 var(--font-body);
 }
 
 .dh-cta2 {
@@ -928,7 +928,7 @@ ul[class*=" dh-"] {
 .dh-cta2-copy h2 {
     margin: 0;
     color: #fff;
-    font: 600 clamp(30px, 3.8vw, 48px)/1.1 var(--font-display, "Cormorant Garamond", serif);
+    font: 600 clamp(30px, 3.8vw, 48px)/1.1 var(--font-display);
 }
 
 .dh-cta2-copy h2 .h-a {
@@ -939,10 +939,10 @@ ul[class*=" dh-"] {
     color: #F1D9A6 !important;
 }
 
-.dh-cta2-copy > p:not(.dh-eyebrow) {
+.dh-cta2-copy>p:not(.dh-eyebrow) {
     margin: 16px 0 28px;
     color: rgba(255, 255, 255, .85);
-    font: 400 16px/1.8 var(--font-body, "Inter", sans-serif);
+    font: 400 16px/1.8 var(--font-body);
 }
 
 .dh-cta2-fig {
@@ -955,10 +955,12 @@ ul[class*=" dh-"] {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: clamp(100px, 14vw, 200px) 0 0 clamp(100px, 14vw, 200px);
+    border-start-start-radius: clamp(100px, 14vw, 200px);
+    border-end-start-radius: clamp(100px, 14vw, 200px);
 }
 
 @media (max-width: 900px) {
+
     .dh-ov-grid,
     .dh-why2,
     .dh-cta2-box {
@@ -1060,7 +1062,7 @@ ul[class*=" dh-"] {
 }
 
 .dh-eyebrow {
-    font-family: var(--font-accent);
+    font-family: var(--font-body);
     font-size: 17px;
     font-weight: 500;
     letter-spacing: .2em;
@@ -1071,7 +1073,7 @@ ul[class*=" dh-"] {
 .dh-deal-num small,
 .dh-pricecard span,
 .dh-cap {
-    font-family: var(--font-accent);
+    font-family: var(--font-body);
     font-weight: 500;
     letter-spacing: .16em;
 }
@@ -1102,7 +1104,7 @@ ul[class*=" dh-"] {
 .dh-tiles b,
 .dh-why2-list b,
 .dh-deal-num b {
-    font-family: var(--font-accent);
+    font-family: var(--font-body);
     font-weight: 500;
 }
 
@@ -1230,4 +1232,613 @@ body:not(.dark) .dh-hero {
 .dh-hero h1 span {
     color: transparent;
     -webkit-text-fill-color: transparent;
+}
+
+/* ==========================================================================
+   Typography system - same on all 6 service pages and matching style.css
+   Only 3 fonts are used in the whole application:
+   Cormorant Garamond, Inter, Work Sans
+   1. Paragraph text : Inter, Work Sans (size/weight/line-height of the hero
+                       intro paragraph "A thoughtfully designed home theatre...")
+   2. Tag lines      : Inter, Work Sans (same as index.html tag lines)
+   3. Headings       : Cormorant Garamond, Work Sans
+   ========================================================================== */
+
+:root {
+    --dh-p-size: clamp(14px, min(1.2vw, 2.3vh), 17px);
+    --dh-p-weight: 400;
+    --dh-p-leading: 1.7;
+}
+
+/* 1. Paragraph text */
+main p:not(.dh-eyebrow):not(.dh-tagline):not(.dh-price),
+main .dh-tiles li span,
+main .dh-pills li,
+main .dh-why2-list li span {
+    font-family: var(--font-body) !important;
+    font-size: var(--dh-p-size) !important;
+    font-weight: var(--dh-p-weight) !important;
+    line-height: var(--dh-p-leading) !important;
+}
+
+/* 2. Tag lines - same font settings as the index.html tag lines (12px)
+      Section tags : Inter, 12px, 600, .22em, uppercase
+      Hero tag     : Inter, 12px, 500, .34em, uppercase */
+main .dh-eyebrow,
+main .dh-index {
+    font-family: var(--font-body) !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    line-height: 1.5 !important;
+    letter-spacing: .22em !important;
+    text-transform: uppercase !important;
+}
+
+main .dh-hero .dh-eyebrow {
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    line-height: 1.3 !important;
+    letter-spacing: .34em !important;
+}
+
+/* 3. Headings - same as index.html
+      h1 (hero)     = index .hero-title          : max(58px, 5.8vw), 400, line-height 1
+      h2 (sections) = index .consultation-copy h2: clamp(34px, 4.4vw, 58px), 500, line-height 1.06
+      h3 (cards)    = index .service-card h3     : 24px, 600
+      Font: Cormorant Garamond, Work Sans */
+main h1,
+main h2,
+main h3,
+main h4,
+main .dh-tagline {
+    font-family: var(--font-display) !important;
+}
+
+main .dh-hero h1 {
+    font-size: max(58px, 5.8vw) !important;
+    font-weight: 400 !important;
+    line-height: 1 !important;
+    letter-spacing: 0 !important;
+    text-wrap: balance;
+}
+
+main h2 {
+    font-size: clamp(34px, 4.4vw, 58px) !important;
+    font-weight: 500 !important;
+    line-height: 1.06 !important;
+    letter-spacing: -.02em !important;
+}
+
+main h3 {
+    font-size: 24px !important;
+    font-weight: 600 !important;
+}
+
+/* Buttons */
+button,
+.hero-btn,
+.booking-btn,
+.section-button,
+.icon-btn {
+    font-family: var(--font-body);
+}
+
+
+/* ==========================================================================
+   RTL / LTR support - same behaviour as index.html when the RTL button is on
+   (flex/grid already mirror automatically; these fix the physical values)
+   ========================================================================== */
+
+/* Check-mark pills: icon sits at the inline start, so padding follows it */
+main .dh-pills li {
+    padding-inline: 40px 18px;
+}
+
+/* Letter-spacing breaks joined (cursive) scripts */
+[dir="rtl"] main .dh-eyebrow,
+[dir="rtl"] main .dh-index {
+    letter-spacing: 0 !important;
+}
+
+[dir="rtl"] main h2 {
+    letter-spacing: 0 !important;
+}
+
+[dir="rtl"] .dh-hero h1,
+[dir="rtl"] .dh-eyebrow,
+[dir="rtl"] main h2,
+[dir="rtl"] main h3,
+[dir="rtl"] main p,
+[dir="rtl"] main li,
+[dir="rtl"] main a {
+    letter-spacing: 0;
+}
+
+/* Left-aligned blocks follow the reading direction */
+[dir="rtl"] .dh-head--left,
+[dir="rtl"] .dh-deal {
+    text-align: right;
+}
+
+/* Price ranges keep their order (e.g. 14,999 - 29,999) */
+[dir="rtl"] .dh-price strong,
+[dir="rtl"] .dh-pricecard strong {
+    direction: ltr;
+    unicode-bidi: isolate;
+    text-align: right;
+}
+
+/* Hover nudge moves the other way */
+[dir="rtl"] .dh-why2-list li:hover {
+    transform: translateX(-4px);
+}
+
+/* Directional arrows are mirrored */
+[dir="rtl"] main a>span[aria-hidden="true"] {
+    display: inline-block;
+    transform: scaleX(-1);
+}
+
+/* Hero title gradient and background glows flip sides */
+[dir="rtl"] .dh-hero h1 {
+    background: linear-gradient(270deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+[dir="rtl"] .dh-hero {
+    background-image:
+        radial-gradient(ellipse 55% 65% at 12% 45%, color-mix(in srgb, var(--primary) var(--dh-p), transparent), transparent 70%),
+        radial-gradient(ellipse 45% 55% at 100% 100%, color-mix(in srgb, var(--secondary) var(--dh-s), transparent), transparent 70%),
+        linear-gradient(180deg, var(--background), var(--surface));
+}
+
+/* Arched hero photo: the taller shoulder stays on the outer side */
+[dir="rtl"] .dh-visual img {
+    border-radius: clamp(140px, 19vw, 270px) clamp(110px, 15vw, 210px) 28px 28px;
+}
+
+/* Offer band glow */
+[dir="rtl"] .dh-deal {
+    background:
+        radial-gradient(circle at 88% 0%, rgba(241, 217, 166, .22), transparent 45%),
+        var(--primary);
+}
+
+:is([data-theme="dark"], [data-bs-theme="dark"], .dark, .dark-mode, .dark-theme, .theme-dark)[dir="rtl"] .dh-deal,
+[dir="rtl"] :is([data-theme="dark"], [data-bs-theme="dark"], .dark, .dark-mode, .dark-theme, .theme-dark) .dh-deal {
+    background:
+        radial-gradient(circle at 88% 0%, rgba(241, 217, 166, .16), transparent 45%),
+        linear-gradient(225deg, #2A0F26 0%, #4A1D40 100%);
+}
+
+:is([data-theme="dark"], [data-bs-theme="dark"], .dark, .dark-mode, .dark-theme, .theme-dark)[dir="rtl"] .dh-benefits,
+:is([data-theme="dark"], [data-bs-theme="dark"], .dark, .dark-mode, .dark-theme, .theme-dark)[dir="rtl"] .dh-cta2-box,
+[dir="rtl"] :is([data-theme="dark"], [data-bs-theme="dark"], .dark, .dark-mode, .dark-theme, .theme-dark) .dh-benefits,
+[dir="rtl"] :is([data-theme="dark"], [data-bs-theme="dark"], .dark, .dark-mode, .dark-theme, .theme-dark) .dh-cta2-box {
+    background: linear-gradient(225deg, #2A0F26 0%, #4A1D40 100%);
+}
+
+[dir="rtl"]:not(:lang(ar)):not(:lang(fa)):not(:lang(ur)):not(:lang(he)) main h2 {
+    letter-spacing: -.02em !important;
+}
+
+[dir="rtl"]:not(:lang(ar)):not(:lang(fa)):not(:lang(ur)):not(:lang(he)) main .dh-eyebrow,
+[dir="rtl"]:not(:lang(ar)):not(:lang(fa)):not(:lang(ur)):not(:lang(he)) main .dh-index {
+    letter-spacing: .22em !important;
+}
+
+[dir="rtl"]:not(:lang(ar)):not(:lang(fa)):not(:lang(ur)):not(:lang(he)) main .dh-hero .dh-eyebrow {
+    letter-spacing: .34em !important;
+}
+
+[dir="rtl"]:not(:lang(ar)):not(:lang(fa)):not(:lang(ur)):not(:lang(he)) main p::after {
+    content: "\200E";
+}
+
+[dir="rtl"]:not(:lang(ar)):not(:lang(fa)):not(:lang(ur)):not(:lang(he)) main .dh-index {
+    direction: ltr;
+    text-align: right;
+}
+
+/* ===== Design pillars (replaces old "What We Do" grid) ===== */
+.dh-pillars {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.dh-pillar {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    background: var(--surface);
+    box-shadow: inset 0 3px 0 var(--secondary);
+    transition: transform .25s, box-shadow .25s, border-color .25s;
+}
+
+.dh-pillar:hover {
+    transform: translateY(-4px);
+    border-color: var(--secondary);
+    box-shadow: inset 0 3px 0 var(--secondary), 0 16px 36px var(--shadow);
+}
+
+.dh-pillar-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dh-pillar-icon {
+    display: grid;
+    place-items: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    background: color-mix(in srgb, var(--secondary) 16%, transparent);
+    color: var(--secondary);
+}
+
+.dh-pillar-no {
+    color: var(--secondary);
+    opacity: .55;
+    font: 500 44px/.9 var(--font-body);
+}
+
+.dh-pillar h3 {
+    margin: 22px 0 10px;
+    color: var(--text-primary);
+}
+
+.dh-pillar p {
+    margin: 0 0 20px;
+    color: var(--text-muted);
+}
+
+.dh-pillar-list {
+    display: grid;
+    gap: 0;
+    margin-top: auto !important;
+    border-top: 1px solid var(--border);
+}
+
+.dh-pillar-list li {
+    position: relative;
+    padding: 12px 0 12px 32px;
+    border-bottom: 1px solid var(--border);
+    color: var(--text-primary);
+    font: 500 15px/1.4 var(--font-body);
+}
+
+.dh-pillar-list li:last-child {
+    border-bottom: 0;
+}
+
+.dh-pillar-list li::before {
+    content: "✓";
+    position: absolute;
+    inset-inline-start: 0;
+    top: 50%;
+    display: grid;
+    place-items: center;
+    width: 20px;
+    height: 20px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background: var(--secondary);
+    color: var(--on-accent);
+    font: 700 11px/1 var(--font-body);
+}
+
+.dh-ov .dh-head {
+    max-width: 760px;
+}
+
+@media (max-width: 900px) {
+    .dh-pillars {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+:is([data-theme="dark"], [data-bs-theme="dark"], .dark, .dark-mode, .dark-theme, .theme-dark) .dh-pillar {
+    border-color: rgba(241, 217, 166, .14);
+    background: linear-gradient(180deg, #18121D 0%, #100C14 100%);
+}
+
+:is([data-theme="dark"], [data-bs-theme="dark"], .dark, .dark-mode, .dark-theme, .theme-dark) .dh-pillar:hover {
+    border-color: var(--secondary);
+}
+
+:is([data-theme="dark"], [data-bs-theme="dark"], .dark, .dark-mode, .dark-theme, .theme-dark) .dh-pillar-icon {
+    background: rgba(241, 217, 166, .1);
+}
+
+/* Hero title: always 2 lines on desktop ("Home Theatre" / "Design") */
+@media (min-width: 1101px) {
+    main .dh-hero h1 {
+        font-size: clamp(64px, 5vw, 96px) !important;
+        white-space: nowrap;
+    }
+}
+
+/* Our Process cards: always a single row */
+@media (min-width: 641px) and (max-width: 1100px) {
+    main .dh-steps {
+        display: grid !important;
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+        gap: 14px;
+    }
+
+    main .dh-step {
+        padding: 22px 18px;
+    }
+
+    main .dh-step-no {
+        font-size: 44px;
+    }
+
+    main .dh-step h3 {
+        font-size: 21px !important;
+    }
+}
+
+@media (max-width: 640px) {
+    main .dh-steps {
+        display: flex !important;
+        grid-template-columns: none !important;
+        gap: 14px;
+        margin-inline: -16px;
+        padding: 4px 16px 14px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-padding-inline: 16px;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    main .dh-step {
+        flex: 0 0 82%;
+        max-width: 320px;
+        padding: 26px 22px;
+        scroll-snap-align: start;
+    }
+
+    main .dh-step-no {
+        font-size: 52px;
+    }
+}
+
+/* ==========================================================================
+   CTA section - RTL / LTR safe + one layout per page
+   (logical properties only: start/end follow the page direction)
+   ========================================================================== */
+.dh-cta2-copy {
+    text-align: start;
+}
+
+.dh-cta2-copy .dh-eyebrow {
+    justify-content: flex-start;
+}
+
+[dir="rtl"] .dh-cta2-copy .dh-eyebrow,
+[dir="rtl"] .dh-cta2-copy h2,
+[dir="rtl"] .dh-cta2-copy p,
+[dir="rtl"] .dh-cta2-copy .section-button {
+    letter-spacing: 0 !important;
+}
+/* CTA shape: ARCH */
+.dh-cta2--split .dh-cta2-box {
+    align-items: center;
+}
+
+@media (min-width: 901px) {
+    .dh-cta2--split .dh-cta2-box {
+        grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr);
+    }
+}
+
+.dh-cta2--split .dh-cta2-fig {
+    display: grid;
+    place-items: center;
+    min-height: 0;
+    padding: clamp(24px, 3vw, 40px);
+}
+
+.dh-cta2--split .dh-cta2-fig img {
+    width: min(100%, 300px);
+    height: clamp(300px, 38vw, 430px);
+    border-radius: 99px 59px 0 0;
+    border: 3px solid rgba(241, 217, 166, .55);
+    border-bottom: 0;
+}
+/* CTA heading follows the page direction (theme.css forces every h2 to ltr in RTL) */
+[dir="rtl"] .dh-cta2-copy h2 {
+    direction: rtl;
+    unicode-bidi: isolate;
+    text-align: inherit;
+}
+
+/* ===== Home Theatre Design: Overflow Fix ===== */
+
+.dh-hero-inner,
+.dh-hero-copy,
+.dh-visual,
+.dh-section,
+.dh-pillars,
+.dh-pillar {
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+@media (min-width: 1101px) {
+    main .dh-hero h1 {
+        white-space: normal !important;
+        overflow-wrap: break-word;
+        text-wrap: balance;
+    }
+}
+
+.dh-pillars {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.dh-pillar h3,
+.dh-pillar p,
+.dh-pillar-list li {
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+.dh-pillar-list li {
+    padding-inline: 28px 4px;
+    box-sizing: border-box;
+}
+
+.dh-visual img {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+    .dh-hero-inner {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .dh-pillars {
+        grid-template-columns: repeat(2, minmax(1, 1fr));
+        gap: 16px;
+    }
+
+    .dh-pillar {
+        padding: 22px;
+    }
+}
+
+@media (max-width: 600px) {
+    .dh-pillars {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .dh-pillar {
+        padding: 20px;
+    }
+}
+
+/* ===== Fix sentence direction in RTL mode ===== */
+
+/* Remove the invisible character added after every paragraph */
+[dir="rtl"]:not(:lang(ar)):not(:lang(fa)):not(:lang(ur)):not(:lang(he)) main p::after {
+    content: none !important;
+}
+
+/* RTL: sentence starts from the right */
+html[dir="rtl"] main .dh-step h3,
+html[dir="rtl"] main .dh-step p,
+html[dir="rtl"] main .dh-pillar h3,
+html[dir="rtl"] main .dh-pillar p,
+html[dir="rtl"] main .dh-pillar-list li {
+    direction: rtl !important;
+    text-align: right !important;
+    letter-spacing: 0 !important;
+}
+
+/* LTR: sentence starts from the left */
+html:not([dir="rtl"]) main .dh-step h3,
+html:not([dir="rtl"]) main .dh-step p,
+html:not([dir="rtl"]) main .dh-pillar h3,
+html:not([dir="rtl"]) main .dh-pillar p,
+html:not([dir="rtl"]) main .dh-pillar-list li {
+    direction: ltr !important;
+    text-align: left !important;
+}
+
+/* CTA: Text LEFT, Image RIGHT */
+@media (max-width: 900px) {
+    main .dh-cta2-box {
+        display: grid !important;
+        grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr) !important;
+        align-items: center !important;
+        gap: 20px !important;
+    }
+
+    main .dh-cta2-copy {
+        grid-column: 1 !important;
+        grid-row: 1 !important;
+        order: 0 !important;
+        min-width: 0 !important;
+        width: 100% !important;
+        text-align: left !important;
+    }
+
+    main .dh-cta2-fig {
+        grid-column: 2 !important;
+        grid-row: 1 !important;
+        order: 1 !important;
+        min-width: 0 !important;
+        width: 100% !important;
+        min-height: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    main .dh-cta2-fig img {
+        display: block !important;
+        width: 100% !important;
+        height: 240px !important;
+        object-fit: cover !important;
+        border-radius: 16px !important;
+    }
+
+    main .dh-cta2-copy h2 {
+        font-size: clamp(20px, 3.2vw, 32px) !important;
+        line-height: 1.2 !important;
+        white-space: normal !important;
+    }
+}
+
+/* Samsung Galaxy S8+ */
+@media (max-width: 400px) {
+    main .dh-cta2-box {
+        grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr) !important;
+        gap: 10px !important;
+        padding: 12px !important;
+    }
+
+    main .dh-cta2-fig img {
+        height: 190px !important;
+    }
+
+    main .dh-cta2-copy h2 {
+        font-size: 18px !important;
+    }
+
+    main .dh-cta2-copy > p:not(.dh-eyebrow) {
+        font-size: 11px !important;
+        line-height: 1.5 !important;
+    }
+
+    main .dh-cta2-copy .section-button {
+        padding: 8px !important;
+        font-size: 9px !important;
+    }
+}
+
+/* Move CTA image slightly left */
+@media (max-width: 900px) {
+    main .dh-cta2-fig {
+        transform: translateX(-8px) !important;
+    }
+}
+
+/* CTA image spacing fix — tablet */
+@media (min-width: 521px) and (max-width: 900px) {
+    main .dh-cta2-box {
+        padding: 24px !important;
+        gap: 20px !important;
+    }
+
+    main .dh-cta2-fig {
+        transform: translateX(8px) !important;
+    }
 }

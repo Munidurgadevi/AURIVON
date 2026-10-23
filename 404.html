@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="robots" content="noindex">
+    <title>404 | Page Not Found - AURIVON</title>
+    <!-- On a server (Netlify) a 404 can load from any URL depth, so paths must start from the site root.
+         Opened straight from a folder (file://), the normal relative paths are used instead. -->
+    <script>if (location.protocol !== 'file:') document.write('<base href="/">');</script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=block"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" href="assets/css/buttons.css">
+    <link rel="stylesheet" href="assets/css/404.css">
+    <link rel="icon" type="image/png" href="assets/images/logo_lightmode.png">
+</head>
+
+<body class="nf">
+    <div class="nf-glow" aria-hidden="true"></div>
+
+    <!-- Same dark mode + RTL buttons as the booking page -->
+    <div class="nf-tools">
+        <button type="button" class="icon-btn" id="darkModeBtn" aria-label="Toggle dark mode"></button>
+        <button type="button" class="icon-btn rtl-btn" id="rtlBtn" aria-label="Toggle right-to-left layout">RTL</button>
+    </div>
+
+    <main class="nf-main">
+        <p class="nf-code" aria-hidden="true">404</p>
+
+        <div class="nf-brand">
+            <a href="index.html" class="brand" aria-label="AURIVON Home">
+                <span class="brand-icon">
+                    <img id="brandLogo" src="assets/images/logo_lightmode.png" alt="AURIVON Logo">
+                </span>
+                <span class="brand-text">
+                    <span class="brand-name">AURI<span>VON</span></span>
+                    <span class="brand-tagline">Home Theatre &amp; Audio</span>
+                </span>
+            </a>
+        </div>
+
+        <h1>Lost in the wrong room?</h1>
+        <p class="nf-lead">The page you’re looking for was moved or doesn’t exist. Let’s get you back to your home
+            theatre.</p>
+
+        <div class="nf-actions">
+            <a href="index.html" class="section-button">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M3.5 10.8 12 3.5l8.5 7.3V20a1 1 0 0 1-1 1h-4.7v-6.2H9.2V21H4.5a1 1 0 0 1-1-1z" />
+                </svg>
+                Back to Home
+            </a>
+            <a href="pages/contact.html" class="section-button nf-ghost">Contact Us</a>
+        </div>
+    </main>
+
+    <script>
+        /* Dark / light mode + RTL / LTR. Uses the same saved keys ("theme", "rtl") as the rest of the site. */
+        (function () {
+            var IMG = new URL('assets/images/', document.baseURI).href;
+            var MOON = '<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16"><path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/></svg>';
+            var SUN = '<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16"><path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/></svg>';
+            var html = document.documentElement;
+            var body = document.body;
+            var themeBtn = document.getElementById('darkModeBtn');
+            var rtlBtn = document.getElementById('rtlBtn');
+            var logo = document.getElementById('brandLogo');
+
+            function get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+            function set(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+
+            function applyTheme(mode) {
+                var file = IMG + (mode === 'dark' ? 'logo_darkmode.png' : 'logo_lightmode.png');
+                body.classList.toggle('dark', mode === 'dark');
+                themeBtn.innerHTML = mode === 'dark' ? SUN : MOON;
+                if (logo) logo.src = file;
+                document.querySelectorAll('link[rel="icon"], link[rel="apple-touch-icon"]').forEach(function (l) { l.href = file; });
+                set('theme', mode);
+            }
+
+            function applyDir(isRTL) {
+                html.setAttribute('dir', isRTL ? 'rtl' : 'ltr');
+                rtlBtn.textContent = isRTL ? 'LTR' : 'RTL';
+                set('rtl', isRTL);
+            }
+
+            applyTheme(get('theme') === 'dark' ? 'dark' : 'light');
+            applyDir(get('rtl') === 'true');
+
+            themeBtn.addEventListener('click', function () {
+                applyTheme(body.classList.contains('dark') ? 'light' : 'dark');
+            });
+            rtlBtn.addEventListener('click', function () {
+                applyDir(html.getAttribute('dir') !== 'rtl');
+            });
+        })();
+    </script>
+</body>
+
+</html>

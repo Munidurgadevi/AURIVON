@@ -1555,3 +1555,42 @@ body {
 html[dir="rtl"] #consultationTitle {
     text-align: right;
 }
+/* Hero: 2 buttons side by side */
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+    margin-top: 3.06vw;
+}
+
+.hero-actions .hero-btn {
+    margin-top: 0;
+}
+
+.hero-btn.hero-btn-ghost {
+    background: color-mix(in srgb, var(--surface) 70%, transparent) !important;
+    border-color: color-mix(in srgb, var(--secondary) 55%, transparent) !important;
+    color: var(--text-primary) !important;
+    font-weight: 500 !important;
+}
+
+.hero-btn.hero-btn-ghost:hover {
+    background: var(--btn-hover) !important;
+    border-color: var(--btn-hover) !important;
+    color: var(--on-accent) !important;
+}
+
+.hero .hero-btn.hero-btn-ghost {
+    animation: aniFadeUp .9s var(--ani-ease-out) 1s both;
+}
+
+.hero .hero-btn.hero-btn-ghost::after {
+    display: none;
+}
+
+@media (max-width: 640px) {
+    .hero-actions {
+        margin-top: 26px;
+    }
+}

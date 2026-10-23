@@ -227,19 +227,7 @@
 .hero .hero-btn {
   position: relative;
   overflow: hidden;
-  animation: aniFadeUp .9s var(--ani-ease-out) 1s both,
-    aniPulseRing 2.4s ease-out 2.2s 2;
-}
-
-.hero .hero-btn::after {
-  content: "";
-  position: absolute;
-  inset: 0 auto 0 0;
-  width: 40%;
-  background: linear-gradient(100deg, transparent, rgba(255, 255, 255, .35), transparent);
-  translate: -120% 0;
-  animation: aniSheen 2.4s ease-in-out 1.8s 1;
-  pointer-events: none;
+  animation: aniFadeUp .9s var(--ani-ease-out) 1s both;
 }
 
 .hero .hero-side-left {
@@ -285,8 +273,7 @@
 }
 
 .motion-hero .mh-btn {
-  animation: aniFadeUp .9s var(--ani-ease-out) 1.1s both,
-    aniPulseRing 2.4s ease-out 2.4s 2;
+  animation: aniFadeUp .9s var(--ani-ease-out) 1.1s both;
 }
 
 @supports (animation-timeline: view()) {

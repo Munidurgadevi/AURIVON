@@ -2323,3 +2323,58 @@ body:not(.dark) .abh-hero {
         margin-inline-start: var(--hero-shift);
     }
 }
+/* ===== About hero: leaf shape image (moved closer to text) ===== */
+.abh-hero .abh-arch {
+    position: relative;
+    overflow: visible;
+    width: clamp(440px, 38vw, 640px);
+    height: auto;
+    min-height: 0;
+    max-height: none;
+    aspect-ratio: 6 / 5;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+/* gold offset frame behind the image */
+.abh-hero .abh-arch::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    translate: -18px 18px;
+    border: 2px solid var(--secondary);
+    border-radius: 28px 140px 28px 140px;
+    pointer-events: none;
+}
+
+.abh-hero .abh-arch img {
+    z-index: 1;
+    border-radius: 28px 140px 28px 140px;
+    box-shadow: 0 30px 70px var(--shadow);
+}
+
+/* move the image left, closer to the text */
+@media (min-width: 961px) {
+    .abh-hero .abh-visual {
+        justify-content: flex-end;
+        margin-inline-end: clamp(0px, 7vw, 130px);
+    }
+}
+
+@media (max-width: 960px) {
+    .abh-hero .abh-arch {
+        width: 100%;
+        max-width: 520px;
+        margin: 0 auto;
+    }
+
+    .abh-hero .abh-arch::before {
+        translate: -10px 10px;
+        border-radius: 22px 90px 22px 90px;
+    }
+
+    .abh-hero .abh-arch img {
+        border-radius: 22px 90px 22px 90px;
+    }
+}
