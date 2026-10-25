@@ -770,40 +770,13 @@ html body.dark .gl-cta-bg {
 
 }
 
-/* ===== Gallery hero text: konchem right ki shift (desktop) ===== */
 @media (min-width: 901px) {
     html body .gl-hero .gl-hero-grid .hero-inner {
         margin-inline-start: var(--hero-shift, clamp(24px, 4vw, 80px));
     }
 }
 
-/* ===== "What every visit covers" numbered tiles: 1 column on phones (Galaxy S8+ 360px) ===== */
-@media (max-width: 480px) {
-    html body .ht-section .ht-grid {
-        display: grid;
-        grid-template-columns: minmax(0, 1fr);
-        grid-template-rows: none;
-        grid-auto-flow: row;
-        gap: 16px;
-        width: 100%;
-        max-width: 420px;
-        margin-inline: auto;
-        padding: 0;
-        overflow: visible;
-        list-style: none;
-    }
 
-    html body .ht-section .ht-grid>li {
-        width: 100%;
-        min-width: 0;
-    }
-
-    html body .ht-section .ht-tile {
-        width: 100%;
-    }
-}
-
-/* ===== Featured Projects (Selected Installations) ===== */
 .fp {
     position: relative;
     padding: 110px 24px;
@@ -848,14 +821,6 @@ html body.dark .gl-cta-bg {
 .fp-intro h2 em {
     font-style: italic;
     color: var(--secondary);
-}
-
-.fp-rule {
-    display: block;
-    width: 64px;
-    height: 2px;
-    margin: 28px 0;
-    background: linear-gradient(90deg, var(--secondary), transparent);
 }
 
 .fp-lead {
@@ -1062,7 +1027,7 @@ html body.dark .gl-cta-bg {
     justify-content: center;
     gap: 16px;
     padding: 24px;
-    background: rgba(8, 6, 8, .94);
+    background: color-mix(in srgb, color-mix(in srgb, var(--primary) 28%, #000) 94%, transparent);
 }
 
 .fp-lock {
@@ -1106,8 +1071,8 @@ html body.dark .gl-cta-bg {
 }
 
 .fp-lb-btn:hover:not(:disabled) {
-    background: var(--secondary);
-    color: #000;
+    background: var(--primary);
+    color: #fff;
 }
 
 .fp-lb-btn:disabled {
@@ -1116,7 +1081,7 @@ html body.dark .gl-cta-bg {
 }
 
 .fp-lb-btn:focus-visible {
-    outline: 2px solid var(--secondary);
+    outline: 2px solid var(--primary);
     outline-offset: 2px;
 }
 
@@ -1218,7 +1183,6 @@ html body.dark .gl-cta-bg {
     }
 }
 
-/* ===== Featured Installations: RTL / LTR Fix ===== */
 
 .fp-shell {
     direction: ltr;
@@ -1307,9 +1271,6 @@ html[dir="rtl"] .fp-intro .fp-lead {
     }
 }
 
-/* ===== Featured Projects: RTL / LTR Text Fix ===== */
-
-/* Default LTR */
 .fp-intro,
 .fp-intro .section-eyebrow,
 .fp-intro h2,
@@ -1320,33 +1281,24 @@ html[dir="rtl"] .fp-intro .fp-lead {
     text-align: left;
 }
 
-/* RTL mode - support html dir and body classes */
 html[dir="rtl"] .fp-intro,
 html[dir="rtl"] .fp-intro .section-eyebrow,
 html[dir="rtl"] .fp-intro h2,
-html[dir="rtl"] .fp-intro .fp-lead,
-body.rtl .fp-intro,
-body.rtl .fp-intro .section-eyebrow,
-body.rtl .fp-intro h2,
-body.rtl .fp-intro .fp-lead {
+html[dir="rtl"] .fp-intro .fp-lead {
     direction: rtl;
     text-align: right;
     unicode-bidi: isolate;
 }
 
-/* Keep English heading words in their correct order */
 .fp-intro h2,
 .fp-intro h2 em {
     unicode-bidi: isolate;
 }
 
-/* Button text direction */
-html[dir="rtl"] .fp-intro .fp-btn,
-body.rtl .fp-intro .fp-btn {
+html[dir="rtl"] .fp-intro .fp-btn {
     direction: ltr;
 }
 
-/* Gallery Featured Projects — Tablet & Mobile Layout */
 @media (max-width: 900px) {
     .fp {
         padding: 40px 20px;
@@ -1407,10 +1359,14 @@ body.rtl .fp-intro .fp-btn {
         margin-bottom: 18px;
     }
 
-    .fp-btn {
-        max-width: 100%;
-        padding: 10px 14px;
-        font-size: 9px;
+    .fp-intro .booking-btn {
+        width: auto !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        height: auto !important;
+        min-height: 0 !important;
+        padding: 10px 14px !important;
+        font-size: 9px !important;
         letter-spacing: 0.08em;
     }
 
@@ -1458,9 +1414,14 @@ body.rtl .fp-intro .fp-btn {
         line-height: 1.5;
     }
 
-    .fp-btn {
-        padding: 9px 10px;
-        font-size: 8px;
+    .fp-intro .booking-btn {
+        width: auto !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        height: auto !important;
+        min-height: 0 !important;
+        padding: 9px 10px !important;
+        font-size: 8px !important;
         white-space: normal;
     }
 
@@ -1477,7 +1438,6 @@ body.rtl .fp-intro .fp-btn {
     }
 }
 
-/* ===== Featured Projects Lightbox Arrows Fix ===== */
 
 .fp-lb {
     position: fixed;
@@ -1591,4 +1551,15 @@ body.rtl .fp-intro .fp-btn {
         margin-top: 10px;
         font-size: 18px;
     }
+}
+
+.fp-intro .booking-btn {
+    display: inline-flex !important;
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: max-content !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+    white-space: nowrap;
+    direction: ltr;
 }

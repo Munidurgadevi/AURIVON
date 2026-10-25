@@ -248,11 +248,7 @@
   animation: aniGlow 7s ease-in-out infinite;
 }
 
-.hero.ab-hero .hero-inner,
-.hero.sv-hero .hero-inner,
-.hero.gl-hero .hero-inner,
-.hero.ct-hero .hero-inner,
-.hero.tf-hero .hero-inner {
+.hero.gl-hero .hero-inner {
   animation: aniFade 1s ease both;
 }
 
@@ -285,29 +281,23 @@
   .ab-copy,
   .ab-title,
   .ab-text,
-  .hp-head,
+  .ho-head,
   .ht-head,
   .hz-head,
   .hy-head,
   .hv-copy,
-  .hw-lead,
-  .ho-head,
-  .tf-crafted-copy,
-  .ct-note,
-  .bk-head {
+  .ct-note {
     animation: aniFadeUp linear both;
     animation-timeline: view();
     animation-range: entry 0% entry 60%;
   }
 
   .section-eyebrow,
-  .hp-eyebrow,
   .ht-eyebrow,
   .hz-eyebrow,
   .hy-eyebrow,
-  .hv-eyebrow,
-  .hw-eyebrow,
-  .ho-eyebrow {
+  .ho-eyebrow,
+  .hv-eyebrow {
     animation: aniFadeDown linear both;
     animation-timeline: view();
     animation-range: entry 0% entry 50%;
@@ -331,17 +321,10 @@
   .standard-card,
   .review-card,
   .proc-item,
-  .hz-card,
-  .hp-card,
   .ht-member,
-  .tf-card,
-  .tf-project,
-  .tf-feature,
   .ct-card,
   .ab-belief-grid>*,
-  .ab-post,
-  .sv-tl,
-  .ab-flow-step {
+  .sv-tl {
     animation: aniFadeUp linear both;
     animation-timeline: view();
     animation-range: entry 0% entry 70%;
@@ -350,27 +333,18 @@
   .service-grid> :nth-child(2),
   .standard-grid> :nth-child(2),
   .reviews-grid> :nth-child(2),
-  .hz-grid> :nth-child(2),
-  .hp-grid> :nth-child(2),
-  .ht-grid> :nth-child(2),
-  .tf-grid> :nth-child(2) {
+  .ht-grid> :nth-child(2) {
     animation-range: entry 8% entry 78%;
   }
 
   .service-grid> :nth-child(3),
   .standard-grid> :nth-child(3),
   .reviews-grid> :nth-child(3),
-  .hz-grid> :nth-child(3),
-  .hp-grid> :nth-child(3),
-  .ht-grid> :nth-child(3),
-  .tf-grid> :nth-child(3) {
+  .ht-grid> :nth-child(3) {
     animation-range: entry 16% entry 86%;
   }
 
-  .standard-grid> :nth-child(4),
-  .hz-grid> :nth-child(4),
-  .hp-grid> :nth-child(4),
-  .ht-grid> :nth-child(4) {
+  .standard-grid> :nth-child(4) {
     animation-range: entry 24% entry 94%;
   }
 
@@ -383,20 +357,13 @@
   }
 
   .service-card-image img,
-  .space-image-wrap img,
-  .hy-media img,
-  .hp-img img,
-  .ab-collage-main img,
-  .ab-flow-media img,
-  .tf-crafted-media img,
-  .ab-post-img img {
+  .space-image-wrap img {
     animation: aniImgReveal linear both;
     animation-timeline: view();
     animation-range: entry 0% entry 80%;
   }
 
-  .ab-collage-small,
-  .tf-img-after {
+  .ab-collage-small {
     animation: aniZoomIn linear both;
     animation-timeline: view();
     animation-range: entry 10% entry 75%;
@@ -415,38 +382,19 @@
     animation-range: entry 30% entry 90%;
   }
 
-  .space-image-wrap,
-  .hy-media,
-  .ab-flow-media,
-  .tf-crafted-media {
+  .space-image-wrap {
     animation: aniFadeRight linear both;
     animation-timeline: view();
     animation-range: entry 0% entry 75%;
   }
 
-  .hy-row-reverse .hy-media {
-    animation-name: aniFadeLeft;
-  }
-
-  .hy-text,
-  .hw-body,
-  .hv-text,
-  .ab-flow-list {
+  .hv-text {
     animation: aniFadeLeft linear both;
     animation-timeline: view();
     animation-range: entry 0% entry 70%;
   }
 
-  .hy-row-reverse .hy-text {
-    animation-name: aniFadeRight;
-  }
-
-  .check-list li,
-  .hw-checks>*,
-  .sv-points>*,
-  .tf-tags>*,
-  .tf-specs>*,
-  .ab-post-list>* {
+  .check-list li {
     animation: aniFadeLeft linear both;
     animation-timeline: view();
     animation-range: entry 0% entry 90%;
@@ -465,15 +413,10 @@
   }
 
   .standard-number,
-  .hz-icon,
-  .hw-circle,
-  .hw-tick,
   .ht-initials,
   .review-avatar,
   .ab-belief-num,
-  .ab-flow-num,
   .sv-tl-num,
-  .tf-feature-icon,
   .ct-icon {
     animation: aniPop linear both;
     animation-timeline: view();
@@ -484,13 +427,6 @@
     animation: aniZoomIn linear both;
     animation-timeline: view();
     animation-range: entry 10% entry 80%;
-  }
-
-  .svs-dashes {
-    transform-origin: left center;
-    animation: aniLineGrow linear both;
-    animation-timeline: view();
-    animation-range: entry 0% entry 80%;
   }
 
   .ab-stats-bar,
@@ -509,8 +445,7 @@
   .consultation-actions,
   .hv-actions,
   .ab-more,
-  .ct-submit,
-  .bk-submit {
+  .ct-submit {
     animation: aniFadeUp linear both;
     animation-timeline: view();
     animation-range: entry 0% entry 90%;
@@ -548,33 +483,23 @@
     animation-range: entry 0% entry 80%;
   }
 
-  .tf-compare {
-    animation: aniZoomIn linear both;
-    animation-timeline: view();
-    animation-range: entry 0% entry 70%;
-  }
-
   .consultation-section {
     animation: aniFade linear both;
     animation-timeline: view();
     animation-range: entry 0% entry 60%;
   }
 
-  .consultation-section .section-button,
-  .consultation-section .hero-btn {
+  .consultation-section .section-button {
     animation: aniFadeUp linear both, aniPulseRing 2.6s ease-out infinite;
     animation-timeline: view(), auto;
     animation-range: entry 0% entry 90%, normal;
   }
 
   .service-card-image,
-  .hy-media,
   .space-image-wrap {
     overflow: hidden;
   }
 
-  .hz-icon,
-  .tf-feature-icon,
   .ct-icon {
     animation: aniPop linear both, aniFloat 4.5s ease-in-out 1s infinite;
     animation-timeline: view(), auto;
@@ -582,24 +507,17 @@
   }
 }
 
-.service-card-image img,
-.hp-img img,
-.hy-media img,
-.ab-post-img img {
+.service-card-image img {
   transition: scale .7s var(--ani-ease);
 }
 
 .text-link span,
-.section-button span,
-.hp-link i,
-.hy-link i {
+.section-button span {
   display: inline-block;
 }
 
 .text-link:hover span,
-.section-button:hover span,
-.hy-link:hover i,
-.hp-link:hover i {
+.section-button:hover span {
   animation: aniBob .8s ease-in-out infinite;
 }
 

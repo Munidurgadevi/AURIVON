@@ -1,7 +1,3 @@
-/* AURIVON Privacy Policy.
-   Same look as the rest of the site: colours come only from theme.css (light + dark),
-   rounded cards like .dh-card, same brand lockup, same dark-mode / RTL buttons. */
-
 .pp *,
 .pp *::before,
 .pp *::after {
@@ -26,7 +22,7 @@
   padding: 24px 0 72px;
 }
 
-/* ---------- top bar (dark mode + RTL) ---------- */
+/*  top bar (dark mode + RTL)  */
 .pp-topbar {
   display: flex;
   justify-content: flex-end;
@@ -34,7 +30,7 @@
   margin-bottom: 20px;
 }
 
-/* ---------- brand + heading ---------- */
+/*  brand + heading  */
 .pp-head {
   max-width: 720px;
   margin: 0 auto;
@@ -125,7 +121,7 @@
   color: var(--secondary);
 }
 
-/* ---------- layout ---------- */
+/*  layout  */
 .pp-layout {
   margin-top: 48px;
   display: grid;
@@ -134,7 +130,6 @@
   align-items: start;
 }
 
-/* side menu stays in view on desktop; on tablets and phones it scrolls with the page */
 .pp-sidebar {
   position: sticky;
   top: 24px;
@@ -194,7 +189,7 @@ html[dir="rtl"] .pp-nav a.active {
   outline-offset: 2px;
 }
 
-/* ---------- cards (rounded, same as the site's .dh-card) ---------- */
+/*  cards (rounded, same as the site's .dh-card)  */
 .pp-content {
   min-width: 0;
 }
@@ -263,7 +258,6 @@ html[dir="rtl"] .pp-nav a.active {
   color: var(--text-primary);
 }
 
-/* ---------- information grid ---------- */
 .pp-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -298,7 +292,6 @@ html[dir="rtl"] .pp-nav a.active {
   line-height: 1.7;
 }
 
-/* ---------- highlight notes ---------- */
 .pp-note {
   margin-top: 20px;
   padding: 16px 20px;
@@ -312,7 +305,7 @@ html[dir="rtl"] .pp-nav a.active {
   color: var(--text-primary);
 }
 
-/* ---------- contact card ---------- */
+/*  contact card  */
 .pp-card--contact {
   padding: 0;
   border: 0;
@@ -350,17 +343,10 @@ html[dir="rtl"] .pp-nav a.active {
 .pp-contact .section-button:hover {
   border-color: var(--btn-hover) !important;
 }
-
-/* ---------- RTL ----------
-   theme.css forces every h2 to ltr in RTL mode; the cards need badge + title to mirror.
-   Text, lists and the side menu flip by themselves because the page direction changes. */
 html[dir="rtl"] .pp-card h2 {
   direction: rtl;
 }
 
-/* ---------- responsive ---------- */
-
-/* large desktop / 1080p and above */
 @media (min-width: 1600px) {
   .pp-page {
     width: min(1360px, 100% - 96px);
@@ -378,7 +364,6 @@ html[dir="rtl"] .pp-card h2 {
   }
 }
 
-/* Nest Hub / tablets in landscape */
 @media (max-width: 1024px) {
   .pp-page {
     width: calc(100% - 40px);
@@ -395,7 +380,6 @@ html[dir="rtl"] .pp-card h2 {
   }
 }
 
-/* iPad Mini portrait and below: one column, menu becomes a grid of links */
 @media (max-width: 900px) {
   .pp-layout {
     grid-template-columns: minmax(0, 1fr);
@@ -475,7 +459,6 @@ html[dir="rtl"] .pp-card h2 {
   }
 }
 
-/* very small phones */
 @media (max-width: 400px) {
   .pp-page {
     width: calc(100% - 24px);
@@ -496,7 +479,6 @@ html[dir="rtl"] .pp-card h2 {
   }
 }
 
-/* folded phones (e.g. Galaxy Z Fold cover screen) */
 @media (max-width: 350px) {
   .pp-nav {
     grid-template-columns: minmax(0, 1fr);

@@ -139,17 +139,6 @@
   font-size: 13px
 }
 
-.bk-note {
-  color: var(--text-muted);
-  font: 400 12px/1.6 "Inter", "Work Sans"
-}
-
-.bk-back {
-  display: block;
-  margin: 26px auto 0;
-  text-align: center
-}
-
 .bk-field input[type="tel"],
 .bk-field input[type="email"] {
   direction: ltr;
@@ -210,9 +199,7 @@ html[dir="rtl"] .bk-field input[type="email"] {
     justify-content: center;
   }
 
-  .bk-note {
-    text-align: center;
-  }
+
 }
 
 .bk-brand {

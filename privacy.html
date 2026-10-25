@@ -26,8 +26,6 @@
 <body class="pp">
 
     <main class="pp-page">
-
-        <!-- Same dark mode + RTL buttons as the other pages (icons are SVG, set by the script below) -->
         <div class="pp-topbar">
             <button type="button" class="icon-btn" id="darkModeBtn" aria-label="Toggle dark mode"></button>
             <button type="button" class="icon-btn rtl-btn" id="rtlBtn" aria-label="Toggle right-to-left layout">RTL</button>
@@ -44,7 +42,7 @@
 
                     <span class="brand-text">
                         <span class="brand-name">AURI<span>VON</span></span>
-                        <span class="brand-tagline">Home Theatre &amp; Audio</span>
+                        <span class="brand-tagline">Home Theatre & Audio</span>
                     </span>
 
                 </a>
@@ -74,7 +72,7 @@
                     <a href="#information" class="active"><b>01</b> Information We Collect</a>
                     <a href="#collection"><b>02</b> How We Collect It</a>
                     <a href="#use"><b>03</b> How We Use Information</a>
-                    <a href="#photos"><b>04</b> Room Photos &amp; Details</a>
+                    <a href="#photos"><b>04</b> Room Photos & Details</a>
                     <a href="#sharing"><b>05</b> Information Sharing</a>
                     <a href="#security"><b>06</b> Data Security</a>
                     <a href="#retention"><b>07</b> Data Retention</a>
@@ -85,8 +83,6 @@
             </aside>
 
             <section class="pp-content">
-
-                <!-- Section 01 -->
                 <article class="pp-card" id="information">
 
                     <h2><span class="pp-num">01</span> Information We Collect</h2>
@@ -128,8 +124,6 @@
 
                     </div>
                 </article>
-
-                <!-- Section 02 -->
                 <article class="pp-card" id="collection">
 
                     <h2><span class="pp-num">02</span> How We Collect Information</h2>
@@ -150,8 +144,6 @@
                     </p>
 
                 </article>
-
-                <!-- Section 03 -->
                 <article class="pp-card" id="use">
 
                     <h2><span class="pp-num">03</span> How We Use Your Information</h2>
@@ -178,8 +170,6 @@
                     </div>
 
                 </article>
-
-                <!-- Section 04 -->
                 <article class="pp-card" id="photos">
 
                     <h2><span class="pp-num">04</span> Room Photos and Project Details</h2>
@@ -207,8 +197,6 @@
                     </div>
 
                 </article>
-
-                <!-- Section 05 -->
                 <article class="pp-card" id="sharing">
 
                     <h2><span class="pp-num">05</span> Information Sharing</h2>
@@ -232,8 +220,6 @@
                     </p>
 
                 </article>
-
-                <!-- Section 06 -->
                 <article class="pp-card" id="security">
 
                     <h2><span class="pp-num">06</span> Data Security</h2>
@@ -251,8 +237,6 @@
                     </p>
 
                 </article>
-
-                <!-- Section 07 -->
                 <article class="pp-card" id="retention">
 
                     <h2><span class="pp-num">07</span> Data Retention</h2>
@@ -270,8 +254,6 @@
                     </p>
 
                 </article>
-
-                <!-- Section 08 -->
                 <article class="pp-card" id="choices">
 
                     <h2><span class="pp-num">08</span> Your Choices</h2>
@@ -294,8 +276,6 @@
                     </p>
 
                 </article>
-
-                <!-- Section 09 -->
                 <article class="pp-card pp-card--contact" id="contact">
 
                     <div class="pp-contact">
@@ -322,8 +302,6 @@
     </main>
 
     <script>
-        /* Dark / light mode + RTL / LTR. Uses the same saved keys and values as the rest of the site:
-           theme = "dark" | "light", rtl = "true" | "false". */
         (function () {
             var IMG = 'assets/images/';
             var MOON = '<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16"><path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/></svg>';
@@ -365,7 +343,6 @@
     </script>
 
     <script>
-        /* "On this page" menu: highlight the section being read (and the clicked one) */
         (function () {
             var links = Array.prototype.slice.call(document.querySelectorAll('.pp-nav a'));
             var sections = Array.prototype.slice.call(document.querySelectorAll('.pp-card[id]'));

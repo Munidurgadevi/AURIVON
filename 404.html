@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="robots" content="noindex">
     <title>404 | Page Not Found - AURIVON</title>
-    <!-- On a server (Netlify) a 404 can load from any URL depth, so paths must start from the site root.
-         Opened straight from a folder (file://), the normal relative paths are used instead. -->
     <script>if (location.protocol !== 'file:') document.write('<base href="/">');</script>
     <link
         href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=block"
@@ -21,8 +19,6 @@
 
 <body class="nf">
     <div class="nf-glow" aria-hidden="true"></div>
-
-    <!-- Same dark mode + RTL buttons as the booking page -->
     <div class="nf-tools">
         <button type="button" class="icon-btn" id="darkModeBtn" aria-label="Toggle dark mode"></button>
         <button type="button" class="icon-btn rtl-btn" id="rtlBtn" aria-label="Toggle right-to-left layout">RTL</button>
@@ -38,13 +34,13 @@
                 </span>
                 <span class="brand-text">
                     <span class="brand-name">AURI<span>VON</span></span>
-                    <span class="brand-tagline">Home Theatre &amp; Audio</span>
+                    <span class="brand-tagline">Home Theatre & Audio</span>
                 </span>
             </a>
         </div>
 
         <h1>Lost in the wrong room?</h1>
-        <p class="nf-lead">The page you’re looking for was moved or doesn’t exist. Let’s get you back to your home
+        <p class="nf-lead">The page you're looking for was moved or doesn't exist. Let's get you back to your home
             theatre.</p>
 
         <div class="nf-actions">
@@ -60,7 +56,6 @@
     </main>
 
     <script>
-        /* Dark / light mode + RTL / LTR. Uses the same saved keys ("theme", "rtl") as the rest of the site. */
         (function () {
             var IMG = new URL('assets/images/', document.baseURI).href;
             var MOON = '<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16"><path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/></svg>';
@@ -71,15 +66,15 @@
             var rtlBtn = document.getElementById('rtlBtn');
             var logo = document.getElementById('brandLogo');
 
-            function get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
-            function set(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+            function get(k) {try {return localStorage.getItem(k);} catch (e) {return null;} }
+            function set(k, v) {try {localStorage.setItem(k, v);} catch (e) { } }
 
             function applyTheme(mode) {
                 var file = IMG + (mode === 'dark' ? 'logo_darkmode.png' : 'logo_lightmode.png');
                 body.classList.toggle('dark', mode === 'dark');
                 themeBtn.innerHTML = mode === 'dark' ? SUN : MOON;
                 if (logo) logo.src = file;
-                document.querySelectorAll('link[rel="icon"], link[rel="apple-touch-icon"]').forEach(function (l) { l.href = file; });
+                document.querySelectorAll('link[rel="icon"], link[rel="apple-touch-icon"]').forEach(function (l) {l.href = file;});
                 set('theme', mode);
             }
 

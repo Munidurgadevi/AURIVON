@@ -317,7 +317,6 @@ body {
     transform: translateY(-50%);
 }
 
-/* ===== FOOTER ===== */
 .site-footer {
     background: var(--surface);
     color: var(--text-muted);

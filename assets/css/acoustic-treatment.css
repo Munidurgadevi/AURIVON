@@ -151,8 +151,7 @@ html {
     justify-content: center;
 }
 
-.dh-head h2,
-.dh-cta h2 {
+.dh-head h2 {
     margin: 0;
     color: var(--text-primary);
     font: 600 clamp(32px, 4vw, 50px)/1.1 var(--font-display);
@@ -181,12 +180,6 @@ html {
     box-shadow: 0 10px 30px var(--shadow);
 }
 
-.dh-overview {
-    display: grid;
-    grid-template-columns: 1.15fr .85fr;
-    gap: 22px;
-}
-
 .dh-index {
     display: block;
     margin-bottom: 14px;
@@ -196,79 +189,10 @@ html {
     text-transform: uppercase;
 }
 
-.dh-card h3 {
-    margin: 0 0 18px;
-    color: var(--text-primary);
-    font: 600 clamp(26px, 2.6vw, 34px)/1.2 var(--font-display);
-}
-
-.dh-card--accent {
-    border-color: var(--primary);
-    background: var(--primary);
-    color: var(--on-primary);
-}
-
-.dh-card--accent h3,
-.dh-card--accent .dh-checks li {
-    color: var(--on-primary);
-}
-
-.dh-card--accent .dh-index {
-    color: #F1D9A6;
-}
-
-.dh-card--accent .dh-checks li::before {
-    background: #F1D9A6;
-    color: #4A1720;
-}
-
-ul[class^="dh-"],
-ul[class*=" dh-"] {
+ul[class^="dh-"] {
     margin: 0;
     padding: 0;
     list-style: none;
-}
-
-.dh-checks li,
-.dh-offer-list li,
-.dh-why li {
-    position: relative;
-    padding-inline-start: 34px;
-    color: var(--text-primary);
-    font: 500 15px/1.5 var(--font-body);
-}
-
-.dh-checks li::before,
-.dh-offer-list li::before,
-.dh-why li::before {
-    content: "✓";
-    position: absolute;
-    inset-inline-start: 0;
-    top: 50%;
-    display: grid;
-    place-items: center;
-    width: 22px;
-    height: 22px;
-    transform: translateY(-50%);
-    border-radius: 50%;
-    background: var(--secondary);
-    color: var(--on-accent);
-    font: 700 12px/1 var(--font-body);
-}
-
-.dh-checks li {
-    padding-block: 11px;
-    border-bottom: 1px solid var(--border);
-}
-
-.dh-card--accent .dh-checks li {
-    border-color: rgba(255, 255, 255, .2);
-}
-
-.dh-checks--2col {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    column-gap: 22px;
 }
 
 .dh-steps {
@@ -315,30 +239,6 @@ ul[class*=" dh-"] {
     align-items: center;
 }
 
-.dh-offer-list {
-    display: grid;
-    gap: 14px;
-}
-
-.dh-offer-list li {
-    padding: 14px 16px 14px 52px;
-    border-radius: 12px;
-    background: var(--surface-elevated);
-    font-size: 16px;
-}
-
-.dh-offer-list li::before {
-    inset-inline-start: 16px;
-}
-
-.dh-note {
-    margin: 22px 0 0;
-    padding-top: 16px;
-    border-top: 1px solid var(--border);
-    color: var(--text-muted);
-    font: 400 13px/1.8 var(--font-body);
-}
-
 .dh-pricecard {
     background: var(--surface-elevated);
     box-shadow: inset 0 4px 0 var(--secondary), 0 10px 30px var(--shadow);
@@ -364,57 +264,6 @@ ul[class*=" dh-"] {
     font: 400 14px/1.7 var(--font-body);
 }
 
-.dh-why {
-    display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-    gap: 14px;
-}
-
-.dh-why li {
-    display: flex;
-    align-items: center;
-    min-height: 92px;
-    padding: 16px 16px 16px 50px;
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    background: var(--surface);
-    font-size: 14px;
-    transition: border-color .2s, transform .2s;
-}
-
-.dh-why li::before {
-    inset-inline-start: 16px;
-}
-
-.dh-why li:hover {
-    transform: translateY(-3px);
-    border-color: var(--secondary);
-}
-
-.dh-cta {
-    padding: clamp(56px, 8vw, 96px) 24px;
-    background: var(--primary);
-    color: var(--on-primary);
-    text-align: center;
-}
-
-.dh-cta .dh-eyebrow {
-    justify-content: center;
-    color: #F1D9A6;
-}
-
-.dh-cta h2 {
-    max-width: 780px;
-    margin: 0 auto;
-    color: var(--on-primary);
-}
-
-.dh-cta>p:not(.dh-eyebrow) {
-    margin: 16px auto 28px;
-    color: rgba(255, 255, 255, .85);
-    font: 400 16px/1.8 var(--font-body);
-}
-
 @media (min-width: 901px) and (max-height: 680px) {
 
     .dh-price,
@@ -435,7 +284,6 @@ ul[class*=" dh-"] {
     }
 
     .dh-hero-inner,
-    .dh-overview,
     .dh-split {
         grid-template-columns: minmax(0, 1fr);
     }
@@ -455,9 +303,7 @@ ul[class*=" dh-"] {
         grid-template-columns: minmax(0, 1fr);
     }
 
-    .dh-why {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
+
 }
 
 @media (max-width: 520px) {
@@ -465,23 +311,10 @@ ul[class*=" dh-"] {
         width: calc(100% - 32px);
     }
 
-    .dh-checks--2col,
-    .dh-why {
-        grid-template-columns: minmax(0, 1fr);
-    }
-
     .dh-actions {
         flex-direction: column;
     }
 
-}
-
-.dh-cta h2 .h-a {
-    color: #fff !important;
-}
-
-.dh-cta h2 .h-b {
-    color: #F1D9A6 !important;
 }
 
 .dh-visual {
@@ -702,7 +535,7 @@ ul[class*=" dh-"] {
 }
 
 .dh-pills li::before {
-    content: "✓";
+    content: "\2713";
     position: absolute;
     inset-inline-start: 12px;
     top: 50%;
@@ -1193,15 +1026,6 @@ ul[class*=" dh-"] {
     padding-inline-end: 8px;
 }
 
-.dh-deal-num--icon {
-    align-items: center;
-    gap: 6px;
-}
-
-.dh-deal-num--icon svg {
-    color: #F1D9A6;
-}
-
 .dh-deal-copy h3 {
     max-width: 640px;
 }
@@ -1228,15 +1052,15 @@ ul[class*=" dh-"] {
     display: none;
 }
 
-.dh-on-plum {
-    border-color: var(--secondary);
+html body main .section-button.dh-on-plum {
+    border: 2px solid #fff !important;
     background: var(--secondary);
     color: var(--on-accent);
 }
 
-.dh-on-plum:hover,
-.dh-on-plum:focus-visible {
-    border-color: #fff;
+html body main .section-button.dh-on-plum:hover,
+html body main .section-button.dh-on-plum:focus-visible {
+    border-color: #fff !important;
     background: #fff;
     color: var(--primary);
 }
@@ -1327,16 +1151,6 @@ body:not(.dark) .dh-hero {
     -webkit-text-fill-color: transparent;
 }
 
-/* ==========================================================================
-   Typography system - same on all 6 service pages and matching style.css
-   Only 3 fonts are used in the whole application:
-   Cormorant Garamond, Inter, Work Sans
-   1. Paragraph text : Inter, Work Sans (size/weight/line-height of the hero
-                       intro paragraph "A thoughtfully designed home theatre...")
-   2. Tag lines      : Inter, Work Sans (same as index.html tag lines)
-   3. Headings       : Cormorant Garamond, Work Sans
-   ========================================================================== */
-
 :root {
     --dh-p-size: clamp(14px, min(1.2vw, 2.3vh), 17px);
     --dh-p-weight: 400;
@@ -1353,10 +1167,6 @@ main .dh-why2-list li span {
     font-weight: var(--dh-p-weight) !important;
     line-height: var(--dh-p-leading) !important;
 }
-
-/* 2. Tag lines - same font settings as the index.html tag lines (12px)
-      Section tags : Inter, 12px, 600, .22em, uppercase
-      Hero tag     : Inter, 12px, 500, .34em, uppercase */
 main .dh-eyebrow,
 main .dh-index {
     font-family: var(--font-body) !important;
@@ -1374,15 +1184,9 @@ main .dh-hero .dh-eyebrow {
     letter-spacing: .34em !important;
 }
 
-/* 3. Headings - same as index.html
-      h1 (hero)     = index .hero-title          : max(58px, 5.8vw), 400, line-height 1
-      h2 (sections) = index .consultation-copy h2: clamp(34px, 4.4vw, 58px), 500, line-height 1.06
-      h3 (cards)    = index .service-card h3     : 24px, 600
-      Font: Cormorant Garamond, Work Sans */
 main h1,
 main h2,
 main h3,
-main h4,
 main .dh-tagline {
     font-family: var(--font-display) !important;
 }
@@ -1407,7 +1211,6 @@ main h3 {
     font-weight: 600 !important;
 }
 
-/* Buttons */
 button,
 .hero-btn,
 .booking-btn,
@@ -1415,12 +1218,6 @@ button,
 .icon-btn {
     font-family: var(--font-body);
 }
-
-
-/* ==========================================================================
-   RTL / LTR support - same behaviour as index.html when the RTL button is on
-   (flex/grid already mirror automatically; these fix the physical values)
-   ========================================================================== */
 
 /* Check-mark pills: icon sits at the inline start, so padding follows it */
 main .dh-pills li {
@@ -1447,13 +1244,11 @@ main .dh-pills li {
     letter-spacing: 0;
 }
 
-/* Left-aligned blocks follow the reading direction */
 [dir="rtl"] .dh-head--left,
 [dir="rtl"] .dh-deal {
     text-align: right;
 }
 
-/* Price ranges keep their order (e.g. 14,999 - 29,999) */
 [dir="rtl"] .dh-price strong,
 [dir="rtl"] .dh-pricecard strong {
     direction: ltr;
@@ -1461,18 +1256,15 @@ main .dh-pills li {
     text-align: right;
 }
 
-/* Hover nudge moves the other way */
 [dir="rtl"] .dh-why2-list li:hover {
     transform: translateX(-4px);
 }
 
-/* Directional arrows are mirrored */
 [dir="rtl"] main a>span[aria-hidden="true"] {
     display: inline-block;
     transform: scaleX(-1);
 }
 
-/* Hero title gradient and background glows flip sides */
 [dir="rtl"] .dh-hero h1 {
     background: linear-gradient(270deg, var(--primary), var(--secondary));
     -webkit-background-clip: text;
@@ -1486,12 +1278,10 @@ main .dh-pills li {
         linear-gradient(180deg, var(--background), var(--surface));
 }
 
-/* Arched hero photo: the taller shoulder stays on the outer side */
 [dir="rtl"] .dh-visual img {
     border-radius: clamp(140px, 19vw, 270px) clamp(110px, 15vw, 210px) 28px 28px;
 }
 
-/* Offer band glow */
 [dir="rtl"] .dh-deal {
     background:
         radial-gradient(circle at 88% 0%, rgba(241, 217, 166, .22), transparent 45%),
@@ -1512,10 +1302,6 @@ main .dh-pills li {
     background: linear-gradient(225deg, #2A0F26 0%, #4A1D40 100%);
 }
 
-/* ==========================================================================
-   CTA section - RTL / LTR safe + one layout per page
-   (logical properties only: start/end follow the page direction)
-   ========================================================================== */
 .dh-cta2-copy {
     text-align: start;
 }
@@ -1529,7 +1315,6 @@ main .dh-pills li {
     letter-spacing: 0 !important;
 }
 
-/* CTA shape: WAVE edge */
 .dh-cta2--center .dh-cta2-box {
     grid-template-columns: minmax(0, 1fr);
 }
@@ -1556,14 +1341,11 @@ main .dh-pills li {
     justify-content: center;
 }
 
-/* CTA heading follows the page direction (theme.css forces every h2 to ltr in RTL) */
 [dir="rtl"] .dh-cta2-copy h2 {
     direction: rtl;
     unicode-bidi: isolate;
     text-align: inherit;
 }
-
-/* English text in RTL keeps the same letter-spacing as LTR */
 [dir="rtl"]:not(:lang(ar)):not(:lang(fa)):not(:lang(ur)):not(:lang(he)) main h2 {
     letter-spacing: -.02em !important;
 }
@@ -1632,10 +1414,6 @@ main .dh-pills li {
         grid-column: 1 / -1;
     }
 }
-
-/* ===== ACOUSTIC TREATMENT: RTL / LTR FIX ===== */
-
-/* Keep English text readable in both directions */
 html[dir="ltr"] main {
     direction: ltr;
 }
@@ -1644,8 +1422,6 @@ html[dir="rtl"] main {
     direction: rtl;
 }
 
-/* ===== Headings: English order stays correct, alignment follows page direction ===== */
-
 /* LTR */
 html[dir="ltr"] main h1,
 html[dir="ltr"] main h2,
@@ -1653,8 +1429,6 @@ html[dir="ltr"] main h3 {
     direction: ltr !important;
     unicode-bidi: isolate;
 }
-
-/* RTL with English text: keep reading order (period/comma stay at the end), align right */
 html[dir="rtl"] main h1,
 html[dir="rtl"] main h2,
 html[dir="rtl"] main h3 {
@@ -1662,22 +1436,18 @@ html[dir="rtl"] main h3 {
     unicode-bidi: isolate;
     text-align: right;
 }
-
-/* RTL with real Arabic / Persian / Urdu / Hebrew text: full RTL */
 html[dir="rtl"]:is(:lang(ar), :lang(fa), :lang(ur), :lang(he)) main h1,
 html[dir="rtl"]:is(:lang(ar), :lang(fa), :lang(ur), :lang(he)) main h2,
 html[dir="rtl"]:is(:lang(ar), :lang(fa), :lang(ur), :lang(he)) main h3 {
     direction: rtl !important;
 }
 
-/* Centered headings stay centered (Our Process, Special Offers, CTA) */
 html[dir="rtl"] main .dh-head:not(.dh-head--left) h2,
 html[dir="rtl"] main .dh-head:not(.dh-head--left)>p,
 html[dir="rtl"] main .dh-cta2--center .dh-cta2-copy h2 {
     text-align: center;
 }
 
-/* English paragraphs: natural text order, RTL alignment */
 html[dir="rtl"] main p,
 html[dir="rtl"] main li,
 html[dir="rtl"] main a {
@@ -1710,7 +1480,6 @@ html[dir="rtl"] main .dh-why2-list b {
     unicode-bidi: isolate;
 }
 
-/* LTR restores the original layout */
 html[dir="ltr"] main h1,
 html[dir="ltr"] main h2,
 html[dir="ltr"] main h3,
@@ -1718,7 +1487,6 @@ html[dir="ltr"] main p {
     direction: ltr;
 }
 
-/* Fix service card numbers in RTL and LTR */
 html[dir="ltr"] .dh-tiles li {
     direction: ltr !important;
     text-align: left !important;
@@ -1728,20 +1496,14 @@ html[dir="rtl"] .dh-tiles li {
     direction: rtl !important;
     text-align: right !important;
 }
-
-/* Keep numbers in correct order and position */
 .dh-tiles li b {
     direction: ltr !important;
     unicode-bidi: isolate;
     display: block;
 }
-
-/* LTR: number on left */
 html[dir="ltr"] .dh-tiles li b {
     text-align: left !important;
 }
-
-/* RTL: number on right */
 html[dir="rtl"] .dh-tiles li b {
     text-align: right !important;
 }

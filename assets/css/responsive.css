@@ -11,7 +11,6 @@ body {
 img,
 svg,
 video,
-canvas,
 iframe {
     max-width: 100%;
 }
@@ -30,8 +29,7 @@ video {
 
 a,
 button,
-label,
-[role="button"] {
+label {
     touch-action: manipulation;
 }
 
@@ -40,9 +38,7 @@ h2,
 h3,
 h4,
 p,
-li,
-td,
-th {
+li {
     overflow-wrap: break-word;
 }
 
@@ -64,9 +60,6 @@ th {
     .space-section,
     .ab-story,
     .ab-wrap.ab-story,
-    .hy-row,
-    .hy-row-reverse,
-    .hw-wrap,
     .ct-layout {
         grid-template-columns: minmax(0, 1fr) !important;
         gap: 32px !important;
@@ -82,16 +75,12 @@ th {
         margin-inline: auto;
     }
 
-    .service-grid,
-    .hz-grid,
-    .hp-grid {
+    .service-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
         gap: 20px !important;
     }
 
-    .service-grid>:last-child:nth-child(odd),
-    .hz-grid>:last-child:nth-child(odd),
-    .hp-grid>:last-child:nth-child(odd) {
+    .service-grid>:last-child:nth-child(odd) {
         grid-column: 1 / -1;
         justify-self: center;
         width: calc(50% - 10px);
@@ -108,6 +97,7 @@ th {
     .ab-stats-bar {
         grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
     }
+
 }
 
 @media (max-width: 640px) {
@@ -195,11 +185,8 @@ th {
     }
 
     .service-grid,
-    .hz-grid,
-    .hp-grid,
     .ab-timeline,
     .ab-belief-grid,
-    .hw-checks,
     .ct-grid {
         grid-template-columns: minmax(0, 1fr) !important;
         gap: 18px !important;
@@ -210,11 +197,7 @@ th {
     }
 
     .service-grid>:last-child:nth-child(odd),
-    .hz-grid>:last-child:nth-child(odd),
-    .hp-grid>:last-child:nth-child(odd),
-    .service-card,
-    .hz-card,
-    .hp-card {
+    .service-card {
         width: 100%;
         max-width: none;
     }
@@ -452,50 +435,6 @@ th {
         padding: 14px !important;
     }
 
-    .review-card p {
-        font-size: 11px;
-        line-height: 1.5;
-    }
-
-    .review-card h3 {
-        font-size: 12px;
-    }
-
-    .hp-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
-        gap: 12px !important;
-    }
-
-    .hp-grid> :last-child:nth-child(odd) {
-        grid-column: auto !important;
-        justify-self: stretch !important;
-        width: 100% !important;
-        max-width: none !important;
-    }
-
-    .hp-card {
-        min-width: 0;
-        width: 100%;
-    }
-
-    .hp-body {
-        padding: 12px !important;
-    }
-
-    .hp-body h3 {
-        font-size: 14px;
-        line-height: 1.4;
-    }
-
-    .hp-body>p:not(.hp-meta) {
-        font-size: 11px;
-        line-height: 1.5;
-    }
-
-    .hp-link {
-        font-size: 10px;
-    }
-
     .ht-grid {
         display: grid !important;
         grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
@@ -579,15 +518,13 @@ th {
         max-width: 1450px;
     }
 
-    html body .ab-wrap,
-    html body .ab-timeline,
-    html body .ab-belief-grid,
-    html body .ab-blogs,
-    html body .ab-flow {
+    html body .of-grid {
         max-width: 1450px;
     }
 
-    html body .of-grid {
+    html body .ab-wrap,
+    html body .ab-timeline,
+    html body .ab-belief-grid {
         max-width: 1450px;
     }
 
@@ -601,16 +538,7 @@ th {
         max-width: 1450px;
     }
 
-    html body .tf-grid,
-    html body .tf-crafted-wrap {
-        max-width: 1450px;
-    }
-
-    html body .hy-row,
-    html body .hz-grid,
-    html body .hp-grid,
-    html body .ht-grid,
-    html body .hw-wrap {
+    html body .ht-grid {
         max-width: 1450px;
     }
 
@@ -623,9 +551,7 @@ th {
 @media (min-width: 1800px) and (max-width: 2000px) {
 
     html body .content-section:not(.consultation-section),
-    html body .hp-section,
     html body .ht-section,
-    html body .hw-section,
     html body .hy-section,
     html body .hz-section,
     html body .of-section {
@@ -694,14 +620,12 @@ html body .hv-actions {
     gap: 12px;
 }
 
-html body section:has(+ .consultation-section):not(.process-section),
-html body section:has(+ .hv-section):not(.ht-section) {
+html body section:has(+ .consultation-section):not(.process-section) {
     padding-bottom: var(--cta-gap);
 }
 
 @media (min-width: 901px) {
 
-    html body .process-section+.consultation-section,
     html body .ht-section+.hv-section {
         margin-top: var(--cta-gap) !important;
     }

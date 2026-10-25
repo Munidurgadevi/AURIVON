@@ -557,6 +557,7 @@ body.dark .jn-hero .jn-hero-text {
   white-space: nowrap;
   animation: aniFadeDown .9s var(--ani-ease-out) .15s both;
 }
+
 @media (max-width: 640px) {
   .jn-hero .section-eyebrow {
     padding: 7px 14px 7px calc(14px + 2px);
@@ -601,8 +602,14 @@ body.dark .jn-hero .jn-hero-text {
   padding: clamp(64px, 9vw, 130px) max(5vw, 24px);
   text-align: center;
   background:
-    radial-gradient(ellipse 60% 70% at 50% 0%, color-mix(in srgb, var(--primary) 12%, transparent), transparent 70%),
-    var(--surface-elevated);
+    radial-gradient(ellipse 60% 70% at 50% 0%, color-mix(in srgb, var(--primary) 18%, transparent), transparent 70%),
+    linear-gradient(135deg, #f6e9f1 0%, #ecd6e5 55%, #f7ecd8 100%);
+}
+
+body.dark .jn-cta {
+  background:
+    radial-gradient(ellipse 60% 70% at 50% 0%, color-mix(in srgb, var(--primary) 30%, transparent), transparent 70%),
+    linear-gradient(135deg, #2a0f26 0%, #4a1d40 60%, #2b1a12 100%);
 }
 
 .jn-cta-inner {

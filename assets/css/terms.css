@@ -1,7 +1,3 @@
-/* AURIVON Terms & Conditions page.
-   Follows the rest of the site: colours from theme.css (light + dark), rounded cards like .dh-card,
-   same brand lockup, same dark-mode / RTL buttons. */
-
 .tc *,
 .tc *::before,
 .tc *::after {
@@ -26,7 +22,6 @@
   padding: 24px 0 72px;
 }
 
-/* ---------- top bar (dark mode + RTL) ---------- */
 .tc-topbar {
   display: flex;
   justify-content: flex-end;
@@ -34,7 +29,6 @@
   margin-bottom: 20px;
 }
 
-/* ---------- brand + heading ---------- */
 .tc-head {
   max-width: 680px;
   margin: 0 auto;
@@ -117,7 +111,7 @@
   color: var(--secondary);
 }
 
-/* ---------- layout ---------- */
+/*  layout  */
 .tc-layout {
   margin-top: 48px;
   display: grid;
@@ -183,7 +177,7 @@ html[dir="rtl"] .tc-nav a.active {
   outline-offset: 2px;
 }
 
-/* ---------- cards (rounded, same as the site's .dh-card) ---------- */
+/*  cards (rounded, same as the site's .dh-card)  */
 .tc-content {
   min-width: 0;
 }
@@ -264,7 +258,7 @@ html[dir="rtl"] .tc-nav a.active {
   color: var(--text-primary);
 }
 
-/* ---------- contact card ---------- */
+/*  contact card  */
 .tc-card--contact {
   padding: 0;
   border: 0;
@@ -308,7 +302,7 @@ html[dir="rtl"] .tc-card h2 {
   direction: rtl;
 }
 
-/* ---------- responsive ---------- */
+/*  responsive  */
 
 /* large desktop / 1080p and above */
 @media (min-width: 1600px) {
