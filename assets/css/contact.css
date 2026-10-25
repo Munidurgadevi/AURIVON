@@ -463,9 +463,9 @@ body .hero.ct-hero .cth-wrap .hero-title {
     max-width: 780px;
     margin-top: clamp(.8rem, 2.6vh, 1.5rem);
     color: #fff;
-    font-family: "Playfair Display", "Cormorant Garamond", serif;
+    font-family: "Cormorant Garamond", serif;
     font-size: clamp(36px, min(6vw, 10vh), 58px);
-    font-weight: 700;
+    font-weight: 400;
     line-height: 1.1;
     letter-spacing: -.01em;
     text-wrap: balance;
