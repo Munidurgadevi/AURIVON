@@ -343,6 +343,7 @@ html[dir="rtl"] .pp-nav a.active {
 .pp-contact .section-button:hover {
   border-color: var(--btn-hover) !important;
 }
+
 html[dir="rtl"] .pp-card h2 {
   direction: rtl;
 }

@@ -28,7 +28,8 @@
     <main class="pp-page">
         <div class="pp-topbar">
             <button type="button" class="icon-btn" id="darkModeBtn" aria-label="Toggle dark mode"></button>
-            <button type="button" class="icon-btn rtl-btn" id="rtlBtn" aria-label="Toggle right-to-left layout">RTL</button>
+            <button type="button" class="icon-btn rtl-btn" id="rtlBtn"
+                aria-label="Toggle right-to-left layout">RTL</button>
         </div>
 
         <header class="pp-head">
@@ -313,7 +314,7 @@
             var logo = document.getElementById('brandLogo');
 
             function get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
-            function set(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+            function set(k, v) { try { localStorage.setItem(k, v); } catch (e) { } }
 
             function applyTheme(mode) {
                 var file = IMG + (mode === 'dark' ? 'logo_darkmode.png' : 'logo_lightmode.png');

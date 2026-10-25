@@ -1167,6 +1167,7 @@ main .dh-why2-list li span {
     font-weight: var(--dh-p-weight) !important;
     line-height: var(--dh-p-leading) !important;
 }
+
 main .dh-eyebrow,
 main .dh-index {
     font-family: var(--font-body) !important;
@@ -1346,6 +1347,7 @@ main .dh-pills li {
     unicode-bidi: isolate;
     text-align: inherit;
 }
+
 [dir="rtl"]:not(:lang(ar)):not(:lang(fa)):not(:lang(ur)):not(:lang(he)) main h2 {
     letter-spacing: -.02em !important;
 }
@@ -1414,6 +1416,7 @@ main .dh-pills li {
         grid-column: 1 / -1;
     }
 }
+
 html[dir="ltr"] main {
     direction: ltr;
 }
@@ -1429,6 +1432,7 @@ html[dir="ltr"] main h3 {
     direction: ltr !important;
     unicode-bidi: isolate;
 }
+
 html[dir="rtl"] main h1,
 html[dir="rtl"] main h2,
 html[dir="rtl"] main h3 {
@@ -1436,6 +1440,7 @@ html[dir="rtl"] main h3 {
     unicode-bidi: isolate;
     text-align: right;
 }
+
 html[dir="rtl"]:is(:lang(ar), :lang(fa), :lang(ur), :lang(he)) main h1,
 html[dir="rtl"]:is(:lang(ar), :lang(fa), :lang(ur), :lang(he)) main h2,
 html[dir="rtl"]:is(:lang(ar), :lang(fa), :lang(ur), :lang(he)) main h3 {
@@ -1496,14 +1501,17 @@ html[dir="rtl"] .dh-tiles li {
     direction: rtl !important;
     text-align: right !important;
 }
+
 .dh-tiles li b {
     direction: ltr !important;
     unicode-bidi: isolate;
     display: block;
 }
+
 html[dir="ltr"] .dh-tiles li b {
     text-align: left !important;
 }
+
 html[dir="rtl"] .dh-tiles li b {
     text-align: right !important;
 }

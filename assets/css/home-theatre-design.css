@@ -826,6 +826,7 @@ main .dh-why2-list li span {
     font-weight: var(--dh-p-weight) !important;
     line-height: var(--dh-p-leading) !important;
 }
+
 main .dh-eyebrow,
 main .dh-index {
     font-family: var(--font-body) !important;
@@ -1049,7 +1050,7 @@ main .dh-pills li {
 }
 
 .dh-pillar-list li::before {
-     content: "\2713";
+    content: "\2713";
     position: absolute;
     inset-inline-start: 0;
     top: 50%;
@@ -1140,6 +1141,7 @@ main .dh-pills li {
         font-size: 52px;
     }
 }
+
 .dh-cta2-copy {
     text-align: start;
 }
@@ -1180,6 +1182,7 @@ main .dh-pills li {
     border: 3px solid rgba(241, 217, 166, .55);
     border-bottom: 0;
 }
+
 [dir="rtl"] .dh-cta2-copy h2 {
     direction: rtl;
     unicode-bidi: isolate;
@@ -1250,9 +1253,11 @@ main .dh-pills li {
         padding: 20px;
     }
 }
+
 [dir="rtl"]:not(:lang(ar)):not(:lang(fa)):not(:lang(ur)):not(:lang(he)) main p::after {
     content: none !important;
 }
+
 html[dir="rtl"] main .dh-step h3,
 html[dir="rtl"] main .dh-step p,
 html[dir="rtl"] main .dh-pillar h3,

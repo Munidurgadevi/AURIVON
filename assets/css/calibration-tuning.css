@@ -535,7 +535,7 @@ ul[class^="dh-"] {
 }
 
 .dh-pills li::before {
-     content: "\2713";
+    content: "\2713";
     position: absolute;
     inset-inline-start: 12px;
     top: 50%;
@@ -1239,6 +1239,7 @@ main .dh-pills li {
 [dir="rtl"] .dh-deal {
     text-align: right;
 }
+
 [dir="rtl"] .dh-price strong,
 [dir="rtl"] .dh-pricecard strong {
     direction: ltr;
@@ -1339,6 +1340,7 @@ main .dh-pills li {
         font-size: 52px;
     }
 }
+
 .dh-cta2-copy {
     text-align: start;
 }

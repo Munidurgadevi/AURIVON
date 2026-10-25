@@ -322,8 +322,9 @@ main .section-button>span:empty::before {
     flex-direction: column;
     justify-content: center;
 }
+
 @media (max-width: 480px) {
-  .ab-stats-bar div {
+    .ab-stats-bar div {
         min-height: 100px;
         padding: 12px 8px;
     }
@@ -1632,8 +1633,9 @@ body:not(.dark) .abh-hero {
         letter-spacing: .24em;
     }
 }
+
 :root {
-    --page-w: 1450px;  
+    --page-w: 1450px;
 }
 
 @media (min-width: 961px) {
@@ -1642,21 +1644,22 @@ body:not(.dark) .abh-hero {
     }
 
     .abh-visual {
-        justify-content: flex-end;   
+        justify-content: flex-end;
     }
 
     .abh-copy {
-        justify-self: start;        
+        justify-self: start;
     }
 }
+
 @media (min-width: 821px) {
     html body main .ab-xp-sec {
         width: 100%;
         max-width: var(--page-w, 1240px);
         margin-inline: auto;
         box-sizing: border-box;
-        align-self: stretch;     
-        justify-self: stretch;   
+        align-self: stretch;
+        justify-self: stretch;
     }
 
     html body main .ab-xp-sec .ab-xp-list {
@@ -1667,7 +1670,7 @@ body:not(.dark) .abh-hero {
 }
 
 :root {
-    --hero-shift: clamp(24px, 4vw, 80px);   
+    --hero-shift: clamp(24px, 4vw, 80px);
 }
 
 @media (min-width: 961px) {
@@ -1675,6 +1678,7 @@ body:not(.dark) .abh-hero {
         margin-inline-start: var(--hero-shift);
     }
 }
+
 /* ===== About hero: leaf shape image (moved closer to text) ===== */
 .abh-hero .abh-arch {
     position: relative;

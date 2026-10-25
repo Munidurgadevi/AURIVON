@@ -16,7 +16,7 @@
     <link rel="icon" type="image/png" href="../assets/images/logo_lightmode.png">
     <link rel="apple-touch-icon" href="../assets/images/logo_lightmode.png">
     <script>
-        (function () {try {var t = localStorage.getItem('theme') === 'dark' ? 'dark' : 'light'; var u = t === 'dark' ? '../assets/images/logo_darkmode.png' : '../assets/images/logo_lightmode.png'; document.querySelectorAll('link[rel="icon"],link[rel="apple-touch-icon"]').forEach(function (l) {l.href = u});} catch (e) { } })();
+        (function () { try { var t = localStorage.getItem('theme') === 'dark' ? 'dark' : 'light'; var u = t === 'dark' ? '../assets/images/logo_darkmode.png' : '../assets/images/logo_lightmode.png'; document.querySelectorAll('link[rel="icon"],link[rel="apple-touch-icon"]').forEach(function (l) { l.href = u }); } catch (e) { } })();
     </script>
     <link rel="stylesheet" href="../assets/css/header-footer.css">
     <link rel="stylesheet" href="../assets/css/responsive.css">
@@ -262,11 +262,11 @@
                         if (last) last.focus();
                     }
 
-                    cards.forEach(function (c, i) {c.addEventListener('click', function () {open(i);});});
-                    prev.addEventListener('click', function () {show(idx - 1);});
-                    next.addEventListener('click', function () {show(idx + 1);});
+                    cards.forEach(function (c, i) { c.addEventListener('click', function () { open(i); }); });
+                    prev.addEventListener('click', function () { show(idx - 1); });
+                    next.addEventListener('click', function () { show(idx + 1); });
                     closeBtn.addEventListener('click', close);
-                    lb.addEventListener('click', function (e) {if (e.target === lb) close();});
+                    lb.addEventListener('click', function (e) { if (e.target === lb) close(); });
                     document.addEventListener('keydown', function (e) {
                         if (lb.hidden) return;
                         if (e.key === 'Escape') close();
@@ -381,7 +381,7 @@
                     tabs.forEach(function (tab) {
                         tab.addEventListener('click', function () {
                             var f = tab.getAttribute('data-filter');
-                            tabs.forEach(function (t) {t.setAttribute('aria-pressed', t === tab ? 'true' : 'false');});
+                            tabs.forEach(function (t) { t.setAttribute('aria-pressed', t === tab ? 'true' : 'false'); });
                             items.forEach(function (it) {
                                 var show = f === 'all' || (' ' + it.getAttribute('data-cat') + ' ').indexOf(' ' + f + ' ') > -1;
                                 it.hidden = !show;
@@ -399,7 +399,7 @@
                         lbImg.alt = img.alt;
                     }
                     function open(item) {
-                        list = items.filter(function (it) {return !it.hidden;});
+                        list = items.filter(function (it) { return !it.hidden; });
                         lastFocus = document.activeElement;
                         show(list.indexOf(item));
                         lb.hidden = false;
@@ -412,11 +412,11 @@
                         if (lastFocus) lastFocus.focus();
                     }
 
-                    items.forEach(function (it) {it.addEventListener('click', function () {open(it);});});
-                    prevBtn.addEventListener('click', function () {show(idx - 1);});
-                    nextBtn.addEventListener('click', function () {show(idx + 1);});
+                    items.forEach(function (it) { it.addEventListener('click', function () { open(it); }); });
+                    prevBtn.addEventListener('click', function () { show(idx - 1); });
+                    nextBtn.addEventListener('click', function () { show(idx + 1); });
                     closeBtn.addEventListener('click', close);
-                    lb.addEventListener('click', function (e) {if (e.target === lb) close();});
+                    lb.addEventListener('click', function (e) { if (e.target === lb) close(); });
                     document.addEventListener('keydown', function (e) {
                         if (lb.hidden) return;
                         if (e.key === 'Escape') close();

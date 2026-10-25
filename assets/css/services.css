@@ -97,6 +97,7 @@ body.dark .svb-slide {
         transform: scale(1.14);
     }
 }
+
 .svb-shade {
     position: absolute;
     inset: 0;

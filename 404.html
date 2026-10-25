@@ -66,15 +66,15 @@
             var rtlBtn = document.getElementById('rtlBtn');
             var logo = document.getElementById('brandLogo');
 
-            function get(k) {try {return localStorage.getItem(k);} catch (e) {return null;} }
-            function set(k, v) {try {localStorage.setItem(k, v);} catch (e) { } }
+            function get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+            function set(k, v) { try { localStorage.setItem(k, v); } catch (e) { } }
 
             function applyTheme(mode) {
                 var file = IMG + (mode === 'dark' ? 'logo_darkmode.png' : 'logo_lightmode.png');
                 body.classList.toggle('dark', mode === 'dark');
                 themeBtn.innerHTML = mode === 'dark' ? SUN : MOON;
                 if (logo) logo.src = file;
-                document.querySelectorAll('link[rel="icon"], link[rel="apple-touch-icon"]').forEach(function (l) {l.href = file;});
+                document.querySelectorAll('link[rel="icon"], link[rel="apple-touch-icon"]').forEach(function (l) { l.href = file; });
                 set('theme', mode);
             }
 

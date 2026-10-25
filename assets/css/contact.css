@@ -149,7 +149,6 @@
     unicode-bidi: isolate;
 }
 
-/* "Our service team is available..." follows the page direction (LTR / RTL toggle) */
 .ct-map-section .section-heading>p {
     direction: inherit;
     unicode-bidi: normal;
@@ -855,6 +854,7 @@ body.dark .ct-cta-card h2 .h-b {
 .hero .hero-btn.hero-btn-ghost::after {
     display: none;
 }
+
 html body main h1,
 html body main h1 * {
     padding-bottom: .1em;

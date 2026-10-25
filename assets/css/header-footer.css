@@ -791,6 +791,7 @@ html[dir="rtl"] .footer-bottom-container p {
         display: none;
     }
 }
+
 html body .abh-hero .abh-eyebrow,
 html body .jn-hero .section-eyebrow,
 html body .dh-hero .dh-eyebrow,
@@ -821,7 +822,7 @@ html body .hero.ct-hero .hero-eyebrow {
     white-space: nowrap !important;
     box-shadow: none !important;
 }
- 
+
 html body .abh-hero .abh-eyebrow::before,
 html body .abh-hero .abh-eyebrow::after,
 html body .jn-hero .section-eyebrow::before,
@@ -832,6 +833,7 @@ html body .hero .hero-eyebrow::before,
 html body .hero .hero-eyebrow::after {
     display: none !important;
 }
+
 /* Dark mode: pill uses #d9a04e */
 html body.dark .abh-hero p.abh-eyebrow.abh-eyebrow,
 html body.dark .jn-hero p.section-eyebrow.section-eyebrow,
@@ -845,7 +847,9 @@ html body.dark .hero.ct-hero p.hero-eyebrow.hero-eyebrow {
     border-color: rgba(217, 160, 78, .55) !important;
     background: rgba(217, 160, 78, .16) !important;
 }
+
 @media (max-width: 640px) {
+
     html body .abh-hero .abh-eyebrow,
     html body .jn-hero .section-eyebrow,
     html body .dh-hero .dh-eyebrow,

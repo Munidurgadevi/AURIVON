@@ -1158,6 +1158,7 @@ main .dh-why2-list li span {
     font-weight: var(--dh-p-weight) !important;
     line-height: var(--dh-p-leading) !important;
 }
+
 main .dh-eyebrow,
 main .dh-index {
     font-family: var(--font-body) !important;
@@ -1347,6 +1348,7 @@ main .dh-pills li {
 .dh-cta2-copy .dh-eyebrow {
     justify-content: flex-start;
 }
+
 .dh-cta2--flip .dh-cta2-fig {
     --hx: min(78vw, 300px);
     position: relative;
@@ -1393,6 +1395,7 @@ main .dh-pills li {
     unicode-bidi: isolate;
     text-align: inherit;
 }
+
 @media (min-width: 641px) and (max-width: 900px) {
 
     /* CTA: Text LEFT, Hexagon Image RIGHT */

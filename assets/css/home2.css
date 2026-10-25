@@ -589,9 +589,7 @@ img {
 }
 
 /* Desktop: image box is exactly as tall as the text beside it */
-@media (min-width: 961px) {
-
-}
+@media (min-width: 961px) {}
 
 .hz-section {
   padding: clamp(60px, 8vw, 100px) 7vw;
@@ -779,13 +777,15 @@ img {
   .hs-card {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;   /* image shows above the text */
+    justify-content: flex-end;
+    /* image shows above the text */
     aspect-ratio: auto;
     min-height: 420px;
   }
 
   .hs-body {
-    position: relative;          /* text decides the height, nothing gets cut */
+    position: relative;
+    /* text decides the height, nothing gets cut */
     inset: auto;
     padding: 24px 24px 26px;
   }
@@ -854,6 +854,7 @@ img {
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   .hs-img,
   .hs-link svg {
     transition: none;
@@ -1275,6 +1276,7 @@ img {
 }
 
 @media (min-width: 1800px) and (max-width: 2000px) {
+
   html body .hj-section,
   html body .hq-section {
     padding-left: calc((100% - 1450px) / 2);
@@ -1290,6 +1292,7 @@ img {
 
 /* scroll reveal (only where supported) */
 @supports (animation-timeline: view()) {
+
   .hj-head,
   .hj-card {
     animation: aniFadeUp linear both;
@@ -1332,12 +1335,14 @@ img {
 }
 
 @media (prefers-reduced-motion: reduce) {
+
   .hj-featured .hj-img,
   .hj-thumb img,
   .hj-side {
     transition: none;
   }
 }
+
 .hq-section {
   position: relative;
   isolation: isolate;
@@ -1439,7 +1444,7 @@ img {
   left: -38px;
 }
 
-.hq-seal > svg {
+.hq-seal>svg {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -1466,7 +1471,9 @@ img {
 }
 
 @keyframes hqSpin {
-  to { transform: rotate(360deg); }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* glass badge */
@@ -1635,7 +1642,7 @@ img {
     animation-range: entry 0% entry 65%;
   }
 
-  .hq-body > * {
+  .hq-body>* {
     animation: aniFadeUp linear both;
     animation-timeline: view();
     animation-range: entry 0% entry 80%;
@@ -1687,7 +1694,7 @@ img {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .hq-seal > svg {
+  .hq-seal>svg {
     animation: none;
   }
 
@@ -1852,6 +1859,7 @@ html[dir="rtl"] #hwTitle {
 html:not([dir="rtl"]) #hwTitle {
   text-align: left;
 }
+
 .hy-section {
   padding: clamp(60px, 8vw, 100px) 7vw;
   background: var(--background);
@@ -1881,6 +1889,7 @@ html:not([dir="rtl"]) #hwTitle {
   line-height: 1.1;
   letter-spacing: -.01em;
 }
+
 .hy-stack {
   max-width: 1250px;
   margin: 0 auto;
@@ -1985,13 +1994,31 @@ body:not(.dark) .hy-card-2 .hy-photo::after {
   animation: hyEq 1.2s ease-in-out infinite;
 }
 
-.hy-eq i:nth-child(2) { animation-delay: -.4s; animation-duration: 1s; }
-.hy-eq i:nth-child(3) { animation-delay: -.8s; animation-duration: 1.4s; }
-.hy-eq i:nth-child(4) { animation-delay: -.2s; animation-duration: .9s; }
+.hy-eq i:nth-child(2) {
+  animation-delay: -.4s;
+  animation-duration: 1s;
+}
+
+.hy-eq i:nth-child(3) {
+  animation-delay: -.8s;
+  animation-duration: 1.4s;
+}
+
+.hy-eq i:nth-child(4) {
+  animation-delay: -.2s;
+  animation-duration: .9s;
+}
 
 @keyframes hyEq {
-  0%, 100% { transform: scaleY(.25); }
-  50% { transform: scaleY(1); }
+
+  0%,
+  100% {
+    transform: scaleY(.25);
+  }
+
+  50% {
+    transform: scaleY(1);
+  }
 }
 
 .hy-copy h3 {
@@ -2092,9 +2119,9 @@ body:not(.dark) .hy-card-2 .hy-photo::after {
 }
 
 .hy-section {
-  --hy-top: calc(var(--rs-header-h, 85px) + 19px);  
-  --hy-step: 24px;                                   
-  --hy-lines: 99;                                   
+  --hy-top: calc(var(--rs-header-h, 85px) + 19px);
+  --hy-step: 24px;
+  --hy-lines: 99;
 }
 
 .hy-card {
@@ -2323,6 +2350,7 @@ body:not(.dark) .hy-card-2 .hy-photo::after {
 }
 
 @media (max-height: 519px) {
+
   .hy-card,
   .hy-card-2,
   .hy-card-3 {
@@ -2341,6 +2369,7 @@ body:not(.dark) .hy-card-2 .hy-photo::after {
     transition: none;
   }
 }
+
 .mh-actions {
   display: flex;
   flex-wrap: wrap;
@@ -2352,7 +2381,7 @@ body:not(.dark) .hy-card-2 .hy-photo::after {
 .mh-btn.mh-btn-ghost {
   background: transparent !important;
   border: 1px solid var(--secondary) !important;
-  color: var(--text-primary) !important;   
+  color: var(--text-primary) !important;
   font-weight: 500 !important;
 }
 
@@ -2365,6 +2394,7 @@ body:not(.dark) .hy-card-2 .hy-photo::after {
 .motion-hero .mh-btn.mh-btn-ghost {
   animation: aniFadeUp .9s var(--ani-ease-out) 1.1s both;
 }
+
 @media (min-width: 641px) and (max-width: 1024px) {
   .hj-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));

@@ -535,7 +535,7 @@ ul[class^="dh-"] {
 }
 
 .dh-pills li::before {
-     content: "\2713";
+    content: "\2713";
     position: absolute;
     inset-inline-start: 12px;
     top: 50%;
@@ -1503,10 +1503,12 @@ main .dh-pills li {
         margin: 12px 0 22px !important;
     }
 }
+
 @media (min-width: 700px) and (max-width: 900px) {
+
     html[dir="rtl"] main .dh-cta2--framed .dh-cta2-copy,
     html[dir="rtl"] main .dh-cta2--framed .dh-cta2-copy h2,
-    html[dir="rtl"] main .dh-cta2--framed .dh-cta2-copy > p:not(.dh-eyebrow) {
+    html[dir="rtl"] main .dh-cta2--framed .dh-cta2-copy>p:not(.dh-eyebrow) {
         direction: rtl !important;
         unicode-bidi: isolate;
         text-align: right !important;
