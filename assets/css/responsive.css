@@ -694,3 +694,31 @@ html body:not(.nb1):not(.nb2):not(.nb3):not(.nb4):not(.nb5) :is(.hero, .motion-h
     -webkit-backdrop-filter: none !important;
     backdrop-filter: none !important;
 }
+/* ===== CTA section: top & bottom spacing (all pages) ===== */
+:root {
+    --cta-gap: 24px;
+}
+
+@media (max-width: 900px) {
+    :root {
+        --cta-gap: 16px;
+    }
+}
+
+html body .dh-cta2 {
+    padding-top: var(--cta-gap) !important;
+    padding-bottom: var(--cta-gap) !important;
+}
+
+html body section:has(+ .dh-cta2),
+html body section:has(+ .ct-cta),
+html body section:has(+ .pq),
+html body section:has(+ .hv-section) {
+    padding-bottom: 0 !important;
+}
+
+html body .ct-cta.content-section,
+html body .pq {
+    padding-top: var(--cta-gap) !important;
+    padding-bottom: var(--cta-gap) !important;
+}
