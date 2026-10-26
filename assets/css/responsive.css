@@ -722,3 +722,71 @@ html body .pq {
     padding-top: var(--cta-gap) !important;
     padding-bottom: var(--cta-gap) !important;
 }
+/* ===== Section taglines: "—— TEXT ——" format (all pages) ===== */
+html body:not(.nb1):not(.nb2):not(.nb3):not(.nb4):not(.nb5) :is(.section-eyebrow, .hero-eyebrow, .dh-eyebrow, .abh-eyebrow, .mh-eyebrow, .pq-eyebrow, .jn-cta-eyebrow, .ct-cta-eyebrow, .hv-eyebrow, .hj-eyebrow, .hq-eyebrow, .ho-eyebrow, .ht-eyebrow, .hy-eyebrow, .hz-eyebrow) {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 14px !important;
+    width: auto !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: none !important;
+    box-shadow: none !important;
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    letter-spacing: .24em !important;
+    text-transform: uppercase !important;
+    white-space: normal !important;
+}
+
+html body:not(.nb1):not(.nb2):not(.nb3):not(.nb4):not(.nb5) :is(.section-eyebrow, .hero-eyebrow, .dh-eyebrow, .abh-eyebrow, .mh-eyebrow, .pq-eyebrow, .jn-cta-eyebrow, .ct-cta-eyebrow, .hv-eyebrow, .hj-eyebrow, .hq-eyebrow, .ho-eyebrow, .ht-eyebrow, .hy-eyebrow, .hz-eyebrow)::before,
+html body:not(.nb1):not(.nb2):not(.nb3):not(.nb4):not(.nb5) :is(.section-eyebrow, .hero-eyebrow, .dh-eyebrow, .abh-eyebrow, .mh-eyebrow, .pq-eyebrow, .jn-cta-eyebrow, .ct-cta-eyebrow, .hv-eyebrow, .hj-eyebrow, .hq-eyebrow, .ho-eyebrow, .ht-eyebrow, .hy-eyebrow, .hz-eyebrow)::after {
+    content: "" !important;
+    display: block !important;
+    position: static !important;
+    flex: 0 0 28px !important;
+    width: 28px !important;
+    height: 1px !important;
+    margin: 0 !important;
+    transform: none !important;
+    border: 0 !important;
+    background: currentColor !important;
+    opacity: .75 !important;
+}
+
+@media (max-width: 640px) {
+    html body:not(.nb1):not(.nb2):not(.nb3):not(.nb4):not(.nb5) :is(.section-eyebrow, .hero-eyebrow, .dh-eyebrow, .abh-eyebrow, .mh-eyebrow, .pq-eyebrow, .jn-cta-eyebrow, .ct-cta-eyebrow, .hv-eyebrow, .hj-eyebrow, .hq-eyebrow, .ho-eyebrow, .ht-eyebrow, .hy-eyebrow, .hz-eyebrow) {
+        gap: 10px !important;
+        font-size: 11px !important;
+        letter-spacing: .18em !important;
+    }
+
+    html body:not(.nb1):not(.nb2):not(.nb3):not(.nb4):not(.nb5) :is(.section-eyebrow, .hero-eyebrow, .dh-eyebrow, .abh-eyebrow, .mh-eyebrow, .pq-eyebrow, .jn-cta-eyebrow, .ct-cta-eyebrow, .hv-eyebrow, .hj-eyebrow, .hq-eyebrow, .ho-eyebrow, .ht-eyebrow, .hy-eyebrow, .hz-eyebrow)::before,
+    html body:not(.nb1):not(.nb2):not(.nb3):not(.nb4):not(.nb5) :is(.section-eyebrow, .hero-eyebrow, .dh-eyebrow, .abh-eyebrow, .mh-eyebrow, .pq-eyebrow, .jn-cta-eyebrow, .ct-cta-eyebrow, .hv-eyebrow, .hj-eyebrow, .hq-eyebrow, .ho-eyebrow, .ht-eyebrow, .hy-eyebrow, .hz-eyebrow)::after {
+        flex-basis: 18px !important;
+        width: 18px !important;
+    }
+}
+/* "Our story" tagline: —— OUR STORY —— */
+.ab-copy .ab-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .24em;
+}
+
+.ab-copy .ab-tag::before,
+.ab-copy .ab-tag::after {
+    content: "";
+    flex: 0 0 28px;
+    height: 1px;
+    background: currentColor;
+    opacity: .75;
+}
