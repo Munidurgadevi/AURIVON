@@ -684,3 +684,13 @@ html body .footer-bottom-container {
     margin-left: auto;
     margin-right: auto;
 }
+/* Hero tagline: keep the text, remove the gold pill/sheet behind it */
+html body:not(.nb1):not(.nb2):not(.nb3):not(.nb4):not(.nb5) :is(.hero, .motion-hero, .abh-hero, .jn-hero, .dh-hero) p:is(.hero-eyebrow, .abh-eyebrow, .dh-eyebrow, .mh-eyebrow, .section-eyebrow) {
+    padding: 0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: none !important;
+    box-shadow: none !important;
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+}
