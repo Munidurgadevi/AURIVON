@@ -790,3 +790,13 @@ html body:not(.nb1):not(.nb2):not(.nb3):not(.nb4):not(.nb5) :is(.section-eyebrow
     background: currentColor;
     opacity: .75;
 }
+/* Cinema section cards (01 Screen / 02 Sound / 03 Lighting): same gold-border hover as the other cards */
+.cinema-col {
+    outline: 1px solid transparent;
+    outline-offset: -1px;
+    transition: outline-color .25s ease;
+}
+
+.cinema-col:hover {
+    outline-color: var(--secondary);
+}
