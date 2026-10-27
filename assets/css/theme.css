@@ -486,3 +486,81 @@ html[dir="rtl"] body .consultation-section[aria-labelledby="svCta"]::before {
   border-left: 0;
   border-right: 4px solid #E8C887;
 }
+
+html body .hero .hero-title,
+html body .hero.gl-hero .hero-inner .hero-title,
+html body .hero.sv-hero .svh-copy .hero-title,
+html body .abh-hero .abh-title,
+html body .dh-hero h1,
+html body .jn-hero h1 {
+  font-size: 68px !important;
+}
+
+html body .hero .hero-text,
+html body .hero.gl-hero .hero-inner .hero-text,
+html body .hero.sv-hero .svh-copy .hero-text,
+html body .abh-hero .abh-text,
+html body .dh-hero .dh-intro,
+html body .jn-hero .jn-hero-text {
+  font-size: 16px !important;
+}
+
+html body:not(.a1):not(.a2):not(.a3):not(.a4):not(.a5):not(.a6):not(.a7) .hero .hero-eyebrow,
+html body:not(.a1):not(.a2):not(.a3):not(.a4):not(.a5):not(.a6):not(.a7) .abh-hero .abh-eyebrow,
+html body:not(.a1):not(.a2):not(.a3):not(.a4):not(.a5):not(.a6):not(.a7) .dh-hero .dh-eyebrow,
+html body:not(.a1):not(.a2):not(.a3):not(.a4):not(.a5):not(.a6):not(.a7) .dh-hero .dh-tagline,
+html body:not(.a1):not(.a2):not(.a3):not(.a4):not(.a5):not(.a6):not(.a7) .jn-hero .section-eyebrow {
+  font-size: 12px !important;
+}
+
+html body:not(.a1):not(.a2):not(.a3):not(.a4):not(.a5):not(.a6):not(.a7):not(.a8) main h2:not(.pp-card h2, .tc-card h2) {
+  font-size: 58px !important;
+}
+
+html body:not(.a1):not(.a2):not(.a3):not(.a4):not(.a5):not(.a6):not(.a7):not(.a8) main p:not([class*="eyebrow"], .nf-code):not(.hero *, .abh-hero *, .dh-hero *, .jn-hero *, .cx *, .prx *) {
+  font-size: 15px !important;
+}
+
+html body:not(.a1):not(.a2):not(.a3):not(.a4):not(.a5):not(.a6):not(.a7):not(.a8) main [class*="eyebrow"]:not(.hero *, .abh-hero *, .dh-hero *, .jn-hero *, .cx *, .prx *) {
+  font-size: 11px !important;
+}
+
+@media (max-width: 768px) {
+
+  html body .hero .hero-title,
+  html body .hero.gl-hero .hero-inner .hero-title,
+  html body .hero.sv-hero .svh-copy .hero-title,
+  html body .abh-hero .abh-title,
+  html body .dh-hero h1,
+  html body .jn-hero h1 {
+    font-size: 40px !important;
+    white-space: normal !important;
+  }
+
+  html body:not(.a1):not(.a2):not(.a3):not(.a4):not(.a5):not(.a6):not(.a7):not(.a8) main h2:not(.pp-card h2, .tc-card h2) {
+    font-size: 32px !important;
+  }
+}
+
+html body:not(.a1):not(.a2):not(.a3):not(.a4):not(.a5):not(.a6):not(.a7) .cx .cx-title,
+html body:not(.a1):not(.a2):not(.a3):not(.a4):not(.a5):not(.a6):not(.a7) .prx .prx-title {
+  font-size: 68px !important;
+}
+
+html body:not(.a1):not(.a2):not(.a3):not(.a4):not(.a5):not(.a6):not(.a7) .cx .cx-text,
+html body:not(.a1):not(.a2):not(.a3):not(.a4):not(.a5):not(.a6):not(.a7) .prx .prx-text {
+  font-size: 16px !important;
+}
+
+html body:not(.a1):not(.a2):not(.a3):not(.a4):not(.a5):not(.a6):not(.a7) .cx .cx-eyebrow,
+html body:not(.a1):not(.a2):not(.a3):not(.a4):not(.a5):not(.a6):not(.a7) .prx .prx-eyebrow {
+  font-size: 12px !important;
+}
+
+@media (max-width: 768px) {
+
+  html body:not(.a1):not(.a2):not(.a3):not(.a4):not(.a5):not(.a6):not(.a7) .cx .cx-title,
+  html body:not(.a1):not(.a2):not(.a3):not(.a4):not(.a5):not(.a6):not(.a7) .prx .prx-title {
+    font-size: 40px !important;
+  }
+}

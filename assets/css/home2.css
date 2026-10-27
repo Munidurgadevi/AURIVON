@@ -1554,7 +1554,7 @@ img {
 
 .hq-lead {
   max-width: 560px;
-  margin-bottom: 40px;
+  margin-bottom: 28px;
   color: var(--text-muted);
   font-family: "Inter", "Work Sans", sans-serif;
   font-size: 16px;
@@ -1918,7 +1918,6 @@ html:not([dir="rtl"]) #hwTitle {
   margin-bottom: 0;
 }
 
-/* middle card: deep plum, for rhythm */
 .hy-card-2 {
   --c-bg: linear-gradient(135deg, #2b1424 0%, #140a11 70%);
   --c-fg: #fff;
@@ -1940,9 +1939,6 @@ html:not([dir="rtl"]) #hwTitle {
   padding: 18px 0 18px 18px;
 }
 
-/* middle card follows the theme:
-   dark mode  -> deep plum (the default values above)
-   light mode -> soft plum/gold tint with dark text */
 body:not(.dark) .hy-card-2 {
   --c-bg: linear-gradient(135deg,
       color-mix(in srgb, var(--primary) 16%, var(--surface)) 0%,
@@ -2040,8 +2036,8 @@ body:not(.dark) .hy-card-2 .hy-photo::after {
 .hy-desc strong {
   display: block;
   margin-bottom: 14px;
-  padding-left: 18px;
-  border-left: 2px solid var(--c-gold);
+  padding-inline-start: 18px;
+  border-inline-start: 2px solid var(--c-gold);
   color: var(--c-fg);
   font-family: "Cormorant Garamond", "Work Sans", serif;
   font-size: clamp(21px, 2vw, 26px);
@@ -2125,16 +2121,7 @@ body:not(.dark) .hy-card-2 .hy-photo::after {
 }
 
 .hy-card {
-  position: sticky;
-  top: var(--hy-top);
-}
-
-.hy-card-2 {
-  top: calc(var(--hy-top) + var(--hy-step));
-}
-
-.hy-card-3 {
-  top: calc(var(--hy-top) + var(--hy-step) * 2);
+  position: relative;
 }
 
 .hy-rest {
@@ -2200,7 +2187,7 @@ body:not(.dark) .hy-card-2 .hy-photo::after {
 
   .hy-desc strong {
     margin-bottom: 10px;
-    padding-left: 14px;
+    padding-inline-start: 14px;
     font-size: 20px;
   }
 
@@ -2325,7 +2312,7 @@ body:not(.dark) .hy-card-2 .hy-photo::after {
 
   .hy-desc strong {
     margin-bottom: 8px;
-    padding-left: 12px;
+    padding-inline-start: 12px;
     font-size: 17px;
   }
 
@@ -2463,5 +2450,68 @@ body:not(.dark) .hy-card-2 .hy-photo::after {
 
   .hj-side .hj-body {
     padding: 0 8px 10px;
+  }
+}
+
+html body .hero .hero-title,
+html body .hero.gl-hero .hero-inner .hero-title,
+html body .hero.sv-hero .svh-copy .hero-title,
+html body .abh-hero .abh-title,
+html body .dh-hero h1,
+html body .motion-hero .mh-content h1,
+html body .jn-hero h1 {
+  font-size: 68px !important;
+}
+
+html body .hero .hero-text,
+html body .hero.gl-hero .hero-inner .hero-text,
+html body .hero.sv-hero .svh-copy .hero-text,
+html body .abh-hero .abh-text,
+html body .dh-hero .dh-intro,
+html body .motion-hero .mh-text,
+html body .jn-hero .jn-hero-text {
+  font-size: 16px !important;
+}
+
+html body:not(.a1):not(.a2):not(.a3):not(.a4):not(.a5):not(.a6):not(.a7) .hero .hero-eyebrow,
+html body:not(.a1):not(.a2):not(.a3):not(.a4):not(.a5):not(.a6):not(.a7) .abh-hero .abh-eyebrow,
+html body:not(.a1):not(.a2):not(.a3):not(.a4):not(.a5):not(.a6):not(.a7) .dh-hero .dh-eyebrow,
+html body:not(.a1):not(.a2):not(.a3):not(.a4):not(.a5):not(.a6):not(.a7) .dh-hero .dh-tagline,
+html body:not(.a1):not(.a2):not(.a3):not(.a4):not(.a5):not(.a6):not(.a7) .motion-hero .mh-eyebrow,
+html body:not(.a1):not(.a2):not(.a3):not(.a4):not(.a5):not(.a6):not(.a7) .jn-hero .section-eyebrow {
+  font-size: 12px !important;
+}
+
+html body main h2,
+html body>section h2 {
+  font-size: 58px !important;
+}
+
+html body:not(.a1):not(.a2):not(.a3):not(.a4):not(.a5):not(.a6):not(.a7):not(.a8) main p:not([class*="eyebrow"]):not(.hero *, .abh-hero *, .dh-hero *, .motion-hero *, .jn-hero *, .cx *, .prx *),
+html body:not(.a1):not(.a2):not(.a3):not(.a4):not(.a5):not(.a6):not(.a7):not(.a8)>section p:not([class*="eyebrow"]):not(.hero *, .abh-hero *, .dh-hero *, .motion-hero *, .jn-hero *) {
+  font-size: 15px !important;
+}
+
+html body:not(.a1):not(.a2):not(.a3):not(.a4):not(.a5):not(.a6):not(.a7):not(.a8) main [class*="eyebrow"]:not(.hero *, .abh-hero *, .dh-hero *, .motion-hero *, .jn-hero *, .cx *, .prx *),
+html body:not(.a1):not(.a2):not(.a3):not(.a4):not(.a5):not(.a6):not(.a7):not(.a8)>section [class*="eyebrow"]:not(.hero *, .abh-hero *, .dh-hero *, .motion-hero *, .jn-hero *) {
+  font-size: 11px !important;
+}
+
+@media (max-width: 768px) {
+
+  html body .hero .hero-title,
+  html body .hero.gl-hero .hero-inner .hero-title,
+  html body .hero.sv-hero .svh-copy .hero-title,
+  html body .abh-hero .abh-title,
+  html body .dh-hero h1,
+  html body .motion-hero .mh-content h1,
+  html body .jn-hero h1 {
+    font-size: 40px !important;
+    white-space: normal !important;
+  }
+
+  html body main h2,
+  html body>section h2 {
+    font-size: 32px !important;
   }
 }

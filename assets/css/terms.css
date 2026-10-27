@@ -51,9 +51,9 @@
 }
 
 .tc-brand .brand-icon {
-  width: var(--rs-logo);
+  width: auto;
   height: var(--rs-logo);
-  flex: 0 0 var(--rs-logo);
+  flex: 0 0 auto;
   border: 0;
   background: transparent;
   box-shadow: none;
@@ -62,7 +62,8 @@
 
 .tc-brand .brand-icon img {
   display: block;
-  width: 100%;
+  width: auto;
+  max-width: none;
   height: 100%;
   padding: 0;
   border-radius: 0;
@@ -412,7 +413,6 @@ html[dir="rtl"] .tc-card h2 {
   }
 }
 
-/* very small / folded phones */
 @media (max-width: 400px) {
   .tc-page {
     width: calc(100% - 24px);
@@ -433,14 +433,12 @@ html[dir="rtl"] .tc-card h2 {
   }
 }
 
-/* folded phones (e.g. Galaxy Z Fold cover screen) */
 @media (max-width: 350px) {
   .tc-nav {
     grid-template-columns: minmax(0, 1fr);
   }
 }
 
-/* Sticky On This Page Menu */
 @media (min-width: 901px) {
   .tc-sidebar {
     position: sticky;

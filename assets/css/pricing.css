@@ -962,7 +962,7 @@ html body:not(.dark) .hero.pr-hero .hero-eyebrow {
 
 .ao-item:hover .ao-ico {
     border-color: var(--primary);
-    background: var(--primary);
+    background: var(--secondary);
     color: var(--on-primary);
 }
 
@@ -1133,7 +1133,7 @@ html body.dark .hero.pr-hero .hero-title {
 
 .know-grid {
     width: min(1040px, 100%);
-    margin: 50px auto 0;
+    margin: 50px auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 18px;
@@ -1250,7 +1250,6 @@ html[dir="ltr"] .know-card::before {
     }
 }
 
-/* Enhance Your Setup - RTL / LTR Fix */
 #aoTitle {
     direction: ltr;
     unicode-bidi: isolate;
@@ -1264,9 +1263,351 @@ html[dir="ltr"] .know-card::before {
 [dir="ltr"] #aoTitle {
     text-align: left;
 }
+
 html body .pr-hero-actions .hero-btn {
     margin-top: 0;
     align-self: center;
     overflow: visible;
     animation: aniFade .9s ease 1s both;
+}
+
+.prx {
+    --prx-h: var(--rs-header-h, 85px);
+    position: relative;
+    isolation: isolate;
+    min-height: max(520px, calc(100svh - var(--prx-h)));
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: clamp(40px, 6vh, 72px) 0;
+    background:
+        radial-gradient(40% 55% at 0% 100%, color-mix(in srgb, var(--primary) 10%, transparent), transparent 75%),
+        var(--background);
+}
+
+body.dark .prx {
+    background:
+        radial-gradient(40% 55% at 0% 100%, color-mix(in srgb, var(--primary) 24%, transparent), transparent 75%),
+        var(--background);
+}
+
+.prx::before,
+.prx::after {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    pointer-events: none;
+    border-radius: 50%;
+    background: radial-gradient(circle at center,
+            transparent 0 calc(var(--r1) - 1px),
+            var(--c1) calc(var(--r1) - 1px) calc(var(--r1) + .5px),
+            transparent calc(var(--r1) + .5px) calc(var(--r2) - 1px),
+            var(--c2) calc(var(--r2) - 1px) calc(var(--r2) + .5px),
+            transparent calc(var(--r2) + .5px) calc(var(--r3) - 1px),
+            var(--c3) calc(var(--r3) - 1px) calc(var(--r3) + .5px),
+            transparent calc(var(--r3) + .5px));
+}
+
+.prx::before {
+    width: 520px;
+    height: 520px;
+    inset-block-start: -260px;
+    inset-inline-end: -200px;
+    --r1: 26.75px;
+    --r2: 54.25px;
+    --r3: 81.75px;
+    --c1: color-mix(in srgb, var(--secondary) 75%, transparent);
+    --c2: color-mix(in srgb, var(--secondary) 55%, transparent);
+    --c3: color-mix(in srgb, var(--secondary) 35%, transparent);
+    animation: prxRingA 11s ease-in-out infinite alternate;
+}
+
+.prx::after {
+    width: 420px;
+    height: 420px;
+    inset-block-end: -210px;
+    inset-inline-end: 6%;
+    --r1: 22.75px;
+    --r2: 46.25px;
+    --r3: 69.75px;
+    --c1: color-mix(in srgb, var(--primary) 70%, transparent);
+    --c2: color-mix(in srgb, var(--primary) 50%, transparent);
+    --c3: color-mix(in srgb, var(--primary) 30%, transparent);
+    animation: prxRingB 13s ease-in-out infinite alternate;
+}
+
+body.dark .prx::before {
+    --c1: color-mix(in srgb, var(--secondary) 70%, transparent);
+    --c2: color-mix(in srgb, var(--secondary) 50%, transparent);
+    --c3: color-mix(in srgb, var(--secondary) 30%, transparent);
+}
+
+body.dark .prx::after {
+    --c1: color-mix(in srgb, color-mix(in srgb, var(--primary) 55%, #fff) 75%, transparent);
+    --c2: color-mix(in srgb, color-mix(in srgb, var(--primary) 55%, #fff) 55%, transparent);
+    --c3: color-mix(in srgb, color-mix(in srgb, var(--primary) 55%, #fff) 35%, transparent);
+}
+
+@keyframes prxRingA {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.08);
+    }
+}
+
+@keyframes prxRingB {
+    from {
+        transform: scale(1.06);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+.prx-inner {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: var(--page-w, 1450px);
+    margin-inline: auto;
+    padding-inline: clamp(20px, 6vw, 96px);
+}
+
+.prx-copy {
+    margin-inline-start: auto;
+    max-width: min(580px, 42vw);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+    animation: aniFade 1s ease both;
+}
+
+.prx-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    margin: 0;
+    color: var(--secondary);
+    font: 700 14px/1 "Inter", "Work Sans", sans-serif;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+}
+
+.prx-eyebrow::before,
+.prx-eyebrow::after {
+    content: "";
+    flex: 0 0 28px;
+    width: 28px;
+    height: 1.5px;
+    background: var(--secondary);
+}
+
+.prx-eyebrow::after {
+    margin-inline-start: -0.3em;
+}
+
+.prx-title {
+    margin: 18px 0 0;
+    padding-bottom: .1em;
+    font-family: "Cormorant Garamond", "Work Sans", serif;
+    font-size: clamp(38px, min(5vw, 10vh), 66px);
+    font-weight: 600;
+    line-height: 1.04;
+}
+
+.prx-title,
+.prx-title span {
+    background-image: linear-gradient(100deg, var(--primary) 10%, var(--secondary) 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.prx-title span {
+    display: block;
+}
+
+body.dark .prx-title,
+body.dark .prx-title span {
+    background-image: linear-gradient(100deg, color-mix(in srgb, var(--primary) 50%, #fff) 0%, var(--secondary) 100%);
+}
+
+.prx-text {
+    margin: 16px 0 0;
+    max-width: 520px;
+    font-size: clamp(14.5px, 1.2vw, 17px);
+    line-height: 1.75;
+    color: var(--text-muted);
+}
+
+.prx-actions {
+    margin-top: clamp(22px, 4vh, 34px);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 14px;
+}
+
+.prx-btn {
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    padding: 0 26px;
+    border: 1px solid var(--primary);
+    border-radius: 30px;
+    background: var(--primary);
+    color: var(--on-primary, #fff);
+    font: 700 15px/1 "Inter", "Work Sans", sans-serif;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background .25s ease, border-color .25s ease, color .25s ease, transform .25s ease;
+}
+
+.prx-btn:hover {
+    transform: translateY(-2px);
+    background: var(--secondary);
+    border-color: var(--secondary);
+    color: #1b1b1b;
+}
+
+.prx-btn-ghost {
+    border-color: color-mix(in srgb, var(--secondary) 60%, transparent);
+    background: color-mix(in srgb, var(--surface) 70%, transparent);
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.prx-btn:focus-visible {
+    outline: 2px solid var(--secondary);
+    outline-offset: 3px;
+}
+
+.prx-art {
+    position: absolute;
+    inset-block: 0;
+    inset-inline-start: 0;
+    width: 54%;
+    z-index: 1;
+    container-type: size;
+    transform: scaleX(-1);
+}
+
+.prx-band,
+.prx-photo {
+    --s: calc(100cqh / 648);
+}
+
+.prx-band {
+    position: absolute;
+    inset: 0;
+}
+
+.prx-band-1 {
+    background: var(--primary);
+    clip-path: polygon(calc(250 * var(--s)) 0, calc(362 * var(--s)) 0, calc(265 * var(--s)) calc(167 * var(--s)), calc(209 * var(--s)) calc(72 * var(--s)));
+}
+
+.prx-band-2 {
+    background: var(--secondary);
+    clip-path: polygon(calc(212 * var(--s)) 0, calc(250 * var(--s)) 0, calc(233 * var(--s)) calc(30 * var(--s)));
+}
+
+.prx-photo {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    clip-path: polygon(calc(362 * var(--s)) 0, 100% 0, 100% 100%, calc(290 * var(--s)) 100%, calc(140 * var(--s)) calc(385 * var(--s)));
+}
+
+.prx-photo img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+.prx-photo img {
+    transform: none;
+}
+
+[dir="rtl"] .prx-art {
+    transform: none;
+}
+
+[dir="rtl"] .prx-photo img {
+    transform: none;
+}
+
+@media (max-width: 1024px) {
+
+    .prx::before {
+        width: 340px;
+        height: 340px;
+        inset-block-start: -170px;
+        inset-inline-end: -130px;
+    }
+
+    .prx::after {
+        display: none;
+    }
+
+    .prx {
+        display: block;
+        min-height: 0;
+        padding: 48px 0 0;
+    }
+
+    .prx-copy {
+        margin-inline-start: 0;
+        max-width: 640px;
+    }
+
+    .prx-inner {
+        padding-bottom: 36px;
+    }
+
+    .prx-art,
+    [dir="rtl"] .prx-art {
+        position: relative;
+        inset: auto;
+        width: 100%;
+        height: clamp(240px, 46vw, 380px);
+        transform: none;
+    }
+
+    .prx-band {
+        display: none;
+    }
+
+    .prx-photo img {
+        transform: none;
+    }
+
+    .prx-photo {
+        clip-path: polygon(0 14%, 50% 0, 100% 14%, 100% 100%, 0 100%);
+    }
+
+    [dir="rtl"] .prx-photo img {
+        transform: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .prx::before,
+    .prx::after,
+    .prx-copy,
+    .prx-btn {
+        animation: none;
+        transition: none;
+    }
 }

@@ -684,7 +684,7 @@ html body .footer-bottom-container {
     margin-left: auto;
     margin-right: auto;
 }
-/* Hero tagline: keep the text, remove the gold pill/sheet behind it */
+
 html body:not(.nb1):not(.nb2):not(.nb3):not(.nb4):not(.nb5) :is(.hero, .motion-hero, .abh-hero, .jn-hero, .dh-hero) p:is(.hero-eyebrow, .abh-eyebrow, .dh-eyebrow, .mh-eyebrow, .section-eyebrow) {
     padding: 0 !important;
     border: 0 !important;
@@ -694,19 +694,23 @@ html body:not(.nb1):not(.nb2):not(.nb3):not(.nb4):not(.nb5) :is(.hero, .motion-h
     -webkit-backdrop-filter: none !important;
     backdrop-filter: none !important;
 }
-/* ===== CTA section: top & bottom spacing (all pages) ===== */
+
 :root {
     --cta-gap: 24px;
+    --cta-top: 56px;
+    --cta-card-top: 40px;
 }
 
 @media (max-width: 900px) {
     :root {
         --cta-gap: 16px;
+        --cta-top: 32px;
+        --cta-card-top: 24px;
     }
 }
 
 html body .dh-cta2 {
-    padding-top: var(--cta-gap) !important;
+    padding-top: var(--cta-top) !important;
     padding-bottom: var(--cta-gap) !important;
 }
 
@@ -719,10 +723,22 @@ html body section:has(+ .hv-section) {
 
 html body .ct-cta.content-section,
 html body .pq {
-    padding-top: var(--cta-gap) !important;
+    padding-top: var(--cta-top) !important;
     padding-bottom: var(--cta-gap) !important;
 }
-/* ===== Section taglines: "—— TEXT ——" format (all pages) ===== */
+
+html body section:has(+ .consultation-section):not(.process-section) {
+    padding-bottom: var(--cta-gap) !important;
+}
+
+html body :is(section, div):not(.process-section)+.consultation-section {
+    margin-top: var(--cta-card-top) !important;
+}
+
+html body .ht-section+.hv-section {
+    margin-top: var(--cta-top) !important;
+}
+
 html body:not(.nb1):not(.nb2):not(.nb3):not(.nb4):not(.nb5) :is(.section-eyebrow, .hero-eyebrow, .dh-eyebrow, .abh-eyebrow, .mh-eyebrow, .pq-eyebrow, .jn-cta-eyebrow, .ct-cta-eyebrow, .hv-eyebrow, .hj-eyebrow, .hq-eyebrow, .ho-eyebrow, .ht-eyebrow, .hy-eyebrow, .hz-eyebrow) {
     display: inline-flex !important;
     align-items: center !important;
@@ -772,12 +788,12 @@ html body:not(.nb1):not(.nb2):not(.nb3):not(.nb4):not(.nb5) :is(.section-eyebrow
         width: 18px !important;
     }
 }
-/* "Our story" tagline: —— OUR STORY —— */
+
 .ab-copy .ab-tag {
     display: inline-flex;
     align-items: center;
     gap: 14px;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 700;
     letter-spacing: .24em;
 }
@@ -790,7 +806,7 @@ html body:not(.nb1):not(.nb2):not(.nb3):not(.nb4):not(.nb5) :is(.section-eyebrow
     background: currentColor;
     opacity: .75;
 }
-/* Cinema section cards (01 Screen / 02 Sound / 03 Lighting): same gold-border hover as the other cards */
+
 .cinema-col {
     outline: 1px solid transparent;
     outline-offset: -1px;

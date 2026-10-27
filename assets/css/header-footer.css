@@ -2,7 +2,7 @@
     --rs-header-h: 68px;
     --rs-gutter: 24px;
     --rs-tap: 44px;
-    --rs-logo: 44px;
+    --rs-logo: 45px;
     --rs-brand-name: 26px;
     --rs-brand-gap: 10px;
     --rs-tagline: 9px;
@@ -60,9 +60,9 @@ body,
 
 .main-header .brand-icon,
 .footer-logo-icon {
-    width: var(--rs-logo);
+    width: auto;
     height: var(--rs-logo);
-    flex: 0 0 var(--rs-logo);
+    flex: 0 0 auto;
     border: 0;
     background: transparent;
     box-shadow: none;
@@ -834,7 +834,6 @@ html body .hero .hero-eyebrow::after {
     display: none !important;
 }
 
-/* Dark mode: pill uses #d9a04e */
 html body.dark .abh-hero p.abh-eyebrow.abh-eyebrow,
 html body.dark .jn-hero p.section-eyebrow.section-eyebrow,
 html body.dark .dh-hero p.dh-eyebrow.dh-eyebrow,
@@ -857,5 +856,39 @@ html body.dark .hero.ct-hero p.hero-eyebrow.hero-eyebrow {
         padding: 7px 14px 7px 16px !important;
         font-size: 11px !important;
         letter-spacing: 2px !important;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* Header logo */
+    html body .brand-icon {
+        width: 46px !important;
+        height: auto !important;
+        flex: 0 0 auto !important;
+    }
+
+    html body .brand-icon img,
+    html body #brandLogo {
+        width: 46px !important;
+        max-width: 46px !important;
+        height: auto !important;
+        object-fit: contain !important;
+    }
+
+    /* Footer logo */
+    html body .footer-logo-icon {
+        width: 46px !important;
+        height: auto !important;
+        flex: 0 0 auto !important;
+    }
+
+    html body .footer-logo-icon img,
+    html body .footer-logo img.logo-light,
+    html body .footer-logo img.logo-dark {
+        width: 46px !important;
+        max-width: 46px !important;
+        height: auto !important;
+        object-fit: contain !important;
     }
 }

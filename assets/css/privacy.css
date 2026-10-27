@@ -53,9 +53,9 @@
 }
 
 .pp-brand .brand-icon {
-  width: var(--rs-logo);
+  width: auto;
   height: var(--rs-logo);
-  flex: 0 0 var(--rs-logo);
+  flex: 0 0 auto;
   border: 0;
   background: transparent;
   box-shadow: none;
@@ -64,7 +64,8 @@
 
 .pp-brand .brand-icon img {
   display: block;
-  width: 100%;
+  width: auto;
+  max-width: none;
   height: 100%;
   padding: 0;
   border-radius: 0;
@@ -96,7 +97,7 @@
 
 .pp-head h1 {
   margin: 0;
-  font: 500 clamp(36px, 5vw, 56px) / 1.08 "Cormorant Garamond", "Work Sans", serif;
+  font: 500 clamp(36px, 5vw, 58px) / 1.08 "Cormorant Garamond", "Work Sans", serif;
   letter-spacing: -.02em;
   color: var(--text-primary);
 }

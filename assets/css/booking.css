@@ -7,14 +7,17 @@
 .bk-page {
   max-width: 880px;
   margin: 0 auto;
-  padding: 24px 20px 64px;
+  padding: 76px 20px 64px;
 }
 
+/* dark mode + RTL buttons: fixed at top right of the screen (same as 404 / coming soon) */
 .bk-topbar {
+  position: fixed;
+  top: 20px;
+  inset-inline-end: 20px;
   display: flex;
-  justify-content: flex-end;
   gap: 12px;
-  margin-bottom: 20px;
+  z-index: 10;
 }
 
 .bk-card {
@@ -22,6 +25,7 @@
   border: 1px solid var(--border);
   box-shadow: 0 14px 40px var(--shadow);
   padding: clamp(28px, 5vw, 56px);
+  border-radius: 28px;
 }
 
 .bk-brand {
@@ -87,7 +91,7 @@
   min-height: 48px;
   padding: 12px 14px;
   border: 1px solid var(--border);
-  border-radius: 0;
+  border-radius: 14px;
   background: var(--background);
   color: var(--text-primary);
   font: 400 14px/1.5 "Inter", "Work Sans";
@@ -151,12 +155,18 @@ html[dir="rtl"] .bk-field input[type="email"] {
 }
 
 @media (max-width: 600px) {
+  .bk-topbar {
+    top: 12px;
+    inset-inline-end: 12px;
+  }
+
   .bk-page {
-    padding: 16px 12px 40px;
+    padding: 64px 12px 40px;
   }
 
   .bk-card {
     padding: 24px 16px;
+    border-radius: 22px;
   }
 
   .bk-brand {
@@ -217,9 +227,9 @@ html[dir="rtl"] .bk-field input[type="email"] {
 }
 
 .bk-brand .brand-icon {
-  width: var(--rs-logo);
+  width: auto;
   height: var(--rs-logo);
-  flex: 0 0 var(--rs-logo);
+  flex: 0 0 auto;
   border: 0;
   background: transparent;
   box-shadow: none;
@@ -227,7 +237,8 @@ html[dir="rtl"] .bk-field input[type="email"] {
 }
 
 .bk-brand .brand-icon img {
-  width: 100%;
+  width: auto;
+  max-width: none;
   height: 100%;
   padding: 0;
   border-radius: 0;
@@ -291,7 +302,7 @@ html[dir="rtl"] .bk-field input[type="email"] {
   justify-content: space-between;
   gap: 12px;
   border: 1px solid var(--border);
-  border-radius: 0;
+  border-radius: 14px;
   background: var(--background);
   color: var(--text-primary);
   font: 400 14px/1.5 "Inter", "Work Sans";
@@ -354,6 +365,7 @@ html[dir="rtl"] .bk-dd-text {
   overscroll-behavior: contain;
   background: var(--surface);
   border: 1px solid var(--border);
+  border-radius: 16px;
   box-shadow: 0 14px 30px var(--shadow);
 }
 
@@ -368,6 +380,7 @@ html[dir="rtl"] .bk-dd-text {
 }
 
 .bk-dd-opt {
+  border-radius: 10px;
   padding: 11px 12px;
   cursor: pointer;
   color: var(--text-primary);
@@ -400,4 +413,13 @@ html[dir="rtl"] .bk-dd-opt {
     font-size: 16px;
     padding: 13px 12px;
   }
+}
+
+.bk-topbar {
+  position: absolute;
+  top: 20px;
+  inset-inline-end: 20px;
+  display: flex;
+  gap: 12px;
+  z-index: 10;
 }

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="robots" content="noindex">
+    <title>Coming Soon - AURIVON</title>
+    <script>if (location.protocol !== 'file:') document.write('<base href="/">');</script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600&display=block"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/theme.css">
+    <link rel="stylesheet" href="assets/css/buttons.css">
+    <link rel="stylesheet" href="assets/css/coming.css">
+    <link rel="icon" type="image/png" href="assets/images/logo_lightmode.png">
+</head>
+
+<body class="cs">
+    <div class="cs-glow" aria-hidden="true"></div>
+    <div class="cs-tools">
+        <button type="button" class="icon-btn" id="darkModeBtn" aria-label="Toggle dark mode"></button>
+        <button type="button" class="icon-btn rtl-btn" id="rtlBtn" aria-label="Toggle right-to-left layout">RTL</button>
+    </div>
+
+    <main class="cs-main">
+        <div class="cs-brand">
+            <a href="index.html" class="brand" aria-label="AURIVON Home">
+                <span class="brand-icon">
+                    <img id="brandLogo" src="assets/images/logo_lightmode.png" alt="AURIVON Logo">
+                </span>
+                <span class="brand-text">
+                    <span class="brand-name">AURI<span>VON</span></span>
+                    <span class="brand-tagline">Home Theatre & Audio</span>
+                </span>
+            </a>
+        </div>
+
+        <div class="cs-badge">
+            <span class="cs-badge-main">Launching Soon // 2026</span>
+            <span class="cs-badge-sub">Cinema &bull; Audio &bull; Automation</span>
+        </div>
+
+        <h1>Something Extraordinary is <em>Arriving</em></h1>
+        <p class="cs-lead">We are crafting a new collection of private cinema rooms, reference-grade audio systems and
+            seamless smart-home experiences for discerning homes.</p>
+
+        <div class="cs-count" id="countdown" role="timer" aria-live="off">
+            <div class="cs-card"><b id="cdDays">00</b><span>Days</span></div>
+            <span class="cs-colon" aria-hidden="true"></span>
+            <div class="cs-card"><b id="cdHours">00</b><span>Hours</span></div>
+            <span class="cs-colon" aria-hidden="true"></span>
+            <div class="cs-card"><b id="cdMins">00</b><span>Minutes</span></div>
+            <span class="cs-colon" aria-hidden="true"></span>
+            <div class="cs-card"><b id="cdSecs">00</b><span>Seconds</span></div>
+        </div>
+
+        <form class="cs-form" id="notifyForm" novalidate>
+            <svg class="cs-mail" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor"
+                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="5" width="18" height="14" rx="2" />
+                <path d="m3.5 7 8.5 6.5L20.5 7" />
+            </svg>
+            <input type="email" id="notifyEmail" placeholder="Enter your email for early access"
+                aria-label="Email address" autocomplete="email" required>
+            <button type="submit" class="section-button cs-submit">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect x="3" y="5" width="18" height="14" rx="2" />
+                    <path d="m3.5 7 8.5 6.5L20.5 7" />
+                </svg>
+                Notify Me
+            </button>
+        </form>
+        <p class="cs-msg" id="notifyMsg" role="status" aria-live="polite"></p>
+
+        <div class="cs-actions">
+            <a href="index.html" class="section-button">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M3.5 10.8 12 3.5l8.5 7.3V20a1 1 0 0 1-1 1h-4.7v-6.2H9.2V21H4.5a1 1 0 0 1-1-1z" />
+                </svg>
+                Back to Home
+            </a>
+            <a href="pages/contact.html" class="section-button cs-ghost">Contact Us</a>
+        </div>
+    </main>
+
+    <script>
+        (function () {
+            /* ===== CHANGE LAUNCH DATE HERE ===== */
+            var LAUNCH_DATE = '2026-12-31T00:00:00';
+            /* =================================== */
+
+            var IMG = new URL('assets/images/', document.baseURI).href;
+            var MOON = '<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16"><path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/></svg>';
+            var SUN = '<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 16 16"><path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/></svg>';
+            var html = document.documentElement;
+            var body = document.body;
+            var themeBtn = document.getElementById('darkModeBtn');
+            var rtlBtn = document.getElementById('rtlBtn');
+            var logo = document.getElementById('brandLogo');
+
+            function get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+            function set(k, v) { try { localStorage.setItem(k, v); } catch (e) { } }
+
+            function applyTheme(mode) {
+                var file = IMG + (mode === 'dark' ? 'logo_darkmode.png' : 'logo_lightmode.png');
+                body.classList.toggle('dark', mode === 'dark');
+                themeBtn.innerHTML = mode === 'dark' ? SUN : MOON;
+                if (logo) logo.src = file;
+                document.querySelectorAll('link[rel="icon"], link[rel="apple-touch-icon"]').forEach(function (l) { l.href = file; });
+                set('theme', mode);
+            }
+
+            function applyDir(isRTL) {
+                html.setAttribute('dir', isRTL ? 'rtl' : 'ltr');
+                rtlBtn.textContent = isRTL ? 'LTR' : 'RTL';
+                set('rtl', isRTL);
+            }
+
+            applyTheme(get('theme') === 'dark' ? 'dark' : 'light');
+            applyDir(get('rtl') === 'true');
+
+            themeBtn.addEventListener('click', function () {
+                applyTheme(body.classList.contains('dark') ? 'light' : 'dark');
+            });
+            rtlBtn.addEventListener('click', function () {
+                applyDir(html.getAttribute('dir') !== 'rtl');
+            });
+
+            /* ===== countdown ===== */
+            var target = new Date(LAUNCH_DATE).getTime();
+            var el = {
+                d: document.getElementById('cdDays'), h: document.getElementById('cdHours'),
+                m: document.getElementById('cdMins'), s: document.getElementById('cdSecs')
+            };
+            function pad(n) { return n < 10 ? '0' + n : '' + n; }
+            function tick() {
+                var diff = Math.max(0, target - Date.now());
+                var d = Math.floor(diff / 864e5);
+                var h = Math.floor(diff % 864e5 / 36e5);
+                var m = Math.floor(diff % 36e5 / 6e4);
+                var s = Math.floor(diff % 6e4 / 1e3);
+                el.d.textContent = pad(d); el.h.textContent = pad(h);
+                el.m.textContent = pad(m); el.s.textContent = pad(s);
+            }
+            tick();
+            setInterval(tick, 1000);
+
+            /* ===== email form (front-end only: connect your backend here) ===== */
+            var form = document.getElementById('notifyForm');
+            var input = document.getElementById('notifyEmail');
+            var msg = document.getElementById('notifyMsg');
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                var ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(input.value.trim());
+                msg.classList.toggle('error', !ok);
+                msg.textContent = ok ? "Thank you! We'll email you as soon as we launch." : 'Please enter a valid email address.';
+                if (ok) form.reset();
+            });
+        })();
+    </script>
+</body>
+
+</html>

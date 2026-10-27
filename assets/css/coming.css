@@ -1,0 +1,414 @@
+.cs *,
+.cs *::before,
+.cs *::after {
+  box-sizing: border-box;
+}
+
+html:has(body.cs),
+body.cs {
+  height: 100%;
+  overflow: hidden;
+}
+
+.cs {
+  --cs-surface: color-mix(in srgb, var(--background) 82%, white);
+  --cs-line: color-mix(in srgb, var(--secondary) 45%, transparent);
+  margin: 0;
+  height: 100vh;
+  height: 100dvh;
+  display: grid;
+  place-items: center;
+  position: relative;
+  overflow: hidden;
+  background: var(--background);
+  color: var(--text-primary);
+}
+
+.cs.dark {
+  --cs-surface: color-mix(in srgb, var(--background) 88%, white);
+}
+
+.cs-glow {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(closest-side at 50% 45%, color-mix(in srgb, var(--primary) 20%, transparent), transparent 75%),
+    radial-gradient(520px 420px at 96% 100%, color-mix(in srgb, var(--secondary) 14%, transparent), transparent 70%),
+    linear-gradient(color-mix(in srgb, var(--text-primary) 4%, transparent) 1px, transparent 1px) 0 0 / 56px 56px,
+    linear-gradient(90deg, color-mix(in srgb, var(--text-primary) 4%, transparent) 1px, transparent 1px) 0 0 / 56px 56px;
+  background-repeat: no-repeat, no-repeat, repeat, repeat;
+  -webkit-mask-image: radial-gradient(ellipse at 50% 50%, #000 35%, transparent 90%);
+  mask-image: radial-gradient(ellipse at 50% 50%, #000 35%, transparent 90%);
+}
+
+.cs-tools {
+  position: absolute;
+  top: 20px;
+  inset-inline-end: 20px;
+  display: flex;
+  gap: 12px;
+  z-index: 10;
+}
+
+.cs-main {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 860px;
+  padding: 0 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cs-brand {
+  --rs-logo: 45px;
+  --rs-brand-name: 26px;
+  --rs-brand-gap: 10px;
+  --rs-tagline: 9px;
+  display: flex;
+  justify-content: center;
+  margin: 0 0 clamp(12px, 3vh, 26px);
+}
+
+.cs-brand .brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--rs-brand-gap);
+  width: fit-content;
+  max-width: 100%;
+}
+
+.cs-brand .brand-icon {
+  width: auto;
+  height: var(--rs-logo);
+  flex: 0 0 auto;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  overflow: hidden;
+}
+
+.cs-brand .brand-icon img {
+  display: block;
+  width: auto;
+  max-width: none;
+  height: 100%;
+  padding: 0;
+  border-radius: 0;
+  object-fit: contain;
+}
+
+.cs-brand .brand-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+
+.cs-brand .brand-name {
+  font-size: var(--rs-brand-name);
+  line-height: 1;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.cs-brand .brand-tagline {
+  font-size: var(--rs-tagline);
+  line-height: 1;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.cs-brand .brand:focus-visible {
+  outline: 2px solid var(--secondary);
+  outline-offset: 6px;
+}
+
+.cs-badge {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 18px;
+  padding: 0;
+  font: 600 13px / 1 "Inter", sans-serif;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.cs-badge-main {
+  color: var(--primary);
+}
+
+.cs-badge-sub {
+  font-weight: 500;
+  letter-spacing: .06em;
+  color: color-mix(in srgb, var(--text-primary) 72%, transparent);
+}
+
+.cs h1 {
+  margin: clamp(10px, 2.4vh, 22px) 0 clamp(8px, 1.5vh, 14px);
+  font: 600 clamp(30px, min(5.4vw, 6.4vh), 56px) / 1.1 "Cormorant Garamond", serif;
+  color: var(--text-primary);
+}
+
+.cs h1 em {
+  font-style: italic;
+  color: var(--primary);
+}
+
+.cs-lead {
+  max-width: 620px;
+  margin: 0 auto clamp(14px, 3vh, 28px);
+  font: 400 clamp(15px, 2.1vh, 17px) / 1.6 "Inter", "Work Sans", sans-serif;
+  color: color-mix(in srgb, var(--text-primary) 72%, transparent);
+}
+
+.cs-count {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(8px, 2.4vw, 26px);
+  margin-bottom: clamp(16px, 3.4vh, 32px);
+}
+
+.cs-card {
+  flex: 1 1 0;
+  max-width: 172px;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: clamp(14px, 3vh, 26px) 8px;
+  border: 1px solid var(--cs-line);
+  border-radius: 22px;
+  background: var(--cs-surface);
+  box-shadow: 0 10px 30px color-mix(in srgb, var(--primary) 8%, transparent);
+}
+
+.cs-card b {
+  font: 700 clamp(30px, 5.6vh, 52px) / 1 "Cormorant Garamond", serif;
+  color: var(--primary);
+  font-variant-numeric: tabular-nums;
+}
+
+.cs-card span {
+  font: 600 clamp(10px, 1.6vh, 13px) / 1 "Inter", sans-serif;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--text-primary) 70%, transparent);
+}
+
+.cs-colon {
+  width: 8px;
+  height: 8px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: var(--secondary);
+}
+
+.cs-form {
+  width: 100%;
+  max-width: 640px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 10px 10px 24px;
+  border: 1px solid var(--cs-line);
+  border-radius: 999px;
+  background: var(--cs-surface);
+  box-shadow: 0 16px 40px color-mix(in srgb, var(--primary) 12%, transparent);
+}
+
+[dir="rtl"] .cs-form {
+  padding: 10px 24px 10px 10px;
+}
+
+.cs-mail {
+  flex: 0 0 auto;
+  color: color-mix(in srgb, var(--text-primary) 70%, transparent);
+}
+
+.cs-form input {
+  flex: 1 1 auto;
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  font: 400 16px / 1.2 "Inter", sans-serif;
+  color: var(--text-primary);
+}
+
+.cs-form input::placeholder {
+  color: color-mix(in srgb, var(--text-primary) 55%, transparent);
+}
+
+.cs-form:focus-within {
+  border-color: var(--primary);
+}
+
+.cs-submit {
+  flex: 0 0 auto;
+  cursor: pointer;
+}
+
+.cs-msg {
+  min-height: 20px;
+  margin: 10px 0 0;
+  font: 500 14px / 1.4 "Inter", sans-serif;
+  color: var(--primary);
+}
+
+.cs-msg.error {
+  color: #c0392b;
+}
+
+.cs-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  margin-top: clamp(10px, 2.4vh, 24px);
+}
+
+.section-button.cs-ghost {
+  background: transparent !important;
+  border: 1px solid var(--secondary) !important;
+  color: var(--text-primary) !important;
+  font-weight: 500 !important;
+}
+
+.section-button.cs-ghost:hover {
+  background: var(--btn-hover) !important;
+  border-color: var(--btn-hover) !important;
+  color: var(--on-accent) !important;
+}
+
+@media (max-width: 640px) {
+
+  html:has(body.cs),
+  body.cs {
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .cs {
+    height: auto;
+    min-height: 100dvh;
+    padding: 72px 0 32px;
+  }
+
+  .cs-tools {
+    top: 12px;
+    inset-inline-end: 12px;
+    gap: 8px;
+  }
+
+  .cs-main {
+    padding: 0 16px;
+  }
+
+  .cs-brand {
+    --rs-logo: 38px;
+    --rs-brand-name: 22px;
+    --rs-brand-gap: 8px;
+    --rs-tagline: 8px;
+    margin-bottom: 14px;
+  }
+
+  .cs-badge {
+    flex-direction: column;
+    gap: 6px;
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .cs h1 {
+    margin: 14px 0 10px;
+    font-size: 28px;
+    line-height: 1.15;
+  }
+
+  .cs-lead {
+    margin-bottom: 18px;
+    font-size: 14px;
+    line-height: 1.55;
+  }
+
+  .cs-colon {
+    display: none;
+  }
+
+  .cs-count {
+    gap: 6px;
+    margin-bottom: 18px;
+  }
+
+  .cs-card {
+    gap: 6px;
+    padding: 14px 2px;
+    border-radius: 14px;
+  }
+
+  .cs-card b {
+    font-size: 28px;
+  }
+
+  .cs-card span {
+    font-size: 9px;
+    letter-spacing: .04em;
+  }
+
+  .cs-form,
+  [dir="rtl"] .cs-form {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 24px;
+  }
+
+  .cs-mail {
+    display: none;
+  }
+
+  .cs-form input {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .cs-submit {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .cs-actions {
+    gap: 10px;
+    margin-top: 16px;
+  }
+}
+
+@media (max-height: 560px) {
+
+  html:has(body.cs),
+  body.cs {
+    height: auto;
+    overflow: auto;
+  }
+
+  .cs {
+    min-height: 100dvh;
+    height: auto;
+    padding: 70px 0 30px;
+  }
+}

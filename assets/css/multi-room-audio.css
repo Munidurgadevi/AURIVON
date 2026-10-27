@@ -1144,23 +1144,12 @@ body:not(.dark) .dh-hero {
     -webkit-text-fill-color: transparent;
 }
 
-/* ==========================================================================
-   Typography system - same on all 6 service pages and matching style.css
-   Only 3 fonts are used in the whole application:
-   Cormorant Garamond, Inter, Work Sans
-   1. Paragraph text : Inter, Work Sans (size/weight/line-height of the hero
-                       intro paragraph "A thoughtfully designed home theatre...")
-   2. Tag lines      : Inter, Work Sans (same as index.html tag lines)
-   3. Headings       : Cormorant Garamond, Work Sans
-   ========================================================================== */
-
 :root {
     --dh-p-size: clamp(14px, min(1.2vw, 2.3vh), 17px);
     --dh-p-weight: 400;
     --dh-p-leading: 1.7;
 }
 
-/* 1. Paragraph text */
 main p:not(.dh-eyebrow):not(.dh-tagline):not(.dh-price),
 main .dh-tiles li span,
 main .dh-pills li,
@@ -1171,9 +1160,6 @@ main .dh-why2-list li span {
     line-height: var(--dh-p-leading) !important;
 }
 
-/* 2. Tag lines - same font settings as the index.html tag lines (12px)
-      Section tags : Inter, 12px, 600, .22em, uppercase
-      Hero tag     : Inter, 12px, 500, .34em, uppercase */
 main .dh-eyebrow,
 main .dh-index {
     font-family: var(--font-body) !important;
@@ -1191,11 +1177,6 @@ main .dh-hero .dh-eyebrow {
     letter-spacing: .34em !important;
 }
 
-/* 3. Headings - same as index.html
-      h1 (hero)     = index .hero-title          : max(58px, 5.8vw), 400, line-height 1
-      h2 (sections) = index .consultation-copy h2: clamp(34px, 4.4vw, 58px), 500, line-height 1.06
-      h3 (cards)    = index .service-card h3     : 24px, 600
-      Font: Cormorant Garamond, Work Sans */
 main h1,
 main h2,
 main h3,
@@ -1233,12 +1214,6 @@ button,
 }
 
 
-/* ==========================================================================
-   RTL / LTR support - same behaviour as index.html when the RTL button is on
-   (flex/grid already mirror automatically; these fix the physical values)
-   ========================================================================== */
-
-/* Check-mark pills: icon sits at the inline start, so padding follows it */
 main .dh-pills li {
     padding-inline: 40px 18px;
 }
@@ -1257,13 +1232,11 @@ main .dh-pills li {
     letter-spacing: 0;
 }
 
-/* Left-aligned blocks follow the reading direction */
 [dir="rtl"] .dh-head--left,
 [dir="rtl"] .dh-deal {
     text-align: right;
 }
 
-/* Price ranges keep their order (e.g. 14,999 - 29,999) */
 [dir="rtl"] .dh-price strong,
 [dir="rtl"] .dh-pricecard strong {
     direction: ltr;
@@ -1271,18 +1244,15 @@ main .dh-pills li {
     text-align: right;
 }
 
-/* Hover nudge moves the other way */
 [dir="rtl"] .dh-why2-list li:hover {
     transform: translateX(-4px);
 }
 
-/* Directional arrows are mirrored */
 [dir="rtl"] main a>span[aria-hidden="true"] {
     display: inline-block;
     transform: scaleX(-1);
 }
 
-/* Hero title gradient and background glows flip sides */
 [dir="rtl"] .dh-hero h1 {
     background: linear-gradient(270deg, var(--primary), var(--secondary));
     -webkit-background-clip: text;
@@ -1296,12 +1266,10 @@ main .dh-pills li {
         linear-gradient(180deg, var(--background), var(--surface));
 }
 
-/* Arched hero photo: the taller shoulder stays on the outer side */
 [dir="rtl"] .dh-visual img {
     border-radius: clamp(140px, 19vw, 270px) clamp(110px, 15vw, 210px) 28px 28px;
 }
 
-/* Offer band glow */
 [dir="rtl"] .dh-deal {
     background:
         radial-gradient(circle at 88% 0%, rgba(241, 217, 166, .22), transparent 45%),
@@ -1322,7 +1290,6 @@ main .dh-pills li {
     background: linear-gradient(225deg, #2A0F26 0%, #4A1D40 100%);
 }
 
-/* Our Process cards: always a single row */
 @media (min-width: 641px) and (max-width: 1100px) {
     main .dh-steps {
         display: grid !important;
@@ -1368,10 +1335,6 @@ main .dh-pills li {
     }
 }
 
-/* ==========================================================================
-   CTA section - RTL / LTR safe + one layout per page
-   (logical properties only: start/end follow the page direction)
-   ========================================================================== */
 .dh-cta2-copy {
     text-align: start;
 }
@@ -1400,14 +1363,12 @@ main .dh-pills li {
     }
 }
 
-/* CTA heading follows the page direction (theme.css forces every h2 to ltr in RTL) */
 [dir="rtl"] .dh-cta2-copy h2 {
     direction: rtl;
     unicode-bidi: isolate;
     text-align: inherit;
 }
 
-/* CTA: text left, image right, blob shape same */
 .dh-cta2--framed .dh-cta2-box {
     grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr);
     align-items: center;
@@ -1441,10 +1402,8 @@ main .dh-pills li {
     margin: 12px 0 22px;
 }
 
-/* iPad mini / small tablet (641px - 900px) */
 @media (min-width: 641px) and (max-width: 900px) {
 
-    /* Special offers: first 2 cards in one row */
     main .dh-offers.dh-offers--two {
         display: grid !important;
         grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
@@ -1468,7 +1427,6 @@ main .dh-pills li {
         font-size: 24px !important;
     }
 
-    /* CTA: text left, image right, blob shape same */
     main .dh-cta2--framed .dh-cta2-box {
         display: grid !important;
         grid-template-columns: minmax(0, 1.1fr) minmax(0, .9fr) !important;
