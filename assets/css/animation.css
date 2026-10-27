@@ -535,6 +535,627 @@ body.dark .hero:not(.tf-hero):not(.ab-hero):not(.sv-hero):not(.gl-hero):not(.ct-
   }
 }
 
+/* =====================================================================
+   SECTION ANIMATIONS - added for every section that had none
+   (header & footer are intentionally NOT touched). CSS only.
+   ===================================================================== */
+
+/* ---------- 1. page-load entrances (top-of-page blocks) ---------- */
+
+.hero .hero-card {
+  animation: aniZoomIn 1.1s var(--ani-ease-out) .9s both;
+}
+
+.abh-hero .abh-eyebrow {
+  animation: aniFadeDown .9s var(--ani-ease-out) .15s both;
+}
+
+.abh-hero .abh-title {
+  animation: aniBlurIn 1.1s var(--ani-ease-out) .35s both;
+}
+
+.abh-hero .abh-text {
+  animation: aniFadeUp 1s var(--ani-ease-out) .7s both;
+}
+
+.abh-hero .abh-actions {
+  animation: aniFadeUp .9s var(--ani-ease-out) .95s both;
+}
+
+.abh-hero .abh-proof {
+  animation: aniFadeUp .9s var(--ani-ease-out) 1.15s both;
+}
+
+.abh-hero .abh-visual {
+  animation: aniZoomIn 1.3s var(--ani-ease-out) .5s both;
+}
+
+.dh-hero .dh-hero-copy>* {
+  animation: aniFadeUp .9s var(--ani-ease-out) both;
+}
+
+.dh-hero .dh-hero-copy>.dh-eyebrow {
+  animation-name: aniFadeDown;
+  animation-delay: .15s;
+}
+
+.dh-hero .dh-hero-copy>h1 {
+  animation-name: aniBlurIn;
+  animation-duration: 1.1s;
+  animation-delay: .35s;
+}
+
+.dh-hero .dh-hero-copy>:nth-child(3) {
+  animation-delay: .6s;
+}
+
+.dh-hero .dh-hero-copy>:nth-child(4) {
+  animation-delay: .8s;
+}
+
+.dh-hero .dh-hero-copy>:nth-child(5) {
+  animation-delay: 1s;
+}
+
+.dh-hero .dh-hero-copy>:nth-child(6) {
+  animation-delay: 1.2s;
+}
+
+.dh-hero .dh-visual {
+  animation: aniZoomIn 1.3s var(--ani-ease-out) .5s both;
+}
+
+.cx .cx-photo {
+  animation: aniZoomIn 1.3s var(--ani-ease-out) .4s both;
+}
+
+.prx .prx-art {
+  animation: aniFadeRight 1.2s var(--ani-ease-out) .4s both;
+}
+
+.bk-card {
+  animation: aniFadeUp 1s var(--ani-ease-out) .1s both;
+}
+
+.bk-topbar {
+  animation: aniFadeDown .8s var(--ani-ease-out) both;
+}
+
+.bk-head>* {
+  animation: aniFadeUp .9s var(--ani-ease-out) .3s both;
+}
+
+.bk-head>:nth-child(2) {
+  animation-delay: .45s;
+}
+
+.bk-head>:nth-child(3) {
+  animation-delay: .6s;
+}
+
+.pp-head> :not(.pp-brand),
+.tc-head> :not(.tc-brand) {
+  animation: aniFadeUp .9s var(--ani-ease-out) .2s both;
+}
+
+.pp-head> :nth-child(3),
+.tc-head> :nth-child(3) {
+  animation-name: aniBlurIn;
+  animation-duration: 1.1s;
+  animation-delay: .35s;
+}
+
+.pp-head> :nth-child(4),
+.tc-head> :nth-child(4) {
+  animation-delay: .6s;
+}
+
+.pp-head> :nth-child(5),
+.tc-head> :nth-child(5) {
+  animation-delay: .8s;
+}
+
+.pp-sidebar,
+.tc-sidebar {
+  animation: aniFadeRight .9s var(--ani-ease-out) .6s both;
+}
+
+.nf-brand,
+.cs-brand {
+  animation: aniFadeDown .8s var(--ani-ease-out) .1s both;
+}
+
+.nf-code,
+.cs-badge {
+  animation: aniPop .9s var(--ani-ease-out) .25s both;
+}
+
+.nf-main h1,
+.cs-main h1 {
+  animation: aniBlurIn 1.1s var(--ani-ease-out) .45s both;
+}
+
+.nf-lead,
+.cs-lead {
+  animation: aniFadeUp 1s var(--ani-ease-out) .75s both;
+}
+
+.nf-actions,
+.cs-actions {
+  animation: aniFadeUp .9s var(--ani-ease-out) 1.05s both;
+}
+
+.cs-card {
+  animation: aniPop .8s var(--ani-ease-out) both;
+}
+
+.cs-card:nth-child(1) {
+  animation-delay: .8s;
+}
+
+.cs-card:nth-child(2) {
+  animation-delay: .95s;
+}
+
+.cs-card:nth-child(3) {
+  animation-delay: 1.1s;
+}
+
+.cs-card:nth-child(4) {
+  animation-delay: 1.25s;
+}
+
+.cs-form {
+  animation: aniFadeUp .9s var(--ani-ease-out) 1.2s both;
+}
+
+/* ---------- 2. scroll-driven reveals (only where supported) ---------- */
+
+@supports (animation-timeline: view()) {
+
+  /* ===== index ===== */
+  .cinema-col {
+    animation: aniFadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 70%;
+  }
+
+  .cinema-col:nth-child(2) {
+    animation-range: entry 8% entry 78%;
+  }
+
+  .cinema-col:nth-child(3) {
+    animation-range: entry 16% entry 86%;
+  }
+
+  /* ===== about ===== */
+  .ab-collage {
+    animation: aniFadeRight linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 75%;
+  }
+
+  .ab-xp-list>* {
+    animation: aniFadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 80%;
+  }
+
+  .ab-spot-panel {
+    animation: aniZoomIn linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 75%;
+  }
+
+  .ab-spot-panel:nth-child(2) {
+    animation-range: entry 8% entry 83%;
+  }
+
+  .ab-spot-panel:nth-child(3) {
+    animation-range: entry 16% entry 91%;
+  }
+
+  .ab-bx-list>* {
+    animation: aniFadeLeft linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 80%;
+  }
+
+  .ab-bx-stage {
+    animation: aniZoomIn linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 75%;
+  }
+
+  /* ===== service detail pages (dh-*) ===== */
+  .dh-head {
+    animation: aniFadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 60%;
+  }
+
+  .dh-ov-body {
+    animation: aniFadeLeft linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 70%;
+  }
+
+  .dh-benefits>* {
+    animation: aniFadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 80%;
+  }
+
+  .dh-pills li {
+    animation: aniPop linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 90%;
+  }
+
+  .dh-pills li:nth-child(2) {
+    animation-range: entry 8% entry 98%;
+  }
+
+  .dh-pills li:nth-child(3) {
+    animation-range: entry 16% entry 106%;
+  }
+
+  .dh-pills li:nth-child(4) {
+    animation-range: entry 24% entry 114%;
+  }
+
+  .dh-step {
+    animation: aniFadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 70%;
+  }
+
+  .dh-step:nth-child(2) {
+    animation-range: entry 8% entry 78%;
+  }
+
+  .dh-step:nth-child(3) {
+    animation-range: entry 16% entry 86%;
+  }
+
+  .dh-approach-note {
+    animation: aniFadeRight linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 70%;
+  }
+
+  .dh-offer:nth-child(odd) {
+    animation: aniFadeLeft linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 75%;
+  }
+
+  .dh-offer:nth-child(even) {
+    animation: aniFadeRight linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 75%;
+  }
+
+  .dh-deal {
+    animation: aniZoomIn linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 75%;
+  }
+
+  .dh-pricecard {
+    animation: aniFadeRight linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 75%;
+  }
+
+  .dh-why2-fig {
+    animation: aniFadeRight linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 75%;
+  }
+
+  .dh-why2-body {
+    animation: aniFadeLeft linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 75%;
+  }
+
+  .dh-cta2-box {
+    animation: aniZoomIn linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 70%;
+  }
+
+  .dh-cta2-copy {
+    animation: aniFadeLeft linear both;
+    animation-timeline: view();
+    animation-range: entry 10% entry 80%;
+  }
+
+  .dh-cta2-fig {
+    animation: aniFadeRight linear both;
+    animation-timeline: view();
+    animation-range: entry 10% entry 80%;
+  }
+
+  /* ===== contact ===== */
+  .ct-cta-card {
+    animation: aniZoomIn linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 70%;
+  }
+
+  .ct-cta-eyebrow {
+    animation: aniFadeDown linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 60%;
+  }
+
+  .ct-cta-text,
+  .ct-cta-actions {
+    animation: aniFadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 80%;
+  }
+
+  .ct-cta-info li {
+    animation: aniFadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 90%;
+  }
+
+  .ct-cta-info li:nth-child(2) {
+    animation-range: entry 8% entry 98%;
+  }
+
+  .ct-cta-info li:nth-child(3) {
+    animation-range: entry 16% entry 106%;
+  }
+
+  /* ===== gallery ===== */
+  .fi-card {
+    animation: aniZoomIn linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 70%;
+  }
+
+  .rg-media {
+    animation: aniFadeRight linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 75%;
+  }
+
+  .rg-side {
+    animation: aniFadeLeft linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 75%;
+  }
+
+  /* ===== journal ===== */
+  .jn-media {
+    animation: aniZoomIn linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 75%;
+  }
+
+  .jn-body {
+    animation: aniFadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 5% entry 80%;
+  }
+
+  .jn-cta-inner {
+    animation: aniZoomIn linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 70%;
+  }
+
+  .jn-cta-eyebrow {
+    animation: aniFadeDown linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 60%;
+  }
+
+  .jn-cta-inner h2,
+  .jn-cta-text,
+  .jn-cta-actions {
+    animation: aniFadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 80%;
+  }
+
+  .jn-cta-cards>* {
+    animation: aniFadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 85%;
+  }
+
+  .jn-cta-cards> :nth-child(2) {
+    animation-range: entry 8% entry 93%;
+  }
+
+  .jn-cta-cards> :nth-child(3) {
+    animation-range: entry 16% entry 101%;
+  }
+
+  /* ===== pricing ===== */
+  .pricing-heading,
+  .price-note {
+    animation: aniFadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 70%;
+  }
+
+  .pk-card {
+    animation: aniFadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 70%;
+  }
+
+  .pk-card:nth-child(2) {
+    animation-name: aniZoomIn;
+    animation-range: entry 8% entry 78%;
+  }
+
+  .pk-card:nth-child(3) {
+    animation-range: entry 16% entry 86%;
+  }
+
+  .ao-visual {
+    animation: aniFadeRight linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 75%;
+  }
+
+  .ao-copy {
+    animation: aniFadeLeft linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 75%;
+  }
+
+  .know-card {
+    animation: aniFadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 70%;
+  }
+
+  .know-card:nth-child(2) {
+    animation-range: entry 8% entry 78%;
+  }
+
+  .know-card:nth-child(3) {
+    animation-range: entry 16% entry 86%;
+  }
+
+  .know-card:nth-child(4) {
+    animation-range: entry 24% entry 94%;
+  }
+
+  .pq-card {
+    animation: aniZoomIn linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 70%;
+  }
+
+  .pq-steps>* {
+    animation: aniFadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 85%;
+  }
+
+  .pq-steps> :nth-child(2) {
+    animation-range: entry 8% entry 93%;
+  }
+
+  .pq-steps> :nth-child(3) {
+    animation-range: entry 16% entry 101%;
+  }
+
+  .pq-steps> :nth-child(4) {
+    animation-range: entry 24% entry 109%;
+  }
+
+  /* ===== services ===== */
+  .sx-card {
+    animation: aniFadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 70%;
+  }
+
+  .ac-list>* {
+    animation: aniFadeLeft linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 80%;
+  }
+
+  .ac-photo {
+    animation: aniZoomIn linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 75%;
+  }
+
+  .of-card {
+    animation: aniFadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 70%;
+  }
+
+  .of-card:nth-child(2) {
+    animation-name: aniZoomIn;
+    animation-range: entry 8% entry 78%;
+  }
+
+  .of-card:nth-child(3) {
+    animation-range: entry 16% entry 86%;
+  }
+
+  .spc-card {
+    animation: aniFadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 75%;
+  }
+
+  .spc-card:nth-child(2) {
+    animation-range: entry 8% entry 83%;
+  }
+
+  .spc-card:nth-child(3) {
+    animation-range: entry 16% entry 91%;
+  }
+
+  .spc-card:nth-child(4) {
+    animation-range: entry 24% entry 99%;
+  }
+
+  /* ===== home2 ===== */
+  .hy-card {
+    animation: aniFadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 70%;
+  }
+
+  .hy-card-2 {
+    animation-range: entry 8% entry 78%;
+  }
+
+  .hy-card-3 {
+    animation-range: entry 16% entry 86%;
+  }
+
+  .hs-card {
+    animation: aniZoomIn linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 75%;
+  }
+
+  .hs-card:nth-child(3n+2) {
+    animation-range: entry 8% entry 83%;
+  }
+
+  .hs-card:nth-child(3n+3) {
+    animation-range: entry 16% entry 91%;
+  }
+
+  /* ===== booking / privacy / terms ===== */
+  .bk-grid>* {
+    animation: aniFadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 90%;
+  }
+
+  .pp-card,
+  .tc-card {
+    animation: aniFadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 70%;
+  }
+
+  .pp-card--contact,
+  .tc-card--contact {
+    animation-name: aniZoomIn;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
 
   *,
